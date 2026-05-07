@@ -22,7 +22,9 @@
     viewBox: { x: 0, y: 0, width: 1000, height: 760 },
     taiwanViewBox: { x: 0, y: 0, width: 1000, height: 760 },
     dragging: null,
-    taiwanDragging: null
+    taiwanDragging: null,
+    touchGesture: null,
+    taiwanTouchGesture: null
   };
 
   const fullViewBox = { x: 0, y: 0, width: 1000, height: 760 };
@@ -128,6 +130,7 @@
   }, { passive: false });
 
   svg.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch") return;
     svg.setPointerCapture(event.pointerId);
     state.dragging = {
       pointerId: event.pointerId,
@@ -158,6 +161,7 @@
   }, { passive: false });
 
   taiwanSvg.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "touch") return;
     taiwanSvg.setPointerCapture(event.pointerId);
     state.taiwanDragging = {
       pointerId: event.pointerId,
@@ -181,6 +185,24 @@
 
   taiwanSvg.addEventListener("pointerup", endTaiwanDrag);
   taiwanSvg.addEventListener("pointercancel", endTaiwanDrag);
+  addTouchGestures(svg, {
+    getViewBox: () => state.viewBox,
+    setViewBox,
+    getGesture: () => state.touchGesture,
+    setGesture: (gesture) => {
+      state.touchGesture = gesture;
+    },
+    zoomClassTarget: svg
+  });
+  addTouchGestures(taiwanSvg, {
+    getViewBox: () => state.taiwanViewBox,
+    setViewBox: setTaiwanViewBox,
+    getGesture: () => state.taiwanTouchGesture,
+    setGesture: (gesture) => {
+      state.taiwanTouchGesture = gesture;
+    },
+    zoomClassTarget: taiwanSvg
+  });
 
   function getEventPoints(event, placeMap) {
     return event.place_ids
@@ -706,6 +728,105 @@
     return {
       x: state.taiwanViewBox.x + ((event.clientX - rect.left) / rect.width) * state.taiwanViewBox.width,
       y: state.taiwanViewBox.y + ((event.clientY - rect.top) / rect.height) * state.taiwanViewBox.height
+    };
+  }
+
+  function addTouchGestures(element, options) {
+    element.addEventListener("touchstart", (event) => {
+      if (event.touches.length === 1 && event.target.closest?.(".marker-group")) return;
+      if (event.touches.length > 2) return;
+      event.preventDefault();
+      options.zoomClassTarget.classList.add("dragging");
+      options.setGesture(createTouchGesture(event, element, options.getViewBox()));
+    }, { passive: false });
+
+    element.addEventListener("touchmove", (event) => {
+      const gesture = options.getGesture();
+      if (!gesture || !event.touches.length) return;
+      event.preventDefault();
+
+      if (event.touches.length === 1 && gesture.mode === "drag") {
+        const touch = event.touches[0];
+        const scaleX = gesture.viewBox.width / element.clientWidth;
+        const scaleY = gesture.viewBox.height / element.clientHeight;
+        options.setViewBox({
+          x: gesture.viewBox.x - (touch.clientX - gesture.startClient.x) * scaleX,
+          y: gesture.viewBox.y - (touch.clientY - gesture.startClient.y) * scaleY,
+          width: gesture.viewBox.width,
+          height: gesture.viewBox.height
+        });
+        return;
+      }
+
+      if (event.touches.length === 2) {
+        const pinch = gesture.mode === "pinch" ? gesture : createTouchGesture(event, element, options.getViewBox());
+        if (gesture.mode !== "pinch") options.setGesture(pinch);
+        const currentDistance = touchDistance(event.touches[0], event.touches[1]);
+        if (!currentDistance) return;
+        const factor = pinch.startDistance / currentDistance;
+        const nextWidth = pinch.viewBox.width * factor;
+        const nextHeight = pinch.viewBox.height * factor;
+        const ratioX = (pinch.center.x - pinch.viewBox.x) / pinch.viewBox.width;
+        const ratioY = (pinch.center.y - pinch.viewBox.y) / pinch.viewBox.height;
+        options.setViewBox({
+          x: pinch.center.x - nextWidth * ratioX,
+          y: pinch.center.y - nextHeight * ratioY,
+          width: nextWidth,
+          height: nextHeight
+        });
+        renderMap(filteredEvents());
+      }
+    }, { passive: false });
+
+    element.addEventListener("touchend", (event) => {
+      if (event.touches.length) {
+        options.setGesture(createTouchGesture(event, element, options.getViewBox()));
+        return;
+      }
+      options.setGesture(null);
+      options.zoomClassTarget.classList.remove("dragging");
+    }, { passive: false });
+
+    element.addEventListener("touchcancel", () => {
+      options.setGesture(null);
+      options.zoomClassTarget.classList.remove("dragging");
+    }, { passive: false });
+  }
+
+  function createTouchGesture(event, element, viewBox) {
+    if (event.touches.length === 2) {
+      return {
+        mode: "pinch",
+        viewBox: { ...viewBox },
+        startDistance: touchDistance(event.touches[0], event.touches[1]),
+        center: clientToViewBox(touchCenter(event.touches[0], event.touches[1]), element, viewBox)
+      };
+    }
+
+    const touch = event.touches[0];
+    return {
+      mode: "drag",
+      viewBox: { ...viewBox },
+      startClient: { x: touch.clientX, y: touch.clientY }
+    };
+  }
+
+  function clientToViewBox(clientPoint, element, viewBox) {
+    const rect = element.getBoundingClientRect();
+    return {
+      x: viewBox.x + ((clientPoint.x - rect.left) / rect.width) * viewBox.width,
+      y: viewBox.y + ((clientPoint.y - rect.top) / rect.height) * viewBox.height
+    };
+  }
+
+  function touchDistance(a, b) {
+    return Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+  }
+
+  function touchCenter(a, b) {
+    return {
+      x: (a.clientX + b.clientX) / 2,
+      y: (a.clientY + b.clientY) / 2
     };
   }
 

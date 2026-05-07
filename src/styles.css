@@ -429,6 +429,7 @@ h1 {
   min-height: 0;
   padding: 14px 18px;
   overflow: auto;
+  overscroll-behavior: contain;
 }
 
 .map-grid {
@@ -451,6 +452,7 @@ h1 {
   box-shadow: var(--shadow);
   cursor: grab;
   touch-action: none;
+  -webkit-user-select: none;
   user-select: none;
 }
 
