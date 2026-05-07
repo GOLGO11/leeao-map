@@ -114,7 +114,10 @@
   focusAllButton.addEventListener("click", () => setNamedView("all"));
   taiwanZoomInButton.addEventListener("click", () => zoomTaiwanMap(0.72));
   taiwanZoomOutButton.addEventListener("click", () => zoomTaiwanMap(1.38));
-  taiwanResetButton.addEventListener("click", () => setTaiwanViewBox(fullTaiwanViewBox));
+  taiwanResetButton.addEventListener("click", () => {
+    setTaiwanViewBox(fullTaiwanViewBox);
+    renderMap(filteredEvents());
+  });
 
   svg.addEventListener("wheel", (event) => {
     event.preventDefault();
@@ -293,6 +296,7 @@
       labelMode: "main"
     });
 
+    const taiwanScale = Math.max(0.2, Math.min(0.85, state.taiwanViewBox.width / fullTaiwanViewBox.width));
     const taiwanEvents = visibleEvents.filter((event) => event.points.some((point) => isTaiwanPoint(point)));
     document.querySelector("#taiwanCount").textContent = taiwanEvents.length;
     renderMapLayer({
@@ -301,7 +305,7 @@
       markerLayer: taiwanMarkerLayer,
       projectFn: projectTaiwan,
       pointFilter: isTaiwanPoint,
-      markerScale: 1,
+      markerScale: taiwanScale,
       baseRadius: 3.2,
       countRadius: 0.38,
       maxRadius: 7,
@@ -349,27 +353,39 @@
       });
     });
 
-    [...byPlace.values()].forEach(({ point, events: pointEvents }) => {
-      const position = projectFn(point.coordinates);
+    const entries = separateDensePoints([...byPlace.values()].map((entry) => ({
+      ...entry,
+      basePosition: projectFn(entry.point.coordinates)
+    })), markerScale);
+    const placedLabels = [];
+
+    entries.forEach(({ point, events: pointEvents, basePosition, position }) => {
       const active = pointEvents.some((event) => event.id === state.activeEventId);
       const category = pointEvents[0].category;
       const meta = categoryMeta[category] || categoryMeta.all;
       const radius = Math.min(maxRadius, baseRadius + pointEvents.length * countRadius) * markerScale;
-      const computedLabelSize = Math.max(7, labelSize * markerScale);
+      const computedLabelSize = Math.max(2.1, labelSize * markerScale);
       const shouldShowLabel = labelMode === "all"
         || active
         || (labelMode === "main" && !isTaiwanPoint(point))
         || (labelMode === "sparse" && pointEvents.length >= 3);
+      const labelPlacement = shouldShowLabel
+        ? placeLabel(shortName(point.name), position, radius, computedLabelSize, markerScale, placedLabels)
+        : null;
+      if (labelPlacement) placedLabels.push(labelPlacement.box);
       const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
       group.setAttribute("class", `marker-group${active ? " active" : ""}`);
       group.setAttribute("tabindex", "0");
       group.setAttribute("role", "button");
       group.setAttribute("aria-label", point.name);
       group.dataset.eventId = pointEvents[0].id;
+      const displaced = distance(basePosition, position) > markerScale * 1.5;
       group.innerHTML = `
+        <title>${escapeSvgText(point.name)}</title>
+        ${displaced ? `<line class="marker-leader" x1="${basePosition.x}" y1="${basePosition.y}" x2="${position.x}" y2="${position.y}"></line>` : ""}
         <circle class="marker-halo" cx="${position.x}" cy="${position.y}" r="${radius * 2.1}"></circle>
         <circle class="marker-dot" cx="${position.x}" cy="${position.y}" r="${radius}" fill="${meta.color}"></circle>
-        ${shouldShowLabel ? `<text class="marker-label" x="${position.x + radius + 5 * markerScale}" y="${position.y + 3.5 * markerScale}" style="font-size:${computedLabelSize}px">${escapeSvgText(shortName(point.name))}</text>` : ""}
+        ${labelPlacement ? `<text class="marker-label" x="${labelPlacement.x}" y="${labelPlacement.y}" style="font-size:${computedLabelSize}px">${escapeSvgText(shortName(point.name))}</text>` : ""}
       `;
       group.addEventListener("click", () => {
         state.activeEventId = pointEvents[0].id;
@@ -386,6 +402,83 @@
       });
       markerLayer.appendChild(group);
     });
+  }
+
+  function separateDensePoints(entries, markerScale) {
+    const remaining = [...entries].sort((a, b) => {
+      const activeA = a.events.some((event) => event.id === state.activeEventId) ? 1 : 0;
+      const activeB = b.events.some((event) => event.id === state.activeEventId) ? 1 : 0;
+      return activeB - activeA || b.events.length - a.events.length || a.point.name.localeCompare(b.point.name, "zh-Hans-CN");
+    });
+    const separated = [];
+    const threshold = 18 * markerScale;
+
+    while (remaining.length) {
+      const seed = remaining.shift();
+      const group = [seed];
+      for (let index = remaining.length - 1; index >= 0; index -= 1) {
+        if (distance(seed.basePosition, remaining[index].basePosition) <= threshold) {
+          group.push(remaining.splice(index, 1)[0]);
+        }
+      }
+
+      if (group.length === 1) {
+        separated.push({ ...seed, position: seed.basePosition });
+        continue;
+      }
+
+      const spread = Math.min(34, 12 + group.length * 2.2) * markerScale;
+      group.forEach((entry, index) => {
+        const angle = -Math.PI / 2 + (index * 2 * Math.PI) / group.length;
+        separated.push({
+          ...entry,
+          position: {
+            x: round(entry.basePosition.x + Math.cos(angle) * spread),
+            y: round(entry.basePosition.y + Math.sin(angle) * spread)
+          }
+        });
+      });
+    }
+
+    return separated;
+  }
+
+  function placeLabel(text, position, radius, fontSize, markerScale, placedLabels) {
+    const width = Math.max(16 * markerScale, text.length * fontSize * 0.64);
+    const height = fontSize * 1.35;
+    const gap = Math.max(3 * markerScale, fontSize * 0.35);
+    const candidates = [
+      { x: position.x + radius + gap, y: position.y + height * 0.34 },
+      { x: position.x - radius - gap - width, y: position.y + height * 0.34 },
+      { x: position.x - width / 2, y: position.y - radius - gap },
+      { x: position.x - width / 2, y: position.y + radius + gap + height },
+      { x: position.x + radius + gap, y: position.y - radius - gap },
+      { x: position.x + radius + gap, y: position.y + radius + gap + height },
+      { x: position.x - radius - gap - width, y: position.y - radius - gap },
+      { x: position.x - radius - gap - width, y: position.y + radius + gap + height }
+    ];
+
+    for (const candidate of candidates) {
+      const box = {
+        x1: candidate.x - 2 * markerScale,
+        y1: candidate.y - height - 2 * markerScale,
+        x2: candidate.x + width + 2 * markerScale,
+        y2: candidate.y + 2 * markerScale
+      };
+      if (!placedLabels.some((placed) => boxesOverlap(box, placed))) {
+        return { x: round(candidate.x), y: round(candidate.y), box };
+      }
+    }
+
+    return null;
+  }
+
+  function boxesOverlap(a, b) {
+    return a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
+  }
+
+  function distance(a, b) {
+    return Math.hypot(a.x - b.x, a.y - b.y);
   }
 
   function renderDetail(event) {
@@ -457,6 +550,7 @@
 
   function setNamedView(name) {
     setViewBox(namedViewBoxes[name] || namedViewBoxes.all);
+    renderMap(filteredEvents());
   }
 
   function zoomMap(factor, center = null) {
@@ -476,6 +570,7 @@
       width: nextWidth,
       height: nextHeight
     });
+    renderMap(filteredEvents());
   }
 
   function zoomTaiwanMap(factor, center = null) {
@@ -495,6 +590,7 @@
       width: nextWidth,
       height: nextHeight
     });
+    renderMap(filteredEvents());
   }
 
   function setViewBox(viewBox) {
