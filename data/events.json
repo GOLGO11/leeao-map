@@ -1609,6 +1609,48 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/007.李敖风流自传/418.在八号房独居.txt",
         "locator": "第3行",
         "evidence_quote": "在八号房独居...李敖关在独居房中，这是典型的虐待"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/001.对自然要自然.txt",
+        "locator": "第11行",
+        "evidence_quote": "1973年11月18日狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/002.与阳光有约.txt",
+        "locator": "第11行",
+        "evidence_quote": "1973年12月9日狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/003.时不我与，我不与时.txt",
+        "locator": "第11行",
+        "evidence_quote": "1973年12月23日午后狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/004.用冰冷表现洁白.txt",
+        "locator": "第15行",
+        "evidence_quote": "1974年1月11日狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/005.朋友的没落.txt",
+        "locator": "第19行",
+        "evidence_quote": "1974年5月4日狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/006.活在湿度计里.txt",
+        "locator": "第9行",
+        "evidence_quote": "1974年6月2日夜狱中作"
+      },
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/007.孤独与鬼.txt",
+        "locator": "第11行",
+        "evidence_quote": "1974年7月7日夜狱中作"
       }
     ]
   },
@@ -1829,6 +1871,58 @@
     ]
   },
   {
+    "id": "event-1980-li-ao-quanji-publication-censorship",
+    "sequence": 218.5,
+    "date_start": "1980-04-20",
+    "date_end": "1980-10-25",
+    "date_label": "1980年4月20日至10月25日",
+    "title": "《李敖全集》出版前后遭审查",
+    "summary": "四季出版公司准备出版《李敖全集》第一梯次六巨册，《李敖全集自序》先发表于1980年4月20日《四季杂志》第十期，随即因措辞激烈被查禁；5月20日台北市政府函四季出版事业有限公司与四季杂志社，要求删除不妥文字并抄送行政院新闻局、台湾警备总司令部，四季为使全集顺利出版而删除该序。6月25日第一、二册出版，10月25日第三至六册出版；第七、八册为1983年2月1日后续出版。地点仍按台北市级处理，四季出版公司、台北市政府函件现场与警总审查会面地点均待考。",
+    "place_ids": [
+      "place-taipei"
+    ],
+    "category": "media",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-quanji",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/007.李敖全集/001.《李敖全集》自序.txt",
+        "locator": "第59、61行",
+        "evidence_quote": "《李敖全集》的出版，可算是四十五岁前的李敖的一次总结...1980年蒙难九周年之日，在中国台湾岛"
+      },
+      {
+        "source_id": "source-leeao-kuaienchou",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/005.李敖快意恩仇录/016.梦遗纪.txt",
+        "locator": "第131、133行",
+        "evidence_quote": "1980年...四季出版公司准备出版《李敖全集》第一梯次六巨册...在《四季杂志》第十期（1980年4月20日）里...四季出版公司为了全集得以顺利出版，就在《李敖全集》前面，删除了这篇序"
+      },
+    {
+      "source_id": "source-leeao-related-dossier",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/006.李敖著作查禁清单及官方理由.txt",
+      "locator": "第45行",
+      "evidence_quote": "隔年再出版《李敖全集》（二十五开，3500页，六十九年6月25日出版）"
+    },
+    {
+      "source_id": "source-leeao-challenge",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/036.19991117挑战李敖.txt",
+      "locator": "第15、17行",
+      "evidence_quote": "台北市政府函...中华民国69年5月20号，受文者是四季出版事业有限公司...副本...行政院新闻局、台湾警备总司令部...又来一封...受文者是四季杂志社"
+    },
+    {
+      "source_id": "source-leeao-qianqiu-wansui-wuya-qiushi",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/003.惊世杂文类/013.千秋万岁乌鸦求是合集/050.远流版《李敖全集》序.txt",
+      "locator": "第3、7行",
+      "evidence_quote": "《李敖全集》原来精装八册，是一九八〇年六月到一九八三年二月由叶圣康的四季出版公司出版的...《李敖全集自序》...发表在《四季杂志》第十期（一九八〇年四月二十日）里"
+    },
+    {
+      "source_id": "source-leeao-qianqiu-wansui-wuya-qiushi",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/003.惊世杂文类/013.千秋万岁乌鸦求是合集/051.李敖著作年表.txt",
+      "locator": "第95、101行",
+      "evidence_quote": "六月二十五日出版《李敖全集》第一册、第二册。十月二十五日出版《李敖全集》第三册、第四册、第五册、第六册...二月一日...同日出版《李敖全集》第七册、第八册"
+    }
+  ]
+},
+  {
     "id": "event-1981-second-imprisonment",
     "sequence": 220,
     "date_start": "1981-08-10",
@@ -1865,6 +1959,28 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/004.李敖回忆录/017.“二进宫”（1981-1982·46岁）.txt",
         "locator": "第3、153行",
         "evidence_quote": "我坐牢所在...留在土城看守所...我在“二进宫”六个月里。"
+      }
+    ]
+  },
+  {
+    "id": "event-1986-daan-precinct-report",
+    "sequence": 227,
+    "date_start": "1986-11-19",
+    "date_end": "1986-11-19",
+    "date_label": "1986年11月19日",
+    "title": "赴大安分局处理恐吓案笔录",
+    "summary": "李敖在信中说，1986年11月19日下午为吴某涉嫌恐吓及预备杀人事到大安分局，警方请证人携身份证与图章到刑事第三组做笔录；当夜他又标注这是自己从警总军法处出狱十周年。地点未见门牌，本轮按大安分局机关/区级近似定位。",
+    "place_ids": [
+      "place-taipei-daan-police-precinct"
+    ],
+    "category": "legal",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-bobo-song",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/006.波波颂/044.我最佩服以色列人.txt",
+        "locator": "第5、27、29行",
+        "evidence_quote": "今天下午在大安分局为吴某涉嫌恐吓及预备杀人事...到大安分局刑事第三组找尤先生...今天是我在警总军法处出狱十周年纪念日...敖之1986年11月19日夜"
       }
     ]
   },

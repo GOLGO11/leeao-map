@@ -1118,6 +1118,29 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-daan-police-precinct",
+      "properties": {
+        "name_zh": "台北市警察局大安分局",
+        "aliases": [
+          "大安分局",
+          "台北市大安分局",
+          "大安分局刑事第三组"
+        ],
+        "place_type": "police_station",
+        "coordinate_precision": "district_approx",
+        "needs_review": true,
+        "notes": "《波波颂》称1986年11月19日李敖因吴某涉嫌恐吓及预备杀人事到大安分局，警方请证人到刑事第三组做笔录；原文未给门牌，坐标先按台北大安区机关/区级近似，旧址待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-shandao-temple",
       "properties": {
         "name_zh": "善导寺",
