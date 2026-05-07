@@ -206,17 +206,27 @@
       "type": "Feature",
       "id": "place-garrison-command-security-office",
       "properties": {
-        "name_zh": "警总保安处",
+        "name_zh": "警总保安处（博爱路）",
         "aliases": [
           "台湾警备总司令部保安处",
-          "保安处"
+          "保安处",
+          "台北市博爱路警备总部保安处",
+          "保安处第五房",
+          "博爱路172号",
+          "台湾警备总司令部保安处看守所"
         ],
-        "place_type": "site",
-        "coordinate_precision": "unknown",
+        "place_type": "detention_site",
+        "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "1971 年被捕后关押近一年；第一轮先不设坐标，待考证旧址。"
+        "notes": "《李敖风流自传》称1971年被捕后“直驶台北市博爱路警备总部保安处”，并在讯问室第五房住近一年；复查以国家人权记忆库/国家文化记忆库所载博爱路172号旧址校正。与六张犁看守所为不同线索，仍保留复查标记。"
       },
-      "geometry": null
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5108306,
+          25.0371985
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -371,17 +381,29 @@
       "type": "Feature",
       "id": "place-military-law-detention-center",
       "properties": {
-        "name_zh": "警总军法处看守所",
+        "name_zh": "景美军法看守所（警总军法处看守所）",
         "aliases": [
           "军法处看守所",
-          "军法处"
+          "军法处",
+          "景美军法看守所",
+          "警总军法处看守所",
+          "景美秀朗桥下军法看守所",
+          "新店二十张景美军事看守所",
+          "白色恐怖景美纪念园区",
+          "新店复兴路131号"
         ],
-        "place_type": "site",
-        "coordinate_precision": "unknown",
+        "place_type": "detention_site",
+        "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "1972-1975 年关押地点之一；需考证旧址。"
+        "notes": "《李敖风流自传》称其自保安处第五房改押景美军法看守所，并在此共住四年八个月；复查以国家人权博物馆“白色恐怖景美纪念园区”现址新北市新店区复兴路131号、秀朗桥南侧校正坐标。八号房为内部空间。"
       },
-      "geometry": null
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53227,
+          24.9881
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -389,12 +411,15 @@
       "properties": {
         "name_zh": "警总军法处八号房",
         "aliases": [
-          "八号房"
+          "八号房",
+          "军法处八号房",
+          "景美军法看守所第八房",
+          "第八房"
         ],
         "place_type": "room",
         "coordinate_precision": "unknown",
         "needs_review": true,
-        "notes": "李敖第一次政治犯时期住得最久的独居牢房；属于警总军法处看守所内部空间，旧址待考。"
+        "notes": "李敖第一次政治犯时期住得最久的独居牢房；《李敖风流自传》称其在景美军法看守所第八房独居约二年半。属于看守所内部空间，暂不单独设坐标，地点详情随景美军法看守所呈现。"
       },
       "geometry": null
     },
@@ -1068,6 +1093,31 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-mainland-building-restaurant",
+      "properties": {
+        "name_zh": "忠孝东路大陆餐厅 / 大陆大楼",
+        "aliases": [
+          "大陆餐厅",
+          "大陆大楼",
+          "忠孝东路大陆餐厅",
+          "台北大陆大楼",
+          "台北市大安区忠孝东路四段大陆大楼"
+        ],
+        "place_type": "restaurant_event_venue",
+        "coordinate_precision": "building_approx",
+        "needs_review": true,
+        "notes": "1980年8月28日李敖宣布与胡茵梦离婚的记者会地点。《李敖风流自传》《李敖回忆录》称“大陆大楼”，《李敖快意恩仇录》《冷眼看台湾》称“忠孝东路大陆餐厅”。当前坐标按忠孝东路四段大陆大楼280/290号一带近似，餐厅楼层与门牌待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55586,
+          25.041162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-shandao-temple",
       "properties": {
         "name_zh": "善导寺",
@@ -1434,6 +1484,31 @@
     },
     {
       "type": "Feature",
+      "id": "place-xindian-huayuan-xincheng-xiao-home",
+      "properties": {
+        "name_zh": "新店花园新城（萧孟能家）",
+        "aliases": [
+          "花园新城",
+          "萧孟能花园新城的家",
+          "新店花园新城",
+          "新店区花园新城",
+          "花园一路二段10号一带"
+        ],
+        "place_type": "residence",
+        "coordinate_precision": "community_approx",
+        "needs_review": true,
+        "notes": "1979年9月15日李敖在萧孟能花园新城家中初见胡茵梦。复查确认“花园新城”位于新店花园一路/花园二路一带；当前坐标按花园一路二段10号社区锚点近似，非萧宅门牌。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54914,
+          24.934117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-yangmingshan-qingshan-jianwo-lou",
       "properties": {
         "name_zh": "阳明山“青山见我楼”书房",
@@ -1453,6 +1528,31 @@
         "coordinates": [
           121.545,
           25.155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-china-television-building-chongyang-120",
+      "properties": {
+        "name_zh": "中国电视公司中视大楼（重阳路120号）",
+        "aliases": [
+          "中国电视公司",
+          "中视",
+          "中视大楼",
+          "中国电视大厦",
+          "China Television Building"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1990年中国电视公司赵宁节目亮相事件的地点锚点。外部复查显示中视大楼为第二代总部暨第一代独栋总部，1986年10月13日启用，地址为台北市南港区重阳路120号；与1999年落成的重阳路118号中视第二大楼区分。录影棚/节目具体棚别待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.599481,
+          25.056549
         ]
       }
     }
