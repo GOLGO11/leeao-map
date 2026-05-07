@@ -938,6 +938,24 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/007.李敖风流自传/238.“四席小屋”.txt",
         "locator": "第5行",
         "evidence_quote": "两天后，我租到新生南路3段60巷1号...订名为“四席小屋”"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/003.独身者的独白.txt",
+        "locator": "第7、31行",
+        "evidence_quote": "我又走向台大来...1961年妇女节在台北“四席小屋”"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/004.爱情的刽子手.txt",
+        "locator": "第5、53行",
+        "evidence_quote": "三年以前，在台大新铺的草坪上...1961年4月11日在台北“四席小屋”"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/022.十三年和十三月.txt",
+        "locator": "第19-27行",
+        "evidence_quote": "1961年2月6日...又回到了台大...找了一间小房...订名为“四席小屋”"
       }
     ]
   },
@@ -978,6 +996,18 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/007.李敖风流自传/242.“碧潭山楼”.txt",
         "locator": "第3-7行",
         "evidence_quote": "所谓“碧潭山楼”...没离开新店...1961年7月5日日记"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/020.老年人和棒子.txt",
+        "locator": "第171行",
+        "evidence_quote": "1961年7月15日在碧潭山楼"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/022.十三年和十三月.txt",
+        "locator": "第27-29、53行",
+        "evidence_quote": "在新店选到了一间小房，背山面水...在青山里、在绿水边、在吊桥上...走上了碧潭的桥头"
       }
     ]
   },
@@ -1080,6 +1110,18 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/004.中华民国作家作品目录——李敖.txt",
         "locator": "第11行",
         "evidence_quote": "民国五十年，李敖以一篇发表于《文星》杂志的《老年人和棒子》引起震撼和议论"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/020.老年人和棒子.txt",
+        "locator": "第199、207行",
+        "evidence_quote": "原登在《文星》第四十九号（1961年11月1日台北出版），是我写给《文星》的第一篇稿子...这真是一场“棒子战”了！"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/022.十三年和十三月.txt",
+        "locator": "第53-55行",
+        "evidence_quote": "写成了投给《文星》的第一篇文字——《老年人和棒子》...去年11月1号发表"
       }
     ]
   },
@@ -1102,6 +1144,40 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/001.李敖五十年表.txt",
         "locator": "1962条",
         "evidence_quote": "住进安东街231号三楼"
+      }
+    ]
+  },
+  {
+    "id": "event-1963-tradition-under-monologue-publication",
+    "sequence": 165,
+    "date_start": "1963-09-25",
+    "date_end": "1963-10-10",
+    "date_label": "1963年9月25日，10月10日再版自序",
+    "title": "第一本书《传统下的独白》出版",
+    "summary": "《传统下的独白》由台北文星书店出版，是李敖第一本书；再版自序称9月25日出版，两个星期后即有再版机会，并提到中国广播公司对文星丛刊和书中爱情观念文字的介绍与广播。复查后以文星书店衡阳街旧址作为出版空间锚点，仍待版权页门牌核验。",
+    "place_ids": [
+      "place-wenxing-bookstore-hengyang"
+    ],
+    "category": "writing",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-tradition-under-monologue",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/001.传统下的独白/002.《传统下的独白》再版自序.txt",
+        "locator": "第3-7行",
+        "evidence_quote": "这本《传统下的独白》是9月25号出版的。出版后两个星期，就居然有一次再版的机会...中国广播公司对这套《文星丛刊》...予以介绍"
+      },
+      {
+        "source_id": "source-leeao-autobiography-and-memoirs-sequel",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/002.李敖自传与回忆续集/035.为文星书店争公道.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "北市稽衡阳字第壹伍号“甲种营业登记证”...在李敖影响下，才转向出版《文星丛刊》等"
+      },
+      {
+        "source_id": "source-leeao-related-dossier",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/004.中华民国作家作品目录——李敖.txt",
+        "locator": "第21行",
+        "evidence_quote": "传统下的独白，台北，文星书店，民五十二年9月，48开，254页。"
       }
     ]
   },
@@ -1186,6 +1262,40 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/006.李敖著作查禁清单及官方理由.txt",
         "locator": "第35-41行",
         "evidence_quote": "文星九○期...文星九八期...文星九七期...其所主编之《文星杂志》亦有三期被禁"
+      }
+    ]
+  },
+  {
+    "id": "event-1966-farewell-ten-books-censorship",
+    "sequence": 184,
+    "date_start": "1966-11-05",
+    "date_end": "1966-12-31",
+    "date_label": "1966年11月5日前后",
+    "title": "《李敖告别文坛十书》出版与查扣",
+    "summary": "《文星》被封后，李敖多种著作在1966年前后遭查禁；同年11月5日出版《李敖告别文坛十书》，并有在装订厂被治安人员抢走的记载。《传统下的再白》属于告别文坛十书之一。第一轮复查未找到装订厂或发行地点的可靠地址，仍以台北市级地点处理。",
+    "place_ids": [
+      "place-taipei"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-autobiography-and-memoirs",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/001.李敖自传与回忆/005.“北土非吾愿，东林怀我师”.txt",
+        "locator": "第755行",
+        "evidence_quote": "1966年，我的《孙逸仙和中国西化医学》...等书全被查禁。11月5日出版《李敖告别文坛十书》，在装订厂被治安人员抢走。"
+      },
+      {
+        "source_id": "source-leeao-related-dossier",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/006.李敖著作查禁清单及官方理由.txt",
+        "locator": "第45行",
+        "evidence_quote": "《传统下的再白》（李敖告别文坛十书之六）...等六本。"
+      },
+      {
+        "source_id": "source-leeao-tradition-under-zai-bai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/002.精品散文类/002.传统下的再白/007.日记八则.txt",
+        "locator": "第3-17行",
+        "evidence_quote": "王世杰...盼能将未卖之书，有序部分删去...把《蒋廷黻选集》李敖序割除...重新发表在我的《李敖告别文坛十书》里"
       }
     ]
   },

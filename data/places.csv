@@ -47,7 +47,7 @@ place-taichung-yongan-1-5,台中市永安街1巷5号,黄钟家,address,,,unknown
 place-taichung-yucai-5,台中育才街5号,严侨家|台中一中斜对面宿舍,address,120.688,24.149,address_approx,true,1,education,event-1953-yucai-street-yanqiao,严侨家，原文称在台中一中斜对面宿舍；坐标按台中一中周边近似。
 place-taichung-yunlongli,台中云龙里（模范西巷）72号,台中云龙里|模范西巷72号,address,120.6736,24.1477,city,true,3,migration|military,event-1949-zhongxing-voyage-keelung|event-1949-arrive-taiwan-taichung|event-1961-penghu-discharge,1949 年到台湾后的住处；门牌需考证，暂用台中市级坐标。
 place-taigu,太谷,太谷县|太谷区,region,112.5513,37.4213,region,false,1,travel,event-1940-taiyuan-taigu,1940 年游太谷等地。
-place-taipei,台北,台北市,city,121.5654,25.033,city,false,6,media|politics|late_life,event-1961-wenxing-li-ao-appears|event-1965-wenxing-banned|event-1995-tv-xiaoaojianghu|event-2004-legislator|event-2006-taipei-mayor-campaign|event-2018-death-taipei,用于第一轮中未精确到机构或门牌的台北事件。
+place-taipei,台北,台北市,city,121.5654,25.033,city,false,7,media|politics|late_life,event-1961-wenxing-li-ao-appears|event-1965-wenxing-banned|event-1966-farewell-ten-books-censorship|event-1995-tv-xiaoaojianghu|event-2004-legislator|event-2006-taipei-mayor-campaign|event-2018-death-taipei,用于第一轮中未精确到机构或门牌的台北事件。
 place-taipei-andong-231,台北安东街231号三楼,安东街231号,address,121.543,25.043,address_approx,true,1,residence,event-1962-andong-street,1962 年住处，需核对旧门牌。
 place-taipei-detention-center-tucheng,台北看守所（土城立德路二号）,台北看守所|土城看守所|土城乡立德路二号,detention_site,121.4514,24.9882,address_approx,true,1,imprisonment,event-1981-second-imprisonment,《监狱学土城？》称台北看守所迁至台北县土城乡立德路二号，李敖第二次政治犯时期留在看守所代执行。
 place-taipei-dunhua-south-road-residence,敦化南路金兰大厦住处线索,敦化南路大厦|金兰大厦|台北市敦化南路大厦住处,residence,121.548,25.033,street_approx,true,1,residence,event-1978-1998-dunhua-south-road-residence,《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”。本地全文另有敦化南路610号林肯大厦、490号白宫大厦、敦化南路一段306号等资料，涉及户籍、出版社、书房或后期住处，不能直接混同。当前坐标按敦化南路金兰大厦线索暂定，门牌待考。
@@ -65,7 +65,7 @@ place-tianjin,天津,,city,117.3616,39.3434,city,false,2,migration,event-1948-ti
 place-tsinghua-university,清华大学,清华,institution,116.3263,40.0007,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
 place-tucheng-renai-institute,土城仁爱教育实验所,仁爱教育实验所|土城看守相关地点,site,121.438,24.966,site_approx,true,1,imprisonment,event-1975-tucheng-renai,1975 年 12 月 22 日移至此处，需进一步考证具体位置。
 place-wenxing-bookstore-emei,文星书店峨眉街店,峨眉街文星书店|坐落峨眉街的现代化书店,bookstore,121.506,25.0443,street_approx,true,1,media,event-1968-wenxing-bookstore-closure,《记文星事件》称文星书店为坐落峨眉街的现代化书店；坐标按台北峨眉街周边暂定。复查提醒：此地点只代表文星书店空间，不能自动代表《文星》杂志编辑部、发行办公室或被封地点。
-place-wenxing-bookstore-hengyang,文星书店衡阳街口小摊,衡阳街口文星书店|文星书店旧址,bookstore,121.5109,25.0423,street_approx,true,1,media,event-1968-wenxing-bookstore-closure,文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。复查提醒：此地点只代表早期书店摊位，不代表《文星》杂志机构地点。
+place-wenxing-bookstore-hengyang,文星书店衡阳街旧址,衡阳街口文星书店|文星书店旧址|衡阳路十五号文星书店|衡阳路15号文星书店,bookstore,121.5109,25.0423,street_approx,true,2,writing|media,event-1963-tradition-under-monologue-publication|event-1968-wenxing-bookstore-closure,文星书店早期在台北衡阳街口创办；《为文星书店争公道》提到台北市税捐稽征处“北市稽衡阳字第壹伍号”营业登记，并称在李敖影响下转向出版《文星丛刊》。另有“衡阳路十五号文星书店”线索。坐标按衡阳路西门町周边暂定；不代表《文星》杂志编辑部地点。
 place-wistaria-tea-house,紫藤庐,紫藤廬,site,121.534,25.024,site_approx,true,1,public_life,event-1982-wistaria-birthday,1982 年党外人士为李敖祝寿处，需复核当时地点。
 place-xiamen-university,厦门大学,,institution,118.097,24.437,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
 place-xindian-bitan-shitou-17,新店狮头路17号“碧潭山楼”,碧潭山楼|新店狮头路17号,address,121.537,24.957,address_approx,true,1,residence,event-1961-bitan-house,1961 年迁居地，需核对旧门牌。

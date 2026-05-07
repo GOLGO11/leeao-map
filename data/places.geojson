@@ -1402,15 +1402,17 @@
       "type": "Feature",
       "id": "place-wenxing-bookstore-hengyang",
       "properties": {
-        "name_zh": "文星书店衡阳街口小摊",
+        "name_zh": "文星书店衡阳街旧址",
         "aliases": [
           "衡阳街口文星书店",
-          "文星书店旧址"
+          "文星书店旧址",
+          "衡阳路十五号文星书店",
+          "衡阳路15号文星书店"
         ],
         "place_type": "bookstore",
         "coordinate_precision": "street_approx",
         "needs_review": true,
-        "notes": "文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。复查提醒：此地点只代表早期书店摊位，不代表《文星》杂志机构地点。"
+        "notes": "文星书店早期在台北衡阳街口创办；《为文星书店争公道》提到台北市税捐稽征处“北市稽衡阳字第壹伍号”营业登记，并称在李敖影响下转向出版《文星丛刊》。另有“衡阳路十五号文星书店”线索。坐标按衡阳路西门町周边暂定；不代表《文星》杂志编辑部地点。"
       },
       "geometry": {
         "type": "Point",
