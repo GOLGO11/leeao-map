@@ -447,9 +447,9 @@
 
   function separateDensePoints(entries, markerScale) {
     const remaining = [...entries].sort((a, b) => {
-      const activeA = a.point.id === state.activePlaceId ? 1 : 0;
-      const activeB = b.point.id === state.activePlaceId ? 1 : 0;
-      return activeB - activeA || b.events.length - a.events.length || a.point.name.localeCompare(b.point.name, "zh-Hans-CN");
+      return b.events.length - a.events.length
+        || a.point.name.localeCompare(b.point.name, "zh-Hans-CN")
+        || a.point.id.localeCompare(b.point.id);
     });
     const separated = [];
     const threshold = 18 * markerScale;
@@ -640,7 +640,7 @@
   }
 
   function zoomMap(factor, center = null) {
-    const minWidth = 120;
+    const minWidth = 55;
     const maxWidth = fullViewBox.width;
     const nextWidth = Math.max(minWidth, Math.min(maxWidth, state.viewBox.width * factor));
     const nextHeight = nextWidth * (fullViewBox.height / fullViewBox.width);
@@ -660,7 +660,7 @@
   }
 
   function zoomTaiwanMap(factor, center = null) {
-    const minWidth = 170;
+    const minWidth = 70;
     const maxWidth = fullTaiwanViewBox.width;
     const nextWidth = Math.max(minWidth, Math.min(maxWidth, state.taiwanViewBox.width * factor));
     const nextHeight = nextWidth * (fullTaiwanViewBox.height / fullTaiwanViewBox.width);
@@ -690,8 +690,8 @@
   }
 
   function clampViewBox(viewBox) {
-    const width = Math.max(120, Math.min(fullViewBox.width, viewBox.width));
-    const height = Math.max(91.2, Math.min(fullViewBox.height, viewBox.height));
+    const width = Math.max(55, Math.min(fullViewBox.width, viewBox.width));
+    const height = Math.max(41.8, Math.min(fullViewBox.height, viewBox.height));
     const maxX = fullViewBox.x + fullViewBox.width - width;
     const maxY = fullViewBox.y + fullViewBox.height - height;
     return {
@@ -703,8 +703,8 @@
   }
 
   function clampTaiwanViewBox(viewBox) {
-    const width = Math.max(170, Math.min(fullTaiwanViewBox.width, viewBox.width));
-    const height = Math.max(129.2, Math.min(fullTaiwanViewBox.height, viewBox.height));
+    const width = Math.max(70, Math.min(fullTaiwanViewBox.width, viewBox.width));
+    const height = Math.max(53.2, Math.min(fullTaiwanViewBox.height, viewBox.height));
     const maxX = fullTaiwanViewBox.x + fullTaiwanViewBox.width - width;
     const maxY = fullTaiwanViewBox.y + fullTaiwanViewBox.height - height;
     return {

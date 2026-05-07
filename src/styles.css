@@ -429,7 +429,9 @@ h1 {
   min-height: 0;
   padding: 14px 18px;
   overflow: auto;
-  overscroll-behavior: contain;
+  overscroll-behavior-y: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 .map-grid {
@@ -438,6 +440,7 @@ h1 {
   gap: 18px;
   height: auto;
   min-height: 0;
+  touch-action: pan-y;
 }
 
 .map-svg {
@@ -464,6 +467,7 @@ h1 {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
   min-height: 0;
+  touch-action: pan-y;
 }
 
 .taiwan-map-header {
@@ -474,6 +478,7 @@ h1 {
   padding: 0 2px 8px;
   color: var(--muted);
   font-size: 13px;
+  touch-action: pan-y;
 }
 
 .taiwan-map-tools {
