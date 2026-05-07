@@ -1,0 +1,695 @@
+(async function init() {
+  const [events, placesGeo] = await Promise.all([
+    fetch("data/events.json").then((response) => response.json()),
+    fetch("data/places.geojson").then((response) => response.json())
+  ]);
+
+  const places = new Map(placesGeo.features.map((feature) => [feature.id, feature]));
+  const geocodedEvents = events
+    .map((event) => ({ ...event, points: getEventPoints(event, places) }))
+    .filter((event) => event.points.length > 0)
+    .sort((a, b) => a.sequence - b.sequence);
+
+  const state = {
+    activeEventId: geocodedEvents[0]?.id,
+    activeCategory: "all",
+    query: "",
+    playing: false,
+    playIndex: 0,
+    timer: null,
+    viewBox: { x: 0, y: 0, width: 1000, height: 760 },
+    taiwanViewBox: { x: 0, y: 0, width: 1000, height: 760 },
+    dragging: null,
+    taiwanDragging: null
+  };
+
+  const fullViewBox = { x: 0, y: 0, width: 1000, height: 760 };
+  const fullTaiwanViewBox = { x: 0, y: 0, width: 1000, height: 760 };
+  const namedViewBoxes = {
+    all: fullViewBox,
+    taiwan: { x: 505, y: 492, width: 235, height: 188 }
+  };
+
+  const categoryMeta = {
+    all: { label: "全部", color: "#344054" },
+    birth: { label: "出生", color: "#b23a48" },
+    migration: { label: "迁徙", color: "#d76f30" },
+    residence: { label: "居住", color: "#6f5d2e" },
+    education: { label: "求学", color: "#1f7a8c" },
+    travel: { label: "行旅", color: "#2e6f40" },
+    health: { label: "医疗", color: "#8a4f7d" },
+    military: { label: "服役", color: "#58606f" },
+    imprisonment: { label: "牢狱", color: "#111827" },
+    public_memory: { label: "记忆", color: "#9b6a12" },
+    public_life: { label: "公共", color: "#3d6f9f" },
+    teaching: { label: "任教", color: "#4d6b32" },
+    media: { label: "媒体", color: "#8f3f71" },
+    politics: { label: "政治", color: "#a13d2d" },
+    lecture: { label: "演讲", color: "#0b5cad" },
+    late_life: { label: "晚年", color: "#5b6472" }
+  };
+
+  const svg = document.querySelector("#mapSvg");
+  const taiwanSvg = document.querySelector("#taiwanSvg");
+  const baseMap = document.querySelector("#baseMap");
+  const routeLayer = document.querySelector("#routeLayer");
+  const markerLayer = document.querySelector("#markerLayer");
+  const taiwanBaseMap = document.querySelector("#taiwanBaseMap");
+  const taiwanRouteLayer = document.querySelector("#taiwanRouteLayer");
+  const taiwanMarkerLayer = document.querySelector("#taiwanMarkerLayer");
+  const timeline = document.querySelector("#timeline");
+  const filters = document.querySelector("#categoryFilters");
+  const searchInput = document.querySelector("#searchInput");
+  const playButton = document.querySelector("#playButton");
+  const resetButton = document.querySelector("#resetButton");
+  const zoomInButton = document.querySelector("#zoomInButton");
+  const zoomOutButton = document.querySelector("#zoomOutButton");
+  const focusTaiwanButton = document.querySelector("#focusTaiwanButton");
+  const focusAllButton = document.querySelector("#focusAllButton");
+  const taiwanZoomInButton = document.querySelector("#taiwanZoomInButton");
+  const taiwanZoomOutButton = document.querySelector("#taiwanZoomOutButton");
+  const taiwanResetButton = document.querySelector("#taiwanResetButton");
+
+  document.querySelector("#eventCount").textContent = events.length;
+  document.querySelector("#placeCount").textContent = placesGeo.features.length;
+  document.querySelector("#visibleCount").textContent = geocodedEvents.length;
+
+  drawBaseMap();
+  drawTaiwanBaseMap();
+  renderFilters();
+  renderLegend();
+  setViewBox(state.viewBox);
+  setTaiwanViewBox(state.taiwanViewBox);
+  render();
+
+  searchInput.addEventListener("input", (event) => {
+    state.query = event.target.value.trim().toLowerCase();
+    state.playing = false;
+    stopPlayback();
+    render();
+  });
+
+  playButton.addEventListener("click", () => {
+    if (state.playing) {
+      stopPlayback();
+    } else {
+      startPlayback();
+    }
+  });
+
+  resetButton.addEventListener("click", () => {
+    state.activeCategory = "all";
+    state.query = "";
+    state.activeEventId = geocodedEvents[0]?.id;
+    searchInput.value = "";
+    stopPlayback();
+    setNamedView("all");
+    setTaiwanViewBox(fullTaiwanViewBox);
+    render();
+  });
+
+  zoomInButton.addEventListener("click", () => zoomMap(0.72));
+  zoomOutButton.addEventListener("click", () => zoomMap(1.38));
+  focusTaiwanButton.addEventListener("click", () => setNamedView("taiwan"));
+  focusAllButton.addEventListener("click", () => setNamedView("all"));
+  taiwanZoomInButton.addEventListener("click", () => zoomTaiwanMap(0.72));
+  taiwanZoomOutButton.addEventListener("click", () => zoomTaiwanMap(1.38));
+  taiwanResetButton.addEventListener("click", () => setTaiwanViewBox(fullTaiwanViewBox));
+
+  svg.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    zoomMap(event.deltaY < 0 ? 0.82 : 1.22, pointerToSvg(event));
+  }, { passive: false });
+
+  svg.addEventListener("pointerdown", (event) => {
+    svg.setPointerCapture(event.pointerId);
+    state.dragging = {
+      pointerId: event.pointerId,
+      start: { x: event.clientX, y: event.clientY },
+      viewBox: { ...state.viewBox }
+    };
+    svg.classList.add("dragging");
+  });
+
+  svg.addEventListener("pointermove", (event) => {
+    if (!state.dragging) return;
+    const scaleX = state.viewBox.width / svg.clientWidth;
+    const scaleY = state.viewBox.height / svg.clientHeight;
+    setViewBox({
+      x: state.dragging.viewBox.x - (event.clientX - state.dragging.start.x) * scaleX,
+      y: state.dragging.viewBox.y - (event.clientY - state.dragging.start.y) * scaleY,
+      width: state.dragging.viewBox.width,
+      height: state.dragging.viewBox.height
+    });
+  });
+
+  svg.addEventListener("pointerup", endDrag);
+  svg.addEventListener("pointercancel", endDrag);
+
+  taiwanSvg.addEventListener("wheel", (event) => {
+    event.preventDefault();
+    zoomTaiwanMap(event.deltaY < 0 ? 0.82 : 1.22, pointerToTaiwanSvg(event));
+  }, { passive: false });
+
+  taiwanSvg.addEventListener("pointerdown", (event) => {
+    taiwanSvg.setPointerCapture(event.pointerId);
+    state.taiwanDragging = {
+      pointerId: event.pointerId,
+      start: { x: event.clientX, y: event.clientY },
+      viewBox: { ...state.taiwanViewBox }
+    };
+    taiwanSvg.classList.add("dragging");
+  });
+
+  taiwanSvg.addEventListener("pointermove", (event) => {
+    if (!state.taiwanDragging) return;
+    const scaleX = state.taiwanViewBox.width / taiwanSvg.clientWidth;
+    const scaleY = state.taiwanViewBox.height / taiwanSvg.clientHeight;
+    setTaiwanViewBox({
+      x: state.taiwanDragging.viewBox.x - (event.clientX - state.taiwanDragging.start.x) * scaleX,
+      y: state.taiwanDragging.viewBox.y - (event.clientY - state.taiwanDragging.start.y) * scaleY,
+      width: state.taiwanDragging.viewBox.width,
+      height: state.taiwanDragging.viewBox.height
+    });
+  });
+
+  taiwanSvg.addEventListener("pointerup", endTaiwanDrag);
+  taiwanSvg.addEventListener("pointercancel", endTaiwanDrag);
+
+  function getEventPoints(event, placeMap) {
+    return event.place_ids
+      .map((placeId) => placeMap.get(placeId))
+      .filter((place) => place?.geometry?.coordinates)
+      .map((place) => ({
+        id: place.id,
+        name: place.properties.name_zh,
+        coordinates: place.geometry.coordinates,
+        precision: place.properties.coordinate_precision,
+        needsReview: place.properties.needs_review
+      }));
+  }
+
+  function filteredEvents() {
+    const query = state.query;
+    return geocodedEvents.filter((event) => {
+      const categoryMatch = state.activeCategory === "all" || event.category === state.activeCategory;
+      if (!categoryMatch) return false;
+      if (!query) return true;
+      const placeText = event.points.map((point) => point.name).join(" ");
+      return `${event.date_label} ${event.title} ${event.summary} ${placeText}`.toLowerCase().includes(query);
+    });
+  }
+
+  function render() {
+    const visibleEvents = filteredEvents();
+    if (!visibleEvents.some((event) => event.id === state.activeEventId)) {
+      state.activeEventId = visibleEvents[0]?.id;
+    }
+    document.querySelector("#visibleCount").textContent = visibleEvents.length;
+    renderTimeline(visibleEvents);
+    renderMap(visibleEvents);
+    renderDetail(visibleEvents.find((event) => event.id === state.activeEventId));
+    updateFilterState();
+    playButton.textContent = state.playing ? "⏸" : "▶";
+    playButton.title = state.playing ? "暂停路线" : "播放路线";
+    playButton.setAttribute("aria-label", playButton.title);
+  }
+
+  function renderFilters() {
+    const categories = ["all", ...new Set(geocodedEvents.map((event) => event.category))];
+    filters.innerHTML = categories.map((category) => {
+      const meta = categoryMeta[category] || { label: category, color: "#667085" };
+      return `<button class="filter-button" type="button" data-category="${category}">${meta.label}</button>`;
+    }).join("");
+
+    filters.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.activeCategory = button.dataset.category;
+        stopPlayback();
+        render();
+      });
+    });
+  }
+
+  function updateFilterState() {
+    filters.querySelectorAll("button").forEach((button) => {
+      button.classList.toggle("active", button.dataset.category === state.activeCategory);
+    });
+  }
+
+  function renderLegend() {
+    const legend = document.querySelector("#legend");
+    const keyCategories = ["birth", "migration", "residence", "education", "imprisonment", "lecture"];
+    legend.innerHTML = keyCategories.map((category) => {
+      const meta = categoryMeta[category];
+      return `<span class="legend-item"><span class="legend-swatch" style="background:${meta.color}"></span>${meta.label}</span>`;
+    }).join("");
+  }
+
+  function renderTimeline(visibleEvents) {
+    if (!visibleEvents.length) {
+      timeline.innerHTML = `<li class="empty-state">没有匹配的事件</li>`;
+      return;
+    }
+
+    timeline.innerHTML = visibleEvents.map((event) => {
+      const year = String(event.date_start).slice(0, 4);
+      const activeClass = event.id === state.activeEventId ? " active" : "";
+      return `
+        <li>
+          <button class="timeline-item${activeClass}" type="button" data-event-id="${event.id}">
+            <span class="timeline-year">${year}</span>
+            <span>
+              <span class="timeline-title">${escapeHtml(event.title)}</span>
+              <span class="timeline-summary">${escapeHtml(event.summary)}</span>
+            </span>
+          </button>
+        </li>
+      `;
+    }).join("");
+
+    timeline.querySelectorAll("button").forEach((button) => {
+      button.addEventListener("click", () => {
+        state.activeEventId = button.dataset.eventId;
+        stopPlayback();
+        render();
+      });
+    });
+  }
+
+  function renderMap(visibleEvents) {
+    const mainScale = Math.max(0.24, Math.min(0.78, state.viewBox.width / fullViewBox.width));
+    renderMapLayer({
+      visibleEvents,
+      routeLayer,
+      markerLayer,
+      projectFn: project,
+      pointFilter: () => true,
+      markerScale: mainScale,
+      baseRadius: 4.2,
+      countRadius: 0.5,
+      maxRadius: 9,
+      labelSize: 10,
+      labelMode: "main"
+    });
+
+    const taiwanEvents = visibleEvents.filter((event) => event.points.some((point) => isTaiwanPoint(point)));
+    document.querySelector("#taiwanCount").textContent = taiwanEvents.length;
+    renderMapLayer({
+      visibleEvents: taiwanEvents,
+      routeLayer: taiwanRouteLayer,
+      markerLayer: taiwanMarkerLayer,
+      projectFn: projectTaiwan,
+      pointFilter: isTaiwanPoint,
+      markerScale: 1,
+      baseRadius: 3.2,
+      countRadius: 0.38,
+      maxRadius: 7,
+      labelSize: 9,
+      labelMode: "all"
+    });
+  }
+
+  function renderMapLayer(options) {
+    const {
+      visibleEvents,
+      routeLayer,
+      markerLayer,
+      projectFn,
+      pointFilter,
+      markerScale,
+      baseRadius,
+      countRadius,
+      maxRadius,
+      labelSize,
+      labelMode
+    } = options;
+
+    routeLayer.innerHTML = "";
+    markerLayer.innerHTML = "";
+
+    const routePoints = visibleEvents
+      .map((event) => event.points.find(pointFilter))
+      .filter(Boolean)
+      .map((point) => projectFn(point.coordinates));
+    if (routePoints.length > 1) {
+      const routePath = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      routePath.setAttribute("class", "route-line");
+      routePath.setAttribute("d", routePoints.map((point, index) => `${index ? "L" : "M"} ${point.x} ${point.y}`).join(" "));
+      routeLayer.appendChild(routePath);
+    }
+
+    const byPlace = new Map();
+    visibleEvents.forEach((event) => {
+      event.points.filter(pointFilter).forEach((point) => {
+        if (!byPlace.has(point.id)) {
+          byPlace.set(point.id, { point, events: [] });
+        }
+        byPlace.get(point.id).events.push(event);
+      });
+    });
+
+    [...byPlace.values()].forEach(({ point, events: pointEvents }) => {
+      const position = projectFn(point.coordinates);
+      const active = pointEvents.some((event) => event.id === state.activeEventId);
+      const category = pointEvents[0].category;
+      const meta = categoryMeta[category] || categoryMeta.all;
+      const radius = Math.min(maxRadius, baseRadius + pointEvents.length * countRadius) * markerScale;
+      const computedLabelSize = Math.max(7, labelSize * markerScale);
+      const shouldShowLabel = labelMode === "all"
+        || active
+        || (labelMode === "main" && !isTaiwanPoint(point))
+        || (labelMode === "sparse" && pointEvents.length >= 3);
+      const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+      group.setAttribute("class", `marker-group${active ? " active" : ""}`);
+      group.setAttribute("tabindex", "0");
+      group.setAttribute("role", "button");
+      group.setAttribute("aria-label", point.name);
+      group.dataset.eventId = pointEvents[0].id;
+      group.innerHTML = `
+        <circle class="marker-halo" cx="${position.x}" cy="${position.y}" r="${radius * 2.1}"></circle>
+        <circle class="marker-dot" cx="${position.x}" cy="${position.y}" r="${radius}" fill="${meta.color}"></circle>
+        ${shouldShowLabel ? `<text class="marker-label" x="${position.x + radius + 5 * markerScale}" y="${position.y + 3.5 * markerScale}" style="font-size:${computedLabelSize}px">${escapeSvgText(shortName(point.name))}</text>` : ""}
+      `;
+      group.addEventListener("click", () => {
+        state.activeEventId = pointEvents[0].id;
+        stopPlayback();
+        render();
+      });
+      group.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          state.activeEventId = pointEvents[0].id;
+          stopPlayback();
+          render();
+        }
+      });
+      markerLayer.appendChild(group);
+    });
+  }
+
+  function renderDetail(event) {
+    if (!event) {
+      document.querySelector("#detailDate").textContent = "没有匹配";
+      document.querySelector("#detailTitle").textContent = "没有可显示事件";
+      document.querySelector("#detailSummary").textContent = "调整搜索词或分类筛选。";
+      document.querySelector("#detailPlaces").textContent = "-";
+      document.querySelector("#detailSource").textContent = "-";
+      return;
+    }
+
+    const source = event.source_refs?.[0];
+    document.querySelector("#detailDate").textContent = event.date_label;
+    document.querySelector("#detailTitle").textContent = event.title;
+    document.querySelector("#detailSummary").textContent = event.summary;
+    document.querySelector("#detailPlaces").textContent = event.points.map((point) => {
+      const mark = point.needsReview ? "（待核）" : "";
+      return `${point.name}${mark}`;
+    }).join("、");
+    document.querySelector("#detailSource").textContent = source
+      ? `${source.locator}：${source.evidence_quote}`
+      : "-";
+
+    const activeButton = timeline.querySelector(`[data-event-id="${event.id}"]`);
+    scrollTimelineTo(activeButton);
+  }
+
+  function startPlayback() {
+    const visibleEvents = filteredEvents();
+    if (!visibleEvents.length) return;
+    const activeIndex = visibleEvents.findIndex((event) => event.id === state.activeEventId);
+    state.playing = true;
+    state.playIndex = activeIndex >= 0 && activeIndex < visibleEvents.length - 1 ? activeIndex : 0;
+    state.activeEventId = visibleEvents[state.playIndex].id;
+    render();
+    state.timer = window.setInterval(() => {
+      const current = filteredEvents();
+      if (!current.length) {
+        stopPlayback();
+        return;
+      }
+      if (state.playIndex >= current.length - 1) {
+        stopPlayback();
+        render();
+        return;
+      }
+      state.playIndex += 1;
+      state.activeEventId = current[state.playIndex].id;
+      render();
+    }, 1500);
+  }
+
+  function stopPlayback() {
+    state.playing = false;
+    if (state.timer) {
+      window.clearInterval(state.timer);
+      state.timer = null;
+    }
+  }
+
+  function scrollTimelineTo(activeButton) {
+    if (!activeButton) return;
+    const wrap = activeButton.closest(".timeline-wrap");
+    if (!wrap) return;
+    const target = activeButton.offsetLeft - (wrap.clientWidth - activeButton.offsetWidth) / 2;
+    wrap.scrollTo({ left: Math.max(0, target), behavior: state.playing ? "auto" : "smooth" });
+  }
+
+  function setNamedView(name) {
+    setViewBox(namedViewBoxes[name] || namedViewBoxes.all);
+  }
+
+  function zoomMap(factor, center = null) {
+    const minWidth = 120;
+    const maxWidth = fullViewBox.width;
+    const nextWidth = Math.max(minWidth, Math.min(maxWidth, state.viewBox.width * factor));
+    const nextHeight = nextWidth * (fullViewBox.height / fullViewBox.width);
+    const anchor = center || {
+      x: state.viewBox.x + state.viewBox.width / 2,
+      y: state.viewBox.y + state.viewBox.height / 2
+    };
+    const ratioX = (anchor.x - state.viewBox.x) / state.viewBox.width;
+    const ratioY = (anchor.y - state.viewBox.y) / state.viewBox.height;
+    setViewBox({
+      x: anchor.x - nextWidth * ratioX,
+      y: anchor.y - nextHeight * ratioY,
+      width: nextWidth,
+      height: nextHeight
+    });
+  }
+
+  function zoomTaiwanMap(factor, center = null) {
+    const minWidth = 170;
+    const maxWidth = fullTaiwanViewBox.width;
+    const nextWidth = Math.max(minWidth, Math.min(maxWidth, state.taiwanViewBox.width * factor));
+    const nextHeight = nextWidth * (fullTaiwanViewBox.height / fullTaiwanViewBox.width);
+    const anchor = center || {
+      x: state.taiwanViewBox.x + state.taiwanViewBox.width / 2,
+      y: state.taiwanViewBox.y + state.taiwanViewBox.height / 2
+    };
+    const ratioX = (anchor.x - state.taiwanViewBox.x) / state.taiwanViewBox.width;
+    const ratioY = (anchor.y - state.taiwanViewBox.y) / state.taiwanViewBox.height;
+    setTaiwanViewBox({
+      x: anchor.x - nextWidth * ratioX,
+      y: anchor.y - nextHeight * ratioY,
+      width: nextWidth,
+      height: nextHeight
+    });
+  }
+
+  function setViewBox(viewBox) {
+    state.viewBox = clampViewBox(viewBox);
+    svg.setAttribute("viewBox", `${round(state.viewBox.x)} ${round(state.viewBox.y)} ${round(state.viewBox.width)} ${round(state.viewBox.height)}`);
+  }
+
+  function setTaiwanViewBox(viewBox) {
+    state.taiwanViewBox = clampTaiwanViewBox(viewBox);
+    taiwanSvg.setAttribute("viewBox", `${round(state.taiwanViewBox.x)} ${round(state.taiwanViewBox.y)} ${round(state.taiwanViewBox.width)} ${round(state.taiwanViewBox.height)}`);
+  }
+
+  function clampViewBox(viewBox) {
+    const width = Math.max(120, Math.min(fullViewBox.width, viewBox.width));
+    const height = Math.max(91.2, Math.min(fullViewBox.height, viewBox.height));
+    const maxX = fullViewBox.x + fullViewBox.width - width;
+    const maxY = fullViewBox.y + fullViewBox.height - height;
+    return {
+      x: Math.max(fullViewBox.x, Math.min(maxX, viewBox.x)),
+      y: Math.max(fullViewBox.y, Math.min(maxY, viewBox.y)),
+      width,
+      height
+    };
+  }
+
+  function clampTaiwanViewBox(viewBox) {
+    const width = Math.max(170, Math.min(fullTaiwanViewBox.width, viewBox.width));
+    const height = Math.max(129.2, Math.min(fullTaiwanViewBox.height, viewBox.height));
+    const maxX = fullTaiwanViewBox.x + fullTaiwanViewBox.width - width;
+    const maxY = fullTaiwanViewBox.y + fullTaiwanViewBox.height - height;
+    return {
+      x: Math.max(fullTaiwanViewBox.x, Math.min(maxX, viewBox.x)),
+      y: Math.max(fullTaiwanViewBox.y, Math.min(maxY, viewBox.y)),
+      width,
+      height
+    };
+  }
+
+  function pointerToSvg(event) {
+    const rect = svg.getBoundingClientRect();
+    return {
+      x: state.viewBox.x + ((event.clientX - rect.left) / rect.width) * state.viewBox.width,
+      y: state.viewBox.y + ((event.clientY - rect.top) / rect.height) * state.viewBox.height
+    };
+  }
+
+  function pointerToTaiwanSvg(event) {
+    const rect = taiwanSvg.getBoundingClientRect();
+    return {
+      x: state.taiwanViewBox.x + ((event.clientX - rect.left) / rect.width) * state.taiwanViewBox.width,
+      y: state.taiwanViewBox.y + ((event.clientY - rect.top) / rect.height) * state.taiwanViewBox.height
+    };
+  }
+
+  function endDrag(event) {
+    if (!state.dragging) return;
+    if (event.pointerId === state.dragging.pointerId) {
+      state.dragging = null;
+      svg.classList.remove("dragging");
+    }
+  }
+
+  function endTaiwanDrag(event) {
+    if (!state.taiwanDragging) return;
+    if (event.pointerId === state.taiwanDragging.pointerId) {
+      state.taiwanDragging = null;
+      taiwanSvg.classList.remove("dragging");
+    }
+  }
+
+  function drawBaseMap() {
+    const grid = [];
+    for (let lng = 108; lng <= 128; lng += 4) {
+      const a = project([lng, 19]);
+      const b = project([lng, 48]);
+      grid.push(`<line class="grid-line" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>`);
+    }
+    for (let lat = 20; lat <= 48; lat += 4) {
+      const a = project([107, lat]);
+      const b = project([129, lat]);
+      grid.push(`<line class="grid-line" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>`);
+    }
+
+    const mainland = polygon([
+      [108.2, 21.4], [110.8, 20.3], [113.3, 21.7], [116.1, 22.7], [119.0, 25.2],
+      [121.5, 28.5], [122.5, 31.5], [121.6, 34.0], [119.0, 36.7], [121.5, 39.0],
+      [124.0, 40.7], [127.3, 43.6], [128.0, 47.0], [122.5, 47.5], [118.4, 45.0],
+      [115.0, 42.0], [112.4, 39.2], [110.2, 35.1], [108.6, 30.5], [107.8, 25.2]
+    ]);
+    const taiwan = polygon([
+      [120.0, 21.9], [121.0, 22.2], [121.8, 23.3], [122.0, 24.5], [121.7, 25.3],
+      [121.0, 25.5], [120.3, 24.9], [120.0, 23.7], [119.8, 22.7]
+    ]);
+    const hainan = polygon([[109.1, 18.2], [110.5, 18.0], [111.2, 19.1], [110.0, 20.1], [108.9, 19.4]]);
+    const penghu = polygon([[119.45, 23.45], [119.72, 23.47], [119.73, 23.68], [119.48, 23.72]]);
+
+    baseMap.innerHTML = `
+      ${grid.join("")}
+      <path class="land" d="${mainland}"></path>
+      <path class="land" d="${taiwan}"></path>
+      <path class="land" d="${hainan}"></path>
+      <path class="land" d="${penghu}"></path>
+      <text class="region-label" x="${project([116.4, 39.9]).x + 12}" y="${project([116.4, 39.9]).y - 12}">北京</text>
+      <text class="region-label" x="${project([121.5, 31.2]).x + 12}" y="${project([121.5, 31.2]).y - 12}">上海</text>
+      <text class="region-label" x="${project([120.7, 24.1]).x + 12}" y="${project([120.7, 24.1]).y - 12}">台中</text>
+      <text class="region-label" x="${project([121.5, 25.0]).x + 12}" y="${project([121.5, 25.0]).y - 12}">台北</text>
+    `;
+  }
+
+  function drawTaiwanBaseMap() {
+    const grid = [];
+    for (let lng = 119.5; lng <= 122.5; lng += 0.5) {
+      const a = projectTaiwan([lng, 21.6]);
+      const b = projectTaiwan([lng, 25.7]);
+      grid.push(`<line class="grid-line" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>`);
+    }
+    for (let lat = 22; lat <= 25.5; lat += 0.5) {
+      const a = projectTaiwan([119.2, lat]);
+      const b = projectTaiwan([122.4, lat]);
+      grid.push(`<line class="grid-line" x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}"></line>`);
+    }
+
+    const taiwan = polygon([
+      [120.0, 21.9], [121.0, 22.2], [121.8, 23.3], [122.0, 24.5], [121.7, 25.3],
+      [121.0, 25.5], [120.3, 24.9], [120.0, 23.7], [119.8, 22.7]
+    ], projectTaiwan);
+    const penghu = polygon([[119.45, 23.45], [119.72, 23.47], [119.73, 23.68], [119.48, 23.72]], projectTaiwan);
+
+    taiwanBaseMap.innerHTML = `
+      ${grid.join("")}
+      <path class="land" d="${taiwan}"></path>
+      <path class="land" d="${penghu}"></path>
+      <text class="region-label" x="${projectTaiwan([121.52, 25.05]).x + 8}" y="${projectTaiwan([121.52, 25.05]).y - 8}">台北</text>
+      <text class="region-label" x="${projectTaiwan([120.68, 24.14]).x + 8}" y="${projectTaiwan([120.68, 24.14]).y + 3}">台中</text>
+      <text class="region-label" x="${projectTaiwan([120.99, 24.78]).x + 8}" y="${projectTaiwan([120.99, 24.78]).y + 3}">新竹</text>
+      <text class="region-label" x="${projectTaiwan([120.22, 22.99]).x + 8}" y="${projectTaiwan([120.22, 22.99]).y + 3}">台南</text>
+    `;
+  }
+
+  function polygon(coordinates, projectFn = project) {
+    return coordinates.map((coordinate, index) => {
+      const point = projectFn(coordinate);
+      return `${index ? "L" : "M"} ${point.x} ${point.y}`;
+    }).join(" ") + " Z";
+  }
+
+  function project([lng, lat]) {
+    const bounds = { minLng: 107, maxLng: 129, minLat: 18, maxLat: 48 };
+    const width = 1000;
+    const height = 760;
+    const pad = 58;
+    const x = pad + ((lng - bounds.minLng) / (bounds.maxLng - bounds.minLng)) * (width - pad * 2);
+    const y = height - pad - ((lat - bounds.minLat) / (bounds.maxLat - bounds.minLat)) * (height - pad * 2);
+    return { x: round(x), y: round(y) };
+  }
+
+  function projectTaiwan([lng, lat]) {
+    const bounds = { minLng: 119.2, maxLng: 122.4, minLat: 21.6, maxLat: 25.7 };
+    const width = 1000;
+    const height = 760;
+    const pad = 58;
+    const x = pad + ((lng - bounds.minLng) / (bounds.maxLng - bounds.minLng)) * (width - pad * 2);
+    const y = height - pad - ((lat - bounds.minLat) / (bounds.maxLat - bounds.minLat)) * (height - pad * 2);
+    return { x: round(x), y: round(y) };
+  }
+
+  function isTaiwanPoint(point) {
+    const [lng, lat] = point.coordinates;
+    return lng >= 119.2 && lng <= 122.4 && lat >= 21.6 && lat <= 25.7;
+  }
+
+  function shortName(name) {
+    return name
+      .replace("台湾省立", "")
+      .replace("国立", "")
+      .replace("附近", "")
+      .replace("（上海）", "")
+      .slice(0, 12);
+  }
+
+  function round(value) {
+    return Math.round(value * 10) / 10;
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function escapeSvgText(value) {
+    return escapeHtml(value).replace(/'/g, "&apos;");
+  }
+})().catch((error) => {
+  document.body.innerHTML = `<main class="empty-state">地图加载失败：${String(error.message || error)}</main>`;
+});

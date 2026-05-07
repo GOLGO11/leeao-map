@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>李敖地理记忆地图</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="side-panel" aria-label="事件时间线">
+        <header class="app-header">
+          <div>
+            <p class="kicker">地理记忆地图</p>
+            <h1>李敖人生轨迹地图</h1>
+          </div>
+          <div class="stat-grid" aria-label="数据概览">
+            <span><strong id="eventCount">0</strong>事件</span>
+            <span><strong id="placeCount">0</strong>地点</span>
+          </div>
+        </header>
+
+        <section class="controls" aria-label="地图控制">
+          <div class="control-row">
+            <button id="playButton" class="icon-button primary" type="button" title="播放路线" aria-label="播放路线">▶</button>
+            <button id="resetButton" class="icon-button" type="button" title="回到全图" aria-label="回到全图">↻</button>
+            <label class="search-box">
+              <span>搜索</span>
+              <input id="searchInput" type="search" placeholder="地点、事件、年份" autocomplete="off" />
+            </label>
+          </div>
+          <div id="categoryFilters" class="filter-bar" aria-label="分类筛选"></div>
+        </section>
+
+        <section class="event-detail" aria-live="polite">
+          <p id="detailDate" class="detail-date">等待选择</p>
+          <h2 id="detailTitle">选择一个地点或事件</h2>
+          <p id="detailSummary">地图已经接入逐书整理的数据。</p>
+          <dl class="detail-meta">
+            <div>
+              <dt>地点</dt>
+              <dd id="detailPlaces">-</dd>
+            </div>
+            <div>
+              <dt>来源</dt>
+              <dd id="detailSource">-</dd>
+            </div>
+          </dl>
+        </section>
+      </aside>
+
+      <section class="map-panel" aria-label="交互地图">
+        <div class="map-toolbar">
+          <div class="legend" id="legend"></div>
+          <div class="map-actions" aria-label="地图缩放">
+            <div class="zoom-controls">
+              <button id="zoomOutButton" class="map-tool-button" type="button" title="缩小" aria-label="缩小">-</button>
+              <button id="zoomInButton" class="map-tool-button" type="button" title="放大" aria-label="放大">+</button>
+            </div>
+            <button id="focusTaiwanButton" class="map-tool-button text" type="button">台湾</button>
+            <button id="focusAllButton" class="map-tool-button text" type="button">全图</button>
+            <div class="map-note">
+              <span id="visibleCount">0</span>
+              <span>条可定位事件</span>
+            </div>
+          </div>
+        </div>
+        <div id="mapStage" class="map-stage">
+          <div class="map-grid">
+            <svg id="mapSvg" class="map-svg main-map-svg" viewBox="0 0 1000 760" role="img" aria-label="李敖人生地理轨迹地图">
+              <defs>
+                <radialGradient id="cityGlow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+                </radialGradient>
+                <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18" />
+                </filter>
+              </defs>
+              <rect class="water" x="0" y="0" width="1000" height="760" />
+              <g id="baseMap"></g>
+              <g id="routeLayer"></g>
+              <g id="markerLayer"></g>
+            </svg>
+            <section class="taiwan-map-panel" aria-label="台湾详图">
+              <div class="taiwan-map-header">
+                <h2>台湾详图</h2>
+                <div class="taiwan-map-tools">
+                  <span><strong id="taiwanCount">0</strong> 条</span>
+                  <div class="zoom-controls">
+                    <button id="taiwanZoomOutButton" class="map-tool-button" type="button" title="缩小台湾详图" aria-label="缩小台湾详图">-</button>
+                    <button id="taiwanZoomInButton" class="map-tool-button" type="button" title="放大台湾详图" aria-label="放大台湾详图">+</button>
+                  </div>
+                  <button id="taiwanResetButton" class="map-tool-button text" type="button">全图</button>
+                </div>
+              </div>
+              <svg id="taiwanSvg" class="map-svg taiwan-map-svg" viewBox="0 0 1000 760" role="img" aria-label="李敖台湾轨迹详图">
+                <rect class="water" x="0" y="0" width="1000" height="760" />
+                <g id="taiwanBaseMap"></g>
+                <g id="taiwanRouteLayer"></g>
+                <g id="taiwanMarkerLayer"></g>
+              </svg>
+            </section>
+          </div>
+        </div>
+        <section class="timeline-wrap" aria-label="事件列表">
+          <ol id="timeline" class="timeline"></ol>
+        </section>
+      </section>
+    </main>
+
+    <script src="src/app.js"></script>
+  </body>
+</html>
