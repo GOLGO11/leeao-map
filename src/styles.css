@@ -228,6 +228,40 @@ h1 {
   line-height: 1.5;
 }
 
+#detailPlaces {
+  display: grid;
+  gap: 6px;
+}
+
+.place-event-link {
+  display: grid;
+  gap: 3px;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.place-event-link + .place-event-link {
+  margin-top: 7px;
+}
+
+.place-event-link.active {
+  border-color: var(--accent);
+  background: #fff6f7;
+}
+
+.place-event-link strong {
+  color: var(--accent-3);
+  font-size: 12px;
+}
+
+.place-event-link span {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .timeline-wrap {
   overflow-x: auto;
   overflow-y: hidden;

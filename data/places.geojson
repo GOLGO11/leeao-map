@@ -1,28 +1,7 @@
 {
   "type": "FeatureCollection",
-  "name": "leeao_places_round_004",
+  "name": "leeao_places_round_010",
   "features": [
-    {
-      "type": "Feature",
-      "id": "place-harbin",
-      "properties": {
-        "name_zh": "哈尔滨",
-        "aliases": [
-          "哈爾濱"
-        ],
-        "place_type": "city",
-        "coordinate_precision": "city",
-        "needs_review": false,
-        "notes": "出生地，第一轮使用城市级坐标。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          126.535,
-          45.8038
-        ]
-      }
-    },
     {
       "type": "Feature",
       "id": "place-beijing",
@@ -48,589 +27,39 @@
     },
     {
       "type": "Feature",
-      "id": "place-taiyuan",
+      "id": "place-beijing-donghua-hospital",
       "properties": {
-        "name_zh": "太原",
-        "aliases": [],
-        "place_type": "city",
-        "coordinate_precision": "city",
-        "needs_review": false,
-        "notes": "1940 年随父亲到太原。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.5489,
-          37.8706
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taigu",
-      "properties": {
-        "name_zh": "太谷",
+        "name_zh": "东华医院",
         "aliases": [
-          "太谷县",
-          "太谷区"
-        ],
-        "place_type": "region",
-        "coordinate_precision": "region",
-        "needs_review": false,
-        "notes": "1940 年游太谷等地。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          112.5513,
-          37.4213
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-tianjin",
-      "properties": {
-        "name_zh": "天津",
-        "aliases": [],
-        "place_type": "city",
-        "coordinate_precision": "city",
-        "needs_review": false,
-        "notes": "1948 年去天津小住后转往上海。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          117.3616,
-          39.3434
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-shanghai",
-      "properties": {
-        "name_zh": "上海",
-        "aliases": [],
-        "place_type": "city",
-        "coordinate_precision": "city",
-        "needs_review": false,
-        "notes": "1948-1949 年转往上海，并入上海市缉椝中学。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.4737,
-          31.2304
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taichung-yunlongli",
-      "properties": {
-        "name_zh": "台中云龙里（模范西巷）72号",
-        "aliases": [
-          "台中云龙里",
-          "模范西巷72号"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "city",
-        "needs_review": true,
-        "notes": "1949 年到台湾后的住处；门牌需考证，暂用台中市级坐标。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.6736,
-          24.1477
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taichung-first-high-school",
-      "properties": {
-        "name_zh": "台湾省立台中第一中学",
-        "aliases": [
-          "台中一中",
-          "国立台中第一高级中等学校"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1949 年跳班考入，坐标为机构近似位置。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.687,
-          24.149
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-ntu",
-      "properties": {
-        "name_zh": "台湾大学",
-        "aliases": [
-          "台大",
-          "国立台湾大学"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5398,
-          25.0173
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-fengshan-infantry-school",
-      "properties": {
-        "name_zh": "凤山陆军步兵学校",
-        "aliases": [
-          "凤山",
-          "陆军步兵学校"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1959 年接受第八期预备军官训练，需复核旧校址。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.363,
-          22.625
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-penghu",
-      "properties": {
-        "name_zh": "澎湖",
-        "aliases": [],
-        "place_type": "region",
-        "coordinate_precision": "region",
-        "needs_review": false,
-        "notes": "1961 年在澎湖退伍。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.5793,
-          23.5711
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-xinsheng-south-60-lane-1",
-      "properties": {
-        "name_zh": "台北新生南路三段60巷1号“四席小屋”",
-        "aliases": [
-          "四席小屋",
-          "新生南路三段60巷1号"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1961 年租下的住处，暂按新生南路三段一带定位。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5335,
-          25.0215
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-xindian-bitan-shitou-17",
-      "properties": {
-        "name_zh": "新店狮头路17号“碧潭山楼”",
-        "aliases": [
-          "碧潭山楼",
-          "新店狮头路17号"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1961 年迁居地，需核对旧门牌。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.537,
-          24.957
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-andong-231",
-      "properties": {
-        "name_zh": "台北安东街231号三楼",
-        "aliases": [
-          "安东街231号"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1962 年住处，需核对旧门牌。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.543,
-          25.043
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-shuiyuan-19-8",
-      "properties": {
-        "name_zh": "水源路19号之八“水源大楼”",
-        "aliases": [
-          "水源大楼",
-          "水源路19号之八"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1964 年迁入，需核对旧址。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.525,
-          25.016
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-xinyi-guotai",
-      "properties": {
-        "name_zh": "信义路国泰信义公寓",
-        "aliases": [
-          "国泰信义公寓"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1965 年迁往，需核对具体门牌。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.562,
-          25.033
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-garrison-command-security-office",
-      "properties": {
-        "name_zh": "警总保安处",
-        "aliases": [
-          "台湾警备总司令部保安处",
-          "保安处"
+          "北京东华医院"
         ],
         "place_type": "site",
         "coordinate_precision": "unknown",
         "needs_review": true,
-        "notes": "1971 年被捕后关押近一年；第一轮先不设坐标，待考证旧址。"
+        "notes": "李敖六岁盲肠炎开刀住院地点；需考证旧址。"
       },
       "geometry": null
     },
     {
       "type": "Feature",
-      "id": "place-military-law-detention-center",
+      "id": "place-beijing-kaiming-bookstore-liulichang",
       "properties": {
-        "name_zh": "警总军法处看守所",
+        "name_zh": "开明书店北京琉璃厂分店",
         "aliases": [
-          "军法处看守所",
-          "军法处"
+          "开明书店琉璃厂分店"
         ],
-        "place_type": "site",
-        "coordinate_precision": "unknown",
+        "place_type": "bookstore",
+        "coordinate_precision": "street_approx",
         "needs_review": true,
-        "notes": "1972-1975 年关押地点之一；需考证旧址。"
-      },
-      "geometry": null
-    },
-    {
-      "type": "Feature",
-      "id": "place-tucheng-renai-institute",
-      "properties": {
-        "name_zh": "土城仁爱教育实验所",
-        "aliases": [
-          "仁爱教育实验所",
-          "土城看守相关地点"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "1975 年 12 月 22 日移至此处，需进一步考证具体位置。"
+        "notes": "《我最难忘的一家书店》称李敖小时候在北京去过开明书店琉璃厂分店；坐标按北京琉璃厂街区暂定，具体门牌待考。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.438,
-          24.966
+          116.389,
+          39.895
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei",
-      "properties": {
-        "name_zh": "台北",
-        "aliases": [
-          "台北市"
-        ],
-        "place_type": "city",
-        "coordinate_precision": "city",
-        "needs_review": false,
-        "notes": "用于第一轮中未精确到机构或门牌的台北事件。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654,
-          25.033
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-wistaria-tea-house",
-      "properties": {
-        "name_zh": "紫藤庐",
-        "aliases": [
-          "紫藤廬"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "1982 年党外人士为李敖祝寿处，需复核当时地点。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.534,
-          25.024
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-soochow-university",
-      "properties": {
-        "name_zh": "东吴大学",
-        "aliases": [
-          "東吳大學"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1993 年起任兼任特聘教师；需确认对应校区。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.546,
-          25.0945
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-legislative-yuan",
-      "properties": {
-        "name_zh": "立法院",
-        "aliases": [
-          "台湾立法院"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2004 年当选立法委员，2005 年相关诉讼事件的制度场域。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5197,
-          25.0442
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-peking-university",
-      "properties": {
-        "name_zh": "北京大学",
-        "aliases": [
-          "北大"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2005 年神州文化之旅演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3109,
-          39.9928
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-tsinghua-university",
-      "properties": {
-        "name_zh": "清华大学",
-        "aliases": [
-          "清华"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2005 年神州文化之旅演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.3263,
-          40.0007
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-fudan-university",
-      "properties": {
-        "name_zh": "复旦大学",
-        "aliases": [
-          "复旦"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2005 年神州文化之旅演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.503,
-          31.2975
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-jinan-university",
-      "properties": {
-        "name_zh": "暨南大学",
-        "aliases": [],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2011 年演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          113.347,
-          23.128
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-shantou-university",
-      "properties": {
-        "name_zh": "汕头大学",
-        "aliases": [],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2011 年演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          116.638,
-          23.422
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-xiamen-university",
-      "properties": {
-        "name_zh": "厦门大学",
-        "aliases": [],
-        "place_type": "institution",
-        "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "2011 年演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          118.097,
-          24.437
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-hong-kong-book-fair",
-      "properties": {
-        "name_zh": "香港书展",
-        "aliases": [
-          "香港会议展览中心"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "2011、2014 年演讲地点，暂按香港书展常用会场定位。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          114.1722,
-          22.282
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-feiye-bookstore",
-      "properties": {
-        "name_zh": "飞页书屋",
-        "aliases": [],
-        "place_type": "site",
-        "coordinate_precision": "unknown",
-        "needs_review": true,
-        "notes": "2017 年最后一次演讲地点，需考证具体地址。"
-      },
-      "geometry": null
     },
     {
       "type": "Feature",
@@ -677,18 +106,342 @@
     },
     {
       "type": "Feature",
-      "id": "place-beijing-donghua-hospital",
+      "id": "place-cathay-general-hospital-taipei",
       "properties": {
-        "name_zh": "东华医院",
+        "name_zh": "国泰综合医院（台北）",
         "aliases": [
-          "北京东华医院"
+          "国泰医院"
+        ],
+        "place_type": "hospital",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖回忆录》最后署记称1997年3月31日去国泰医院开疝气；坐标按台北国泰综合医院院区暂定，具体病房待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.553,
+          25.037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-feiye-bookstore",
+      "properties": {
+        "name_zh": "飞页书屋",
+        "aliases": [],
+        "place_type": "site",
+        "coordinate_precision": "unknown",
+        "needs_review": true,
+        "notes": "2017 年最后一次演讲地点，需考证具体地址。"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-fengshan-infantry-school",
+      "properties": {
+        "name_zh": "凤山陆军步兵学校",
+        "aliases": [
+          "凤山",
+          "陆军步兵学校"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1959 年接受第八期预备军官训练，需复核旧校址。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.363,
+          22.625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-formosan-aboriginal-culture-village",
+      "properties": {
+        "name_zh": "九族文化村",
+        "aliases": [
+          "日月潭九族文化村"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "《潭畔寻思录》提到在日月潭九族文化村看高山族民俗之舞；坐标按现址暂定，需复查1989年园区范围。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.947,
+          23.875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-fudan-university",
+      "properties": {
+        "name_zh": "复旦大学",
+        "aliases": [
+          "复旦"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2005 年神州文化之旅演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.503,
+          31.2975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-garrison-command-security-office",
+      "properties": {
+        "name_zh": "警总保安处",
+        "aliases": [
+          "台湾警备总司令部保安处",
+          "保安处"
         ],
         "place_type": "site",
         "coordinate_precision": "unknown",
         "needs_review": true,
-        "notes": "李敖六岁盲肠炎开刀住院地点；需考证旧址。"
+        "notes": "1971 年被捕后关押近一年；第一轮先不设坐标，待考证旧址。"
       },
       "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-harbin",
+      "properties": {
+        "name_zh": "哈尔滨",
+        "aliases": [
+          "哈爾濱"
+        ],
+        "place_type": "city",
+        "coordinate_precision": "city",
+        "needs_review": false,
+        "notes": "出生地，第一轮使用城市级坐标。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.535,
+          45.8038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-hong-kong-book-fair",
+      "properties": {
+        "name_zh": "香港书展",
+        "aliases": [
+          "香港会议展览中心"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "2011、2014 年演讲地点，暂按香港书展常用会场定位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1722,
+          22.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-jinan-university",
+      "properties": {
+        "name_zh": "暨南大学",
+        "aliases": [],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2011 年演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.347,
+          23.128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-keelung-port",
+      "properties": {
+        "name_zh": "基隆港",
+        "aliases": [
+          "基隆码头"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "1949年5月12日傍晚下船处。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.741,
+          25.134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-legislative-yuan",
+      "properties": {
+        "name_zh": "立法院",
+        "aliases": [
+          "台湾立法院"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2004 年当选立法委员，2005 年相关诉讼事件的制度场域。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5197,
+          25.0442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-legislative-yuan-zhongxing-building-103",
+      "properties": {
+        "name_zh": "立法院中兴大楼第103室",
+        "aliases": [
+          "立法院中兴大楼103室",
+          "中兴大楼第103室",
+          "中興大樓第103室"
+        ],
+        "place_type": "government_building_room",
+        "coordinate_precision": "building_approx",
+        "needs_review": true,
+        "notes": "《李敖议坛哀思录》明确记2007年9月30日“中国智慧党成立大会”在立法院中兴大楼第103室；坐标按立法院院区内中兴大楼附近暂定，具体房间不可由坐标精确表达。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5199,
+          25.0447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-liuzhangli-security-office",
+      "properties": {
+        "name_zh": "警总保安处六张犁看守所",
+        "aliases": [
+          "保安处六张犁看守所",
+          "六张犁看守所",
+          "警总保安处看守所"
+        ],
+        "place_type": "detention_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "《刘辰旦》称其位于台北市和平东路底与卧龙街交叉口、六张犁公墓山底下。坐标按该描述暂定。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5568,
+          25.0162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-military-law-detention-center",
+      "properties": {
+        "name_zh": "警总军法处看守所",
+        "aliases": [
+          "军法处看守所",
+          "军法处"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "unknown",
+        "needs_review": true,
+        "notes": "1972-1975 年关押地点之一；需考证旧址。"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-military-law-room-8",
+      "properties": {
+        "name_zh": "警总军法处八号房",
+        "aliases": [
+          "八号房"
+        ],
+        "place_type": "room",
+        "coordinate_precision": "unknown",
+        "needs_review": true,
+        "notes": "李敖第一次政治犯时期住得最久的独居牢房；属于警总军法处看守所内部空间，旧址待考。"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-nchu-zhongxing-lake",
+      "properties": {
+        "name_zh": "中兴大学中兴湖",
+        "aliases": [
+          "中兴湖",
+          "国立中兴大学中兴湖"
+        ],
+        "place_type": "lake",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "《我最难忘的一片小湖》围绕中兴大学中兴湖展开；坐标按中兴大学校内湖区暂定。复查提醒：本篇未见明确到访日期，当前按地点对象型空间记忆处理。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.675,
+          24.123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-nctu-hsinchu",
+      "properties": {
+        "name_zh": "交通大学（新竹）",
+        "aliases": [
+          "新竹交通大学",
+          "交大",
+          "国立交通大学"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "1989年12月21日李敖前往新竹交通大学演讲；具体演讲馆舍待考，当前保留校级定位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.9974,
+          24.7867
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -711,25 +464,145 @@
     },
     {
       "type": "Feature",
-      "id": "place-taiyuan-opium-suppression-bureau",
+      "id": "place-ntu",
       "properties": {
-        "name_zh": "太原禁烟局",
+        "name_zh": "台湾大学",
         "aliases": [
-          "华北禁烟总局太原禁烟局",
-          "太原禁烟分局"
+          "台大",
+          "国立台湾大学"
         ],
-        "place_type": "site",
-        "coordinate_precision": "city",
-        "needs_review": true,
-        "notes": "李敖五六岁随父住进禁烟局；具体旧址待考，暂用太原市级坐标。"
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          112.5489,
-          37.8706
+          121.5398,
+          25.0173
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "place-ntu-wenzhou-73-first-dorm",
+      "properties": {
+        "name_zh": "温州街73号台大第一宿舍第四室",
+        "aliases": [
+          "温州街73号",
+          "台大第一宿舍第四室",
+          "台湾大学第一宿舍"
+        ],
+        "place_type": "residence",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《我最难忘的一个官僚同学》明确称李敖在台大历史系后期住温州街73号台大第一宿舍第四室；坐标按台大温州街宿舍区暂定。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5327,
+          25.0205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-peking-university",
+      "properties": {
+        "name_zh": "北京大学",
+        "aliases": [
+          "北大"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2005 年神州文化之旅演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3109,
+          39.9928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-penghu",
+      "properties": {
+        "name_zh": "澎湖",
+        "aliases": [],
+        "place_type": "region",
+        "coordinate_precision": "region",
+        "needs_review": false,
+        "notes": "1961 年在澎湖退伍。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.5793,
+          23.5711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-shanghai",
+      "properties": {
+        "name_zh": "上海",
+        "aliases": [],
+        "place_type": "city",
+        "coordinate_precision": "city",
+        "needs_review": false,
+        "notes": "1948-1949 年转往上海，并入上海市缉椝中学。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4737,
+          31.2304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-shanghai-bund-central-bank",
+      "properties": {
+        "name_zh": "黄浦滩中央银行一带",
+        "aliases": [
+          "黄浦滩",
+          "上海黄浦江边",
+          "中央银行"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "李敖去买书经过黄浦滩，目击抢兑黄金潮；暂按外滩中央银行历史建筑一带近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.49,
+          31.236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-shanghai-commercial-press",
+      "properties": {
+        "name_zh": "商务印书馆（上海）",
+        "aliases": [
+          "商务印书馆"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "unknown",
+        "needs_review": true,
+        "notes": "李敖在上海常去买书的地点之一；需考证当时门市或馆址。"
+      },
+      "geometry": null
     },
     {
       "type": "Feature",
@@ -754,28 +627,6 @@
     },
     {
       "type": "Feature",
-      "id": "place-shanghai-tilanqiao-prison",
-      "properties": {
-        "name_zh": "上海监狱（提篮桥监狱）",
-        "aliases": [
-          "上海监狱",
-          "提篮桥监狱"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "作为上海新居对面参照物出现，不是李敖关押地点。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5045,
-          31.2545
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "place-shanghai-jigui-middle-school",
       "properties": {
         "name_zh": "上海市缉椝中学",
@@ -792,39 +643,23 @@
     },
     {
       "type": "Feature",
-      "id": "place-shanghai-commercial-press",
+      "id": "place-shanghai-kaiming-bookstore-fuzhou-road",
       "properties": {
-        "name_zh": "商务印书馆（上海）",
+        "name_zh": "开明书店上海福州路总店",
         "aliases": [
-          "商务印书馆"
+          "上海开明书店总店",
+          "开明书店福州路总店"
         ],
-        "place_type": "institution",
-        "coordinate_precision": "unknown",
+        "place_type": "bookstore",
+        "coordinate_precision": "street_approx",
         "needs_review": true,
-        "notes": "李敖在上海常去买书的地点之一；需考证当时门市或馆址。"
-      },
-      "geometry": null
-    },
-    {
-      "type": "Feature",
-      "id": "place-shanghai-bund-central-bank",
-      "properties": {
-        "name_zh": "黄浦滩中央银行一带",
-        "aliases": [
-          "黄浦滩",
-          "上海黄浦江边",
-          "中央银行"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "李敖去买书经过黄浦滩，目击抢兑黄金潮；暂按外滩中央银行历史建筑一带近似。"
+        "notes": "《我最难忘的一家书店》称李敖在上海去过开明书店福州路总店；坐标按上海福州路书店街区暂定，具体门牌待考。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.49,
-          31.236
+          121.481,
+          31.234
         ]
       }
     },
@@ -852,95 +687,109 @@
     },
     {
       "type": "Feature",
-      "id": "place-keelung-port",
+      "id": "place-shanghai-tilanqiao-prison",
       "properties": {
-        "name_zh": "基隆港",
+        "name_zh": "上海监狱（提篮桥监狱）",
         "aliases": [
-          "基隆码头"
+          "上海监狱",
+          "提篮桥监狱"
         ],
         "place_type": "site",
         "coordinate_precision": "site_approx",
-        "needs_review": false,
-        "notes": "1949年5月12日傍晚下船处。"
+        "needs_review": true,
+        "notes": "作为上海新居对面参照物出现，不是李敖关押地点。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.741,
-          25.134
+          121.5045,
+          31.2545
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-taichung-hospital",
+      "id": "place-shantou-university",
       "properties": {
-        "name_zh": "台中医院",
+        "name_zh": "汕头大学",
         "aliases": [],
         "place_type": "institution",
         "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "《我最难忘的一位老师》中黄钟住院处；需核对1950年代院址。"
+        "needs_review": false,
+        "notes": "2011 年演讲。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.681,
-          24.143
+          116.638,
+          23.422
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-taichung-yongan-1-5",
+      "id": "place-soochow-university",
       "properties": {
-        "name_zh": "台中市永安街1巷5号",
+        "name_zh": "东吴大学",
         "aliases": [
-          "黄钟家"
+          "東吳大學"
         ],
-        "place_type": "address",
-        "coordinate_precision": "unknown",
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
         "needs_review": true,
-        "notes": "李敖高三后休学备考时到黄钟家补习；旧门牌待考。"
-      },
-      "geometry": null
-    },
-    {
-      "type": "Feature",
-      "id": "place-taichung-yucai-5",
-      "properties": {
-        "name_zh": "台中育才街5号",
-        "aliases": [
-          "严侨家",
-          "台中一中斜对面宿舍"
-        ],
-        "place_type": "address",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "严侨家，原文称在台中一中斜对面宿舍；坐标按台中一中周边近似。"
+        "notes": "1993 年起任兼任特聘教师；需确认对应校区。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.688,
-          24.149
+          121.546,
+          25.0945
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-military-law-room-8",
+      "id": "place-sun-moon-lake",
       "properties": {
-        "name_zh": "警总军法处八号房",
+        "name_zh": "日月潭",
         "aliases": [
-          "八号房"
+          "日月潭潭畔"
         ],
-        "place_type": "room",
-        "coordinate_precision": "unknown",
-        "needs_review": true,
-        "notes": "李敖第一次政治犯时期住得最久的独居牢房；属于警总军法处看守所内部空间，旧址待考。"
+        "place_type": "lake",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "1989年《潭畔寻思录》写作现场。"
       },
-      "geometry": null
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.915,
+          23.865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-sun-yat-sen-memorial-hall-taipei",
+      "properties": {
+        "name_zh": "台北国父纪念馆",
+        "aliases": [
+          "国父纪念馆",
+          "國立國父紀念館",
+          "National Dr. Sun Yat-sen Memorial Hall"
+        ],
+        "place_type": "memorial_hall",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖议坛哀思录》记李敖2004年11月14日在国父纪念馆作唯一一场正式竞选公开演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5603,
+          25.0401
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -988,6 +837,47 @@
     },
     {
       "type": "Feature",
+      "id": "place-taichung-first-high-school",
+      "properties": {
+        "name_zh": "台湾省立台中第一中学",
+        "aliases": [
+          "台中一中",
+          "国立台中第一高级中等学校"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1949 年跳班考入，坐标为机构近似位置。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.687,
+          24.149
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taichung-hospital",
+      "properties": {
+        "name_zh": "台中医院",
+        "aliases": [],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《我最难忘的一位老师》中黄钟住院处；需核对1950年代院址。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.681,
+          24.143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taichung-station",
       "properties": {
         "name_zh": "台中车站",
@@ -1009,68 +899,124 @@
     },
     {
       "type": "Feature",
-      "id": "place-wenxing-bookstore-hengyang",
+      "id": "place-taichung-yongan-1-5",
       "properties": {
-        "name_zh": "文星书店衡阳街口小摊",
+        "name_zh": "台中市永安街1巷5号",
         "aliases": [
-          "衡阳街口文星书店",
-          "文星书店旧址"
+          "黄钟家"
         ],
-        "place_type": "bookstore",
-        "coordinate_precision": "street_approx",
+        "place_type": "address",
+        "coordinate_precision": "unknown",
         "needs_review": true,
-        "notes": "文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。"
+        "notes": "李敖高三后休学备考时到黄钟家补习；旧门牌待考。"
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-taichung-yucai-5",
+      "properties": {
+        "name_zh": "台中育才街5号",
+        "aliases": [
+          "严侨家",
+          "台中一中斜对面宿舍"
+        ],
+        "place_type": "address",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "严侨家，原文称在台中一中斜对面宿舍；坐标按台中一中周边近似。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5109,
-          25.0423
+          120.688,
+          24.149
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-wenxing-bookstore-emei",
+      "id": "place-taichung-yunlongli",
       "properties": {
-        "name_zh": "文星书店峨眉街店",
+        "name_zh": "台中云龙里（模范西巷）72号",
         "aliases": [
-          "峨眉街文星书店",
-          "坐落峨眉街的现代化书店"
+          "台中云龙里",
+          "模范西巷72号"
         ],
-        "place_type": "bookstore",
-        "coordinate_precision": "street_approx",
+        "place_type": "address",
+        "coordinate_precision": "city",
         "needs_review": true,
-        "notes": "《记文星事件》称文星书店为坐落峨眉街的现代化书店；坐标按台北峨眉街周边暂定。"
+        "notes": "1949 年到台湾后的住处；门牌需考证，暂用台中市级坐标。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.506,
-          25.0443
+          120.6736,
+          24.1477
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-liuzhangli-security-office",
+      "id": "place-taigu",
       "properties": {
-        "name_zh": "警总保安处六张犁看守所",
+        "name_zh": "太谷",
         "aliases": [
-          "保安处六张犁看守所",
-          "六张犁看守所",
-          "警总保安处看守所"
+          "太谷县",
+          "太谷区"
         ],
-        "place_type": "detention_site",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "《刘辰旦》称其位于台北市和平东路底与卧龙街交叉口、六张犁公墓山底下。坐标按该描述暂定。"
+        "place_type": "region",
+        "coordinate_precision": "region",
+        "needs_review": false,
+        "notes": "1940 年游太谷等地。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5568,
-          25.0162
+          112.5513,
+          37.4213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei",
+      "properties": {
+        "name_zh": "台北",
+        "aliases": [
+          "台北市"
+        ],
+        "place_type": "city",
+        "coordinate_precision": "city",
+        "needs_review": false,
+        "notes": "用于第一轮中未精确到机构或门牌的台北事件。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-andong-231",
+      "properties": {
+        "name_zh": "台北安东街231号三楼",
+        "aliases": [
+          "安东街231号"
+        ],
+        "place_type": "address",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1962 年住处，需核对旧门牌。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543,
+          25.043
         ]
       }
     },
@@ -1099,111 +1045,158 @@
     },
     {
       "type": "Feature",
-      "id": "place-ntu-wenzhou-73-first-dorm",
+      "id": "place-taipei-dunhua-south-road-residence",
       "properties": {
-        "name_zh": "温州街73号台大第一宿舍第四室",
+        "name_zh": "敦化南路金兰大厦住处线索",
         "aliases": [
-          "温州街73号",
-          "台大第一宿舍第四室",
-          "台湾大学第一宿舍"
+          "敦化南路大厦",
+          "金兰大厦",
+          "台北市敦化南路大厦住处"
         ],
         "place_type": "residence",
+        "coordinate_precision": "street_approx",
+        "needs_review": true,
+        "notes": "《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”。本地全文另有敦化南路610号林肯大厦、490号白宫大厦、敦化南路一段306号等资料，涉及户籍、出版社、书房或后期住处，不能直接混同。当前坐标按敦化南路金兰大厦线索暂定，门牌待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.548,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-shandao-temple",
+      "properties": {
+        "name_zh": "善导寺",
+        "aliases": [
+          "臺北善導寺",
+          "台北善导寺"
+        ],
+        "place_type": "religious_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖快意恩仇录》称李敖到台北念台大，一开始借住善导寺地下室骨灰间旁。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5233,
+          25.0448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-shuiyuan-19-8",
+      "properties": {
+        "name_zh": "水源路19号之八“水源大楼”",
+        "aliases": [
+          "水源大楼",
+          "水源路19号之八"
+        ],
+        "place_type": "address",
         "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "《我最难忘的一个官僚同学》明确称李敖在台大历史系后期住温州街73号台大第一宿舍第四室；坐标按台大温州街宿舍区暂定。"
+        "notes": "1964 年迁入，需核对旧址。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5327,
-          25.0205
+          121.525,
+          25.016
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-sun-moon-lake",
+      "id": "place-taipei-wenxianhui-renai-hangzhou",
       "properties": {
-        "name_zh": "日月潭",
+        "name_zh": "开国五十年文献会（仁爱路二段9巷27号）",
         "aliases": [
-          "日月潭潭畔"
+          "中华民国开国五十年文献编纂委员会",
+          "杭州南路文献会",
+          "文献会",
+          "仁爱路2段9巷27号文献会"
         ],
-        "place_type": "lake",
-        "coordinate_precision": "site_approx",
-        "needs_review": false,
-        "notes": "1989年《潭畔寻思录》写作现场。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.915,
-          23.865
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-formosan-aboriginal-culture-village",
-      "properties": {
-        "name_zh": "九族文化村",
-        "aliases": [
-          "日月潭九族文化村"
-        ],
-        "place_type": "site",
-        "coordinate_precision": "site_approx",
+        "place_type": "institution",
+        "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "《潭畔寻思录》提到在日月潭九族文化村看高山族民俗之舞；坐标按现址暂定，需复查1989年园区范围。"
+        "notes": "《李敖自传与回忆》给出仁爱路2段9巷27号；《李敖回忆录》写“住进杭州南路文献会”；蒋君章回忆称办公室在仁爱路与杭州南路之交。坐标按仁爱路二段9巷与杭州南路一带暂定，旧址仍需地籍/旧门牌考证。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.947,
-          23.875
+          121.528,
+          25.038
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-nctu-hsinchu",
+      "id": "place-taipei-xinsheng-south-60-lane-1",
       "properties": {
-        "name_zh": "交通大学（新竹）",
+        "name_zh": "台北新生南路三段60巷1号“四席小屋”",
         "aliases": [
-          "新竹交通大学",
-          "交大",
-          "国立交通大学"
+          "四席小屋",
+          "新生南路三段60巷1号"
         ],
-        "place_type": "university",
+        "place_type": "address",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1961 年租下的住处，暂按新生南路三段一带定位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5335,
+          25.0215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-xinyi-guotai",
+      "properties": {
+        "name_zh": "信义路国泰信义公寓",
+        "aliases": [
+          "国泰信义公寓"
+        ],
+        "place_type": "address",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1965年迁往，需核对具体门牌；《我最难忘的一位烈士》复查补充，郑南榕称此处后来门牌为安和路、当时为信义路，双并四楼公寓一侧为《文星》资料室，一侧为李敖第一个家。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.562,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taiwan-high-court-taichung-branch",
+      "properties": {
+        "name_zh": "台湾高等法院台中分院",
+        "aliases": [
+          "臺灣高等法院臺中分院",
+          "台中高分院",
+          "台湾高等法院台中分院"
+        ],
+        "place_type": "court",
         "coordinate_precision": "institution_approx",
-        "needs_review": false,
-        "notes": "1989年12月21日李敖前往新竹交通大学演讲。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.9974,
-          24.7867
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-nchu-zhongxing-lake",
-      "properties": {
-        "name_zh": "中兴大学中兴湖",
-        "aliases": [
-          "中兴湖",
-          "国立中兴大学中兴湖"
-        ],
-        "place_type": "lake",
-        "coordinate_precision": "site_approx",
         "needs_review": true,
-        "notes": "《我最难忘的一片小湖》围绕中兴大学中兴湖展开；坐标按中兴大学校内湖区暂定。"
+        "notes": "《李敖快意恩仇录》“闹衙纪”多次写到台中高分院开庭和更审；坐标按现址台中市南区五权南路99号暂定，1988-1993年开庭地点是否同址仍需复查。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.675,
-          24.123
+          120.6688,
+          24.1268
         ]
       }
     },
@@ -1220,13 +1213,246 @@
         "place_type": "bookstore",
         "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "李敖回忆大学时期每年去一次，1991年前后再访时已搬到三楼；坐标按中山北路一段77号暂定。"
+        "notes": "李敖回忆大学时期每年去一次，1991年前后再访时一楼已成面包公司，书店搬到三楼；坐标按中山北路一段77号暂定。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           121.5231,
           25.0498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taiyuan",
+      "properties": {
+        "name_zh": "太原",
+        "aliases": [],
+        "place_type": "city",
+        "coordinate_precision": "city",
+        "needs_review": false,
+        "notes": "1940 年随父亲到太原。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.5489,
+          37.8706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taiyuan-opium-suppression-bureau",
+      "properties": {
+        "name_zh": "太原禁烟局",
+        "aliases": [
+          "华北禁烟总局太原禁烟局",
+          "太原禁烟分局"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "李敖五六岁随父住进禁烟局；具体旧址待考，暂用太原市级坐标。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          112.5489,
+          37.8706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tianjin",
+      "properties": {
+        "name_zh": "天津",
+        "aliases": [],
+        "place_type": "city",
+        "coordinate_precision": "city",
+        "needs_review": false,
+        "notes": "1948 年去天津小住后转往上海。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          117.3616,
+          39.3434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tsinghua-university",
+      "properties": {
+        "name_zh": "清华大学",
+        "aliases": [
+          "清华"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2005 年神州文化之旅演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3263,
+          40.0007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tucheng-renai-institute",
+      "properties": {
+        "name_zh": "土城仁爱教育实验所",
+        "aliases": [
+          "仁爱教育实验所",
+          "土城看守相关地点"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "1975 年 12 月 22 日移至此处，需进一步考证具体位置。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.438,
+          24.966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-wenxing-bookstore-emei",
+      "properties": {
+        "name_zh": "文星书店峨眉街店",
+        "aliases": [
+          "峨眉街文星书店",
+          "坐落峨眉街的现代化书店"
+        ],
+        "place_type": "bookstore",
+        "coordinate_precision": "street_approx",
+        "needs_review": true,
+        "notes": "《记文星事件》称文星书店为坐落峨眉街的现代化书店；坐标按台北峨眉街周边暂定。复查提醒：此地点只代表文星书店空间，不能自动代表《文星》杂志编辑部、发行办公室或被封地点。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.506,
+          25.0443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-wenxing-bookstore-hengyang",
+      "properties": {
+        "name_zh": "文星书店衡阳街口小摊",
+        "aliases": [
+          "衡阳街口文星书店",
+          "文星书店旧址"
+        ],
+        "place_type": "bookstore",
+        "coordinate_precision": "street_approx",
+        "needs_review": true,
+        "notes": "文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。复查提醒：此地点只代表早期书店摊位，不代表《文星》杂志机构地点。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5109,
+          25.0423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-wistaria-tea-house",
+      "properties": {
+        "name_zh": "紫藤庐",
+        "aliases": [
+          "紫藤廬"
+        ],
+        "place_type": "site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "1982 年党外人士为李敖祝寿处，需复核当时地点。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.534,
+          25.024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-xiamen-university",
+      "properties": {
+        "name_zh": "厦门大学",
+        "aliases": [],
+        "place_type": "institution",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "2011 年演讲。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          118.097,
+          24.437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-xindian-bitan-shitou-17",
+      "properties": {
+        "name_zh": "新店狮头路17号“碧潭山楼”",
+        "aliases": [
+          "碧潭山楼",
+          "新店狮头路17号"
+        ],
+        "place_type": "address",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1961 年迁居地，需核对旧门牌。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.537,
+          24.957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-yangmingshan-qingshan-jianwo-lou",
+      "properties": {
+        "name_zh": "阳明山“青山见我楼”书房",
+        "aliases": [
+          "草山“青山见我楼”",
+          "青山见我楼",
+          "草山之阳",
+          "阳明山书房"
+        ],
+        "place_type": "study",
+        "coordinate_precision": "area_approx",
+        "needs_review": true,
+        "notes": "《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；未见门牌，坐标按阳明山/草山范围暂定。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.545,
+          25.155
         ]
       }
     }

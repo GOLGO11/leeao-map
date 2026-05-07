@@ -9,9 +9,11 @@
     .map((event) => ({ ...event, points: getEventPoints(event, places) }))
     .filter((event) => event.points.length > 0)
     .sort((a, b) => a.sequence - b.sequence);
+  const placeEventMap = buildPlaceEventMap(geocodedEvents);
 
   const state = {
     activeEventId: geocodedEvents[0]?.id,
+    activePlaceId: null,
     activeCategory: "all",
     query: "",
     playing: false,
@@ -101,6 +103,7 @@
     state.activeCategory = "all";
     state.query = "";
     state.activeEventId = geocodedEvents[0]?.id;
+    state.activePlaceId = null;
     searchInput.value = "";
     stopPlayback();
     setNamedView("all");
@@ -192,6 +195,17 @@
       }));
   }
 
+  function buildPlaceEventMap(items) {
+    const map = new Map();
+    items.forEach((event) => {
+      event.points.forEach((point) => {
+        if (!map.has(point.id)) map.set(point.id, []);
+        map.get(point.id).push(event);
+      });
+    });
+    return map;
+  }
+
   function filteredEvents() {
     const query = state.query;
     return geocodedEvents.filter((event) => {
@@ -211,7 +225,7 @@
     document.querySelector("#visibleCount").textContent = visibleEvents.length;
     renderTimeline(visibleEvents);
     renderMap(visibleEvents);
-    renderDetail(visibleEvents.find((event) => event.id === state.activeEventId));
+    renderPlaceDetail(visibleEvents);
     updateFilterState();
     playButton.textContent = state.playing ? "⏸" : "▶";
     playButton.title = state.playing ? "暂停路线" : "播放路线";
@@ -273,7 +287,7 @@
 
     timeline.querySelectorAll("button").forEach((button) => {
       button.addEventListener("click", () => {
-        state.activeEventId = button.dataset.eventId;
+        selectEvent(button.dataset.eventId);
         stopPlayback();
         render();
       });
@@ -360,7 +374,7 @@
     const placedLabels = [];
 
     entries.forEach(({ point, events: pointEvents, basePosition, position }) => {
-      const active = pointEvents.some((event) => event.id === state.activeEventId);
+      const active = point.id === state.activePlaceId;
       const category = pointEvents[0].category;
       const meta = categoryMeta[category] || categoryMeta.all;
       const radius = Math.min(maxRadius, baseRadius + pointEvents.length * countRadius) * markerScale;
@@ -378,6 +392,7 @@
       group.setAttribute("tabindex", "0");
       group.setAttribute("role", "button");
       group.setAttribute("aria-label", point.name);
+      group.dataset.placeId = point.id;
       group.dataset.eventId = pointEvents[0].id;
       const displaced = distance(basePosition, position) > markerScale * 1.5;
       group.innerHTML = `
@@ -387,15 +402,19 @@
         <circle class="marker-dot" cx="${position.x}" cy="${position.y}" r="${radius}" fill="${meta.color}"></circle>
         ${labelPlacement ? `<text class="marker-label" x="${labelPlacement.x}" y="${labelPlacement.y}" style="font-size:${computedLabelSize}px">${escapeSvgText(shortName(point.name))}</text>` : ""}
       `;
-      group.addEventListener("click", () => {
-        state.activeEventId = pointEvents[0].id;
+      group.addEventListener("pointerdown", (event) => {
+        event.stopPropagation();
+      });
+      group.addEventListener("click", (event) => {
+        event.stopPropagation();
+        selectPlace(point.id, pointEvents[0].id);
         stopPlayback();
         render();
       });
       group.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          state.activeEventId = pointEvents[0].id;
+          selectPlace(point.id, pointEvents[0].id);
           stopPlayback();
           render();
         }
@@ -406,8 +425,8 @@
 
   function separateDensePoints(entries, markerScale) {
     const remaining = [...entries].sort((a, b) => {
-      const activeA = a.events.some((event) => event.id === state.activeEventId) ? 1 : 0;
-      const activeB = b.events.some((event) => event.id === state.activeEventId) ? 1 : 0;
+      const activeA = a.point.id === state.activePlaceId ? 1 : 0;
+      const activeB = b.point.id === state.activePlaceId ? 1 : 0;
       return activeB - activeA || b.events.length - a.events.length || a.point.name.localeCompare(b.point.name, "zh-Hans-CN");
     });
     const separated = [];
@@ -481,30 +500,75 @@
     return Math.hypot(a.x - b.x, a.y - b.y);
   }
 
-  function renderDetail(event) {
-    if (!event) {
-      document.querySelector("#detailDate").textContent = "没有匹配";
-      document.querySelector("#detailTitle").textContent = "没有可显示事件";
-      document.querySelector("#detailSummary").textContent = "调整搜索词或分类筛选。";
+  function selectEvent(eventId) {
+    state.activeEventId = eventId;
+  }
+
+  function selectPlace(placeId, eventId = null) {
+    state.activePlaceId = placeId;
+    const relatedEvent = eventId
+      ? geocodedEvents.find((event) => event.id === eventId)
+      : placeEventMap.get(placeId)?.[0];
+    if (relatedEvent) state.activeEventId = relatedEvent.id;
+  }
+
+  function renderPlaceDetail(visibleEvents) {
+    const place = places.get(state.activePlaceId);
+    const relatedEvents = placeEventMap.get(state.activePlaceId) || [];
+
+    if (!state.activePlaceId) {
+      document.querySelector("#detailDate").textContent = "等待选择";
+      document.querySelector("#detailTitle").textContent = "选择一个地图地点";
+      document.querySelector("#detailSummary").textContent = "点击地图中的地点，查看地点说明与关联事件。";
       document.querySelector("#detailPlaces").textContent = "-";
       document.querySelector("#detailSource").textContent = "-";
       return;
     }
 
-    const source = event.source_refs?.[0];
-    document.querySelector("#detailDate").textContent = event.date_label;
-    document.querySelector("#detailTitle").textContent = event.title;
-    document.querySelector("#detailSummary").textContent = event.summary;
-    document.querySelector("#detailPlaces").textContent = event.points.map((point) => {
-      const mark = point.needsReview ? "（待核）" : "";
-      return `${point.name}${mark}`;
-    }).join("、");
-    document.querySelector("#detailSource").textContent = source
-      ? `${source.locator}：${source.evidence_quote}`
-      : "-";
+    if (!place || !relatedEvents.length) {
+      document.querySelector("#detailDate").textContent = "没有匹配";
+      document.querySelector("#detailTitle").textContent = "没有可显示地点";
+      document.querySelector("#detailSummary").textContent = "点击地图中的地点，查看地点说明与关联事件。";
+      document.querySelector("#detailPlaces").textContent = "-";
+      document.querySelector("#detailSource").textContent = "-";
+      return;
+    }
 
-    const activeButton = timeline.querySelector(`[data-event-id="${event.id}"]`);
-    scrollTimelineTo(activeButton);
+    const properties = place.properties || {};
+    const coordinates = place.geometry?.coordinates || [];
+    const aliases = properties.aliases?.length ? properties.aliases.join("、") : "无";
+    const review = properties.needs_review ? "待复核" : "已确认";
+    const coordinateText = coordinates.length ? `${coordinates[0]}, ${coordinates[1]}` : "-";
+    const activeEvent = visibleEvents.find((event) => event.id === state.activeEventId);
+
+    document.querySelector("#detailDate").textContent = "地点详情";
+    document.querySelector("#detailTitle").textContent = properties.name_zh || place.id;
+    document.querySelector("#detailSummary").textContent = properties.notes || "暂未记录地点说明。";
+    document.querySelector("#detailPlaces").innerHTML = `
+      <span>类型：${escapeHtml(properties.place_type || "-")}</span>
+      <span>精度：${escapeHtml(properties.coordinate_precision || "-")}</span>
+      <span>状态：${escapeHtml(review)}</span>
+      <span>坐标：${escapeHtml(coordinateText)}</span>
+      <span>别名：${escapeHtml(aliases)}</span>
+    `;
+    document.querySelector("#detailSource").innerHTML = relatedEvents.map((event) => `
+      <article class="place-event-link${event.id === state.activeEventId ? " active" : ""}" data-event-id="${escapeHtml(event.id)}">
+        <strong>${escapeHtml(event.date_label)}</strong>
+        <span>${escapeHtml(event.title)}</span>
+      </article>
+    `).join("");
+    document.querySelectorAll(".place-event-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        state.activeEventId = link.dataset.eventId;
+        stopPlayback();
+        render();
+      });
+    });
+
+    if (activeEvent) {
+      const activeButton = timeline.querySelector(`[data-event-id="${activeEvent.id}"]`);
+      scrollTimelineTo(activeButton);
+    }
   }
 
   function startPlayback() {

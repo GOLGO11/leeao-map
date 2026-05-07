@@ -1,61 +1,71 @@
 ﻿place_id,name_zh,aliases,place_type,lng,lat,coordinate_precision,needs_review,event_count,categories,event_ids,notes
-place-harbin,哈尔滨,哈爾濱,city,126.535,45.8038,city,false,1,birth,event-1935-birth-harbin,出生地，第一轮使用城市级坐标。
 place-beijing,北京/北平,北平|北京市|北京,city,116.4074,39.9042,city,false,6,migration|travel|education,event-1937-move-beiping|event-1940-taiyuan-taigu|event-1941-taiyuan-opium-bureau|event-1942-school-beijing|event-1948-tianjin-shanghai|event-1948-xilin-voyage-to-shanghai,1937 年迁至北平，1942 年入北京新鲜胡同小学。
-place-taiyuan,太原,,city,112.5489,37.8706,city,false,1,travel,event-1940-taiyuan-taigu,1940 年随父亲到太原。
-place-taigu,太谷,太谷县|太谷区,region,112.5513,37.4213,region,false,1,travel,event-1940-taiyuan-taigu,1940 年游太谷等地。
-place-tianjin,天津,,city,117.3616,39.3434,city,false,2,migration,event-1948-tianjin-shanghai|event-1948-xilin-voyage-to-shanghai,1948 年去天津小住后转往上海。
-place-shanghai,上海,,city,121.4737,31.2304,city,false,2,migration|education,event-1948-tianjin-shanghai|event-1949-shanghai-school,1948-1949 年转往上海，并入上海市缉椝中学。
-place-taichung-yunlongli,台中云龙里（模范西巷）72号,台中云龙里|模范西巷72号,address,120.6736,24.1477,city,true,3,migration|military,event-1949-zhongxing-voyage-keelung|event-1949-arrive-taiwan-taichung|event-1961-penghu-discharge,1949 年到台湾后的住处；门牌需考证，暂用台中市级坐标。
-place-taichung-first-high-school,台湾省立台中第一中学,台中一中|国立台中第一高级中等学校,institution,120.687,24.149,institution_approx,true,2,education,event-1949-taichung-first-high-school|event-1953-yucai-street-yanqiao,1949 年跳班考入，坐标为机构近似位置。
-place-ntu,台湾大学,台大|国立台湾大学,institution,121.5398,25.0173,institution_approx,false,5,education|residence|lecture,event-1954-ntu-law|event-1955-ntu-history|event-1957-1958-ntu-wenzhou-dorm|event-1961-ntu-grad-school|event-2010-ntu-lecture,1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。
-place-fengshan-infantry-school,凤山陆军步兵学校,凤山|陆军步兵学校,institution,120.363,22.625,institution_approx,true,1,military,event-1959-fengshan-training,1959 年接受第八期预备军官训练，需复核旧校址。
-place-penghu,澎湖,,region,119.5793,23.5711,region,false,1,military,event-1961-penghu-discharge,1961 年在澎湖退伍。
-place-taipei-xinsheng-south-60-lane-1,台北新生南路三段60巷1号“四席小屋”,四席小屋|新生南路三段60巷1号,address,121.5335,25.0215,address_approx,true,1,residence,event-1961-four-mat-room,1961 年租下的住处，暂按新生南路三段一带定位。
-place-xindian-bitan-shitou-17,新店狮头路17号“碧潭山楼”,碧潭山楼|新店狮头路17号,address,121.537,24.957,address_approx,true,1,residence,event-1961-bitan-house,1961 年迁居地，需核对旧门牌。
-place-taipei-andong-231,台北安东街231号三楼,安东街231号,address,121.543,25.043,address_approx,true,1,residence,event-1962-andong-street,1962 年住处，需核对旧门牌。
-place-taipei-shuiyuan-19-8,水源路19号之八“水源大楼”,水源大楼|水源路19号之八,address,121.525,25.016,address_approx,true,1,residence,event-1964-shuiyuan-building,1964 年迁入，需核对旧址。
-place-taipei-xinyi-guotai,信义路国泰信义公寓,国泰信义公寓,address,121.562,25.033,address_approx,true,3,residence|public_life|imprisonment,event-1965-xinyi-apartment|event-1968-zheng-nanrong-first-meeting|event-1970-house-arrest-surveillance,1965 年迁往，需核对具体门牌。
-place-garrison-command-security-office,警总保安处,台湾警备总司令部保安处|保安处,site,,,unknown,true,1,imprisonment,event-1971-arrest-security-office,1971 年被捕后关押近一年；第一轮先不设坐标，待考证旧址。
-place-military-law-detention-center,警总军法处看守所,军法处看守所|军法处,site,,,unknown,true,2,imprisonment,event-1972-military-law-detention|event-1972-1975-military-law-room-8,1972-1975 年关押地点之一；需考证旧址。
-place-tucheng-renai-institute,土城仁爱教育实验所,仁爱教育实验所|土城看守相关地点,site,121.438,24.966,site_approx,true,1,imprisonment,event-1975-tucheng-renai,1975 年 12 月 22 日移至此处，需进一步考证具体位置。
-place-taipei,台北,台北市,city,121.5654,25.033,city,false,3,media|politics|late_life,event-1995-tv-xiaoaojianghu|event-2004-legislator|event-2018-death-taipei,用于第一轮中未精确到机构或门牌的台北事件。
-place-wistaria-tea-house,紫藤庐,紫藤廬,site,121.534,25.024,site_approx,true,1,public_life,event-1982-wistaria-birthday,1982 年党外人士为李敖祝寿处，需复核当时地点。
-place-soochow-university,东吴大学,東吳大學,institution,121.546,25.0945,institution_approx,true,1,teaching,event-1993-soochow-teaching,1993 年起任兼任特聘教师；需确认对应校区。
-place-legislative-yuan,立法院,台湾立法院,institution,121.5197,25.0442,institution_approx,false,1,politics,event-2004-legislator,2004 年当选立法委员，2005 年相关诉讼事件的制度场域。
-place-peking-university,北京大学,北大,institution,116.3109,39.9928,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
-place-tsinghua-university,清华大学,清华,institution,116.3263,40.0007,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
-place-fudan-university,复旦大学,复旦,institution,121.503,31.2975,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
-place-jinan-university,暨南大学,,institution,113.347,23.128,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
-place-shantou-university,汕头大学,,institution,116.638,23.422,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
-place-xiamen-university,厦门大学,,institution,118.097,24.437,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
-place-hong-kong-book-fair,香港书展,香港会议展览中心,site,114.1722,22.282,site_approx,true,2,lecture,event-2011-mainland-lectures|event-2014-hong-kong-book-fair,2011、2014 年演讲地点，暂按香港书展常用会场定位。
-place-feiye-bookstore,飞页书屋,,site,,,unknown,true,1,lecture,event-2017-last-lecture,2017 年最后一次演讲地点，需考证具体地址。
+place-beijing-donghua-hospital,东华医院,北京东华医院,site,,,unknown,true,1,health,event-1941-donghua-hospital-appendicitis,李敖六岁盲肠炎开刀住院地点；需考证旧址。
+place-beijing-kaiming-bookstore-liulichang,开明书店北京琉璃厂分店,开明书店琉璃厂分店,bookstore,116.389,39.895,street_approx,true,1,public_memory,event-1940s-beijing-kaiming-bookstore-liulichang,《我最难忘的一家书店》称李敖小时候在北京去过开明书店琉璃厂分店；坐标按北京琉璃厂街区暂定，具体门牌待考。
 place-beijing-neiwubujie-44,北平内务部街甲44号,内务部街甲44号,address,116.424,39.921,address_approx,true,1,residence,event-1937-1946-neiwubu-residence,《李敖自传》记为全家迁北平后的住处，前后十年，到1946年以后搬走；坐标按东城灯市口内务部街一带近似。
 place-beijing-xinxian-hutong-primary-school,新鲜胡同小学,京师公立第三小学|北京新鲜胡同小学,institution,116.4285,39.9215,address_approx,true,1,education,event-1942-school-beijing,李敖启蒙学校；原文称从内务部街东边街口转朝阳门南街再转新鲜胡同，校本部在路南。
-place-beijing-donghua-hospital,东华医院,北京东华医院,site,,,unknown,true,1,health,event-1941-donghua-hospital-appendicitis,李敖六岁盲肠炎开刀住院地点；需考证旧址。
-place-niangziguan,娘子关,,site,113.873,37.97,region,false,1,travel,event-1941-taiyuan-opium-bureau,李敖随父赴太原时火车经过，自河北入山西。
-place-taiyuan-opium-suppression-bureau,太原禁烟局,华北禁烟总局太原禁烟局|太原禁烟分局,site,112.5489,37.8706,city,true,1,travel,event-1941-taiyuan-opium-bureau,李敖五六岁随父住进禁烟局；具体旧址待考，暂用太原市级坐标。
-place-shanghai-hongkou-tilanqiao-residence,上海虹口提篮桥附近新居,提篮桥附近新居,address,121.504,31.253,address_approx,true,1,residence,event-1948-1949-shanghai-tilanqiao-residence,1948-1949年全家在上海准备久居的新居，原文称对面就是上海监狱。
-place-shanghai-tilanqiao-prison,上海监狱（提篮桥监狱）,上海监狱|提篮桥监狱,site,121.5045,31.2545,site_approx,true,1,residence,event-1948-1949-shanghai-tilanqiao-residence,作为上海新居对面参照物出现，不是李敖关押地点。
-place-shanghai-jigui-middle-school,上海市缉椝中学,缉椝中学|华童公学,institution,,,unknown,true,1,education,event-1949-shanghai-school,1949年1月25日考取、2月15日开学；具体旧址待考。
-place-shanghai-commercial-press,商务印书馆（上海）,商务印书馆,institution,,,unknown,true,1,public_memory,event-1949-shanghai-bookshops-and-gold-run,李敖在上海常去买书的地点之一；需考证当时门市或馆址。
-place-shanghai-bund-central-bank,黄浦滩中央银行一带,黄浦滩|上海黄浦江边|中央银行,site,121.49,31.236,site_approx,true,1,public_memory,event-1949-shanghai-bookshops-and-gold-run,李敖去买书经过黄浦滩，目击抢兑黄金潮；暂按外滩中央银行历史建筑一带近似。
-place-shanghai-port,上海码头,上海港|黄浦江码头,site,121.491,31.24,site_approx,true,2,migration,event-1948-xilin-voyage-to-shanghai|event-1949-zhongxing-voyage-keelung,1948年抵上海、1949年乘中兴轮离上海的码头，具体码头待考。
+place-cathay-general-hospital-taipei,国泰综合医院（台北）,国泰医院,hospital,121.553,25.037,institution_approx,true,1,writing,event-1997-cathay-hospital-memoir-surgery,《李敖回忆录》最后署记称1997年3月31日去国泰医院开疝气；坐标按台北国泰综合医院院区暂定，具体病房待考。
+place-feiye-bookstore,飞页书屋,,site,,,unknown,true,1,lecture,event-2017-last-lecture,2017 年最后一次演讲地点，需考证具体地址。
+place-fengshan-infantry-school,凤山陆军步兵学校,凤山|陆军步兵学校,institution,120.363,22.625,institution_approx,true,1,military,event-1959-fengshan-training,1959 年接受第八期预备军官训练，需复核旧校址。
+place-formosan-aboriginal-culture-village,九族文化村,日月潭九族文化村,site,120.947,23.875,site_approx,true,1,public_memory,event-1989-sun-moon-lake-tanpan,《潭畔寻思录》提到在日月潭九族文化村看高山族民俗之舞；坐标按现址暂定，需复查1989年园区范围。
+place-fudan-university,复旦大学,复旦,institution,121.503,31.2975,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
+place-garrison-command-security-office,警总保安处,台湾警备总司令部保安处|保安处,site,,,unknown,true,1,imprisonment,event-1971-arrest-security-office,1971 年被捕后关押近一年；第一轮先不设坐标，待考证旧址。
+place-harbin,哈尔滨,哈爾濱,city,126.535,45.8038,city,false,1,birth,event-1935-birth-harbin,出生地，第一轮使用城市级坐标。
+place-hong-kong-book-fair,香港书展,香港会议展览中心,site,114.1722,22.282,site_approx,true,2,lecture,event-2011-mainland-lectures|event-2014-hong-kong-book-fair,2011、2014 年演讲地点，暂按香港书展常用会场定位。
+place-jinan-university,暨南大学,,institution,113.347,23.128,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
 place-keelung-port,基隆港,基隆码头,site,121.741,25.134,site_approx,false,2,migration,event-1949-zhongxing-voyage-keelung|event-1949-arrive-taiwan-taichung,1949年5月12日傍晚下船处。
-place-taichung-hospital,台中医院,,institution,120.681,24.143,institution_approx,true,1,education,event-1953-taichung-hospital-huangzhong,《我最难忘的一位老师》中黄钟住院处；需核对1950年代院址。
-place-taichung-yongan-1-5,台中市永安街1巷5号,黄钟家,address,,,unknown,true,1,education,event-1953-taichung-huangzhong-tutoring,李敖高三后休学备考时到黄钟家补习；旧门牌待考。
-place-taichung-yucai-5,台中育才街5号,严侨家|台中一中斜对面宿舍,address,120.688,24.149,address_approx,true,1,education,event-1953-yucai-street-yanqiao,严侨家，原文称在台中一中斜对面宿舍；坐标按台中一中周边近似。
+place-legislative-yuan,立法院,台湾立法院,institution,121.5197,25.0442,institution_approx,false,3,politics,event-2004-legislator|event-2005-2006-legislative-yuan-anti-arms-questioning|event-2006-legislative-yuan-tear-gas-arms-purchase,2004 年当选立法委员，2005 年相关诉讼事件的制度场域。
+place-legislative-yuan-zhongxing-building-103,立法院中兴大楼第103室,立法院中兴大楼103室|中兴大楼第103室|中興大樓第103室,government_building_room,121.5199,25.0447,building_approx,true,1,politics,event-2007-china-wisdom-party-founding,《李敖议坛哀思录》明确记2007年9月30日“中国智慧党成立大会”在立法院中兴大楼第103室；坐标按立法院院区内中兴大楼附近暂定，具体房间不可由坐标精确表达。
+place-liuzhangli-security-office,警总保安处六张犁看守所,保安处六张犁看守所|六张犁看守所|警总保安处看守所,detention_site,121.5568,25.0162,site_approx,true,1,imprisonment,event-1971-arrest-security-office,《刘辰旦》称其位于台北市和平东路底与卧龙街交叉口、六张犁公墓山底下。坐标按该描述暂定。
+place-military-law-detention-center,警总军法处看守所,军法处看守所|军法处,site,,,unknown,true,2,imprisonment,event-1972-military-law-detention|event-1972-1975-military-law-room-8,1972-1975 年关押地点之一；需考证旧址。
 place-military-law-room-8,警总军法处八号房,八号房,room,,,unknown,true,1,imprisonment,event-1972-1975-military-law-room-8,李敖第一次政治犯时期住得最久的独居牢房；属于警总军法处看守所内部空间，旧址待考。
+place-nchu-zhongxing-lake,中兴大学中兴湖,中兴湖|国立中兴大学中兴湖,lake,120.675,24.123,site_approx,true,1,public_memory,event-1990-nchu-zhongxing-lake,《我最难忘的一片小湖》围绕中兴大学中兴湖展开；坐标按中兴大学校内湖区暂定。复查提醒：本篇未见明确到访日期，当前按地点对象型空间记忆处理。
+place-nctu-hsinchu,交通大学（新竹）,新竹交通大学|交大|国立交通大学,university,120.9974,24.7867,institution_approx,false,1,lecture,event-1989-nctu-lecture,1989年12月21日李敖前往新竹交通大学演讲；具体演讲馆舍待考，当前保留校级定位。
+place-niangziguan,娘子关,,site,113.873,37.97,region,false,1,travel,event-1941-taiyuan-opium-bureau,李敖随父赴太原时火车经过，自河北入山西。
+place-ntu,台湾大学,台大|国立台湾大学,institution,121.5398,25.0173,institution_approx,false,5,education|residence|lecture,event-1954-ntu-law|event-1955-ntu-history|event-1957-1958-ntu-wenzhou-dorm|event-1961-ntu-grad-school|event-2010-ntu-lecture,1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。
+place-ntu-wenzhou-73-first-dorm,温州街73号台大第一宿舍第四室,温州街73号|台大第一宿舍第四室|台湾大学第一宿舍,residence,121.5327,25.0205,address_approx,true,1,residence,event-1957-1958-ntu-wenzhou-dorm,《我最难忘的一个官僚同学》明确称李敖在台大历史系后期住温州街73号台大第一宿舍第四室；坐标按台大温州街宿舍区暂定。
+place-peking-university,北京大学,北大,institution,116.3109,39.9928,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
+place-penghu,澎湖,,region,119.5793,23.5711,region,false,1,military,event-1961-penghu-discharge,1961 年在澎湖退伍。
+place-shanghai,上海,,city,121.4737,31.2304,city,false,2,migration|education,event-1948-tianjin-shanghai|event-1949-shanghai-school,1948-1949 年转往上海，并入上海市缉椝中学。
+place-shanghai-bund-central-bank,黄浦滩中央银行一带,黄浦滩|上海黄浦江边|中央银行,site,121.49,31.236,site_approx,true,1,public_memory,event-1949-shanghai-bookshops-and-gold-run,李敖去买书经过黄浦滩，目击抢兑黄金潮；暂按外滩中央银行历史建筑一带近似。
+place-shanghai-commercial-press,商务印书馆（上海）,商务印书馆,institution,,,unknown,true,1,public_memory,event-1949-shanghai-bookshops-and-gold-run,李敖在上海常去买书的地点之一；需考证当时门市或馆址。
+place-shanghai-hongkou-tilanqiao-residence,上海虹口提篮桥附近新居,提篮桥附近新居,address,121.504,31.253,address_approx,true,1,residence,event-1948-1949-shanghai-tilanqiao-residence,1948-1949年全家在上海准备久居的新居，原文称对面就是上海监狱。
+place-shanghai-jigui-middle-school,上海市缉椝中学,缉椝中学|华童公学,institution,,,unknown,true,1,education,event-1949-shanghai-school,1949年1月25日考取、2月15日开学；具体旧址待考。
+place-shanghai-kaiming-bookstore-fuzhou-road,开明书店上海福州路总店,上海开明书店总店|开明书店福州路总店,bookstore,121.481,31.234,street_approx,true,1,public_memory,event-1949-shanghai-bookshops-and-gold-run,《我最难忘的一家书店》称李敖在上海去过开明书店福州路总店；坐标按上海福州路书店街区暂定，具体门牌待考。
+place-shanghai-port,上海码头,上海港|黄浦江码头,site,121.491,31.24,site_approx,true,2,migration,event-1948-xilin-voyage-to-shanghai|event-1949-zhongxing-voyage-keelung,1948年抵上海、1949年乘中兴轮离上海的码头，具体码头待考。
+place-shanghai-tilanqiao-prison,上海监狱（提篮桥监狱）,上海监狱|提篮桥监狱,site,121.5045,31.2545,site_approx,true,1,residence,event-1948-1949-shanghai-tilanqiao-residence,作为上海新居对面参照物出现，不是李敖关押地点。
+place-shantou-university,汕头大学,,institution,116.638,23.422,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
+place-soochow-university,东吴大学,東吳大學,institution,121.546,25.0945,institution_approx,true,1,teaching,event-1993-soochow-teaching,1993 年起任兼任特聘教师；需确认对应校区。
+place-sun-moon-lake,日月潭,日月潭潭畔,lake,120.915,23.865,site_approx,false,1,public_memory,event-1989-sun-moon-lake-tanpan,1989年《潭畔寻思录》写作现场。
+place-sun-yat-sen-memorial-hall-taipei,台北国父纪念馆,国父纪念馆|國立國父紀念館|National Dr. Sun Yat-sen Memorial Hall,memorial_hall,121.5603,25.0401,site_approx,false,1,politics,event-2004-sys-memorial-campaign-speech,《李敖议坛哀思录》记李敖2004年11月14日在国父纪念馆作唯一一场正式竞选公开演讲。
 place-taichung-cunde-1,台中存德巷一号,存德巷一号|台中存德巷1号,address,120.688,24.149,address_approx,true,1,education,event-1952-qianmu-cunde-meeting,1952年李敖由徐武军带往拜见钱穆。坐标按台中一中周边存德巷语境暂定，需以后核验旧址。
 place-taichung-cunde-13,台中存德巷十三号台中一中宿舍,存德巷13号|台中一中宿舍,residence,120.6886,24.1487,address_approx,true,1,education,event-1952-qianmu-cunde-meeting,李敖称家住存德巷13号台中一中宿舍，每天经过钱穆住处。坐标按台中一中周边暂定。
+place-taichung-first-high-school,台湾省立台中第一中学,台中一中|国立台中第一高级中等学校,institution,120.687,24.149,institution_approx,true,3,education|legal,event-1949-taichung-first-high-school|event-1953-yucai-street-yanqiao|event-1987-taichung-book-raid-lawsuit,1949 年跳班考入，坐标为机构近似位置。
+place-taichung-hospital,台中医院,,institution,120.681,24.143,institution_approx,true,1,education,event-1953-taichung-hospital-huangzhong,《我最难忘的一位老师》中黄钟住院处；需核对1950年代院址。
 place-taichung-station,台中车站,台中火车站,station,120.685,24.1368,site_approx,false,1,education,event-1952-hushi-letter-taichung-station,1952年10月1日，李敖在台中车站递长信给胡适。
-place-wenxing-bookstore-hengyang,文星书店衡阳街口小摊,衡阳街口文星书店|文星书店旧址,bookstore,121.5109,25.0423,street_approx,true,1,media,event-1968-wenxing-bookstore-closure,文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。
-place-wenxing-bookstore-emei,文星书店峨眉街店,峨眉街文星书店|坐落峨眉街的现代化书店,bookstore,121.506,25.0443,street_approx,true,3,media,event-1961-wenxing-li-ao-appears|event-1965-wenxing-banned|event-1968-wenxing-bookstore-closure,《记文星事件》称文星书店为坐落峨眉街的现代化书店；坐标按台北峨眉街周边暂定。
-place-liuzhangli-security-office,警总保安处六张犁看守所,保安处六张犁看守所|六张犁看守所|警总保安处看守所,detention_site,121.5568,25.0162,site_approx,true,1,imprisonment,event-1971-arrest-security-office,《刘辰旦》称其位于台北市和平东路底与卧龙街交叉口、六张犁公墓山底下。坐标按该描述暂定。
+place-taichung-yongan-1-5,台中市永安街1巷5号,黄钟家,address,,,unknown,true,1,education,event-1953-taichung-huangzhong-tutoring,李敖高三后休学备考时到黄钟家补习；旧门牌待考。
+place-taichung-yucai-5,台中育才街5号,严侨家|台中一中斜对面宿舍,address,120.688,24.149,address_approx,true,1,education,event-1953-yucai-street-yanqiao,严侨家，原文称在台中一中斜对面宿舍；坐标按台中一中周边近似。
+place-taichung-yunlongli,台中云龙里（模范西巷）72号,台中云龙里|模范西巷72号,address,120.6736,24.1477,city,true,3,migration|military,event-1949-zhongxing-voyage-keelung|event-1949-arrive-taiwan-taichung|event-1961-penghu-discharge,1949 年到台湾后的住处；门牌需考证，暂用台中市级坐标。
+place-taigu,太谷,太谷县|太谷区,region,112.5513,37.4213,region,false,1,travel,event-1940-taiyuan-taigu,1940 年游太谷等地。
+place-taipei,台北,台北市,city,121.5654,25.033,city,false,6,media|politics|late_life,event-1961-wenxing-li-ao-appears|event-1965-wenxing-banned|event-1995-tv-xiaoaojianghu|event-2004-legislator|event-2006-taipei-mayor-campaign|event-2018-death-taipei,用于第一轮中未精确到机构或门牌的台北事件。
+place-taipei-andong-231,台北安东街231号三楼,安东街231号,address,121.543,25.043,address_approx,true,1,residence,event-1962-andong-street,1962 年住处，需核对旧门牌。
 place-taipei-detention-center-tucheng,台北看守所（土城立德路二号）,台北看守所|土城看守所|土城乡立德路二号,detention_site,121.4514,24.9882,address_approx,true,1,imprisonment,event-1981-second-imprisonment,《监狱学土城？》称台北看守所迁至台北县土城乡立德路二号，李敖第二次政治犯时期留在看守所代执行。
-place-ntu-wenzhou-73-first-dorm,温州街73号台大第一宿舍第四室,温州街73号|台大第一宿舍第四室|台湾大学第一宿舍,residence,121.5327,25.0205,address_approx,true,1,residence,event-1957-1958-ntu-wenzhou-dorm,《我最难忘的一个官僚同学》明确称李敖在台大历史系后期住温州街73号台大第一宿舍第四室；坐标按台大温州街宿舍区暂定。
-place-sun-moon-lake,日月潭,日月潭潭畔,lake,120.915,23.865,site_approx,false,1,public_memory,event-1989-sun-moon-lake-tanpan,1989年《潭畔寻思录》写作现场。
-place-formosan-aboriginal-culture-village,九族文化村,日月潭九族文化村,site,120.947,23.875,site_approx,true,1,public_memory,event-1989-sun-moon-lake-tanpan,《潭畔寻思录》提到在日月潭九族文化村看高山族民俗之舞；坐标按现址暂定，需复查1989年园区范围。
-place-nctu-hsinchu,交通大学（新竹）,新竹交通大学|交大|国立交通大学,university,120.9974,24.7867,institution_approx,false,1,lecture,event-1989-nctu-lecture,1989年12月21日李敖前往新竹交通大学演讲。
-place-nchu-zhongxing-lake,中兴大学中兴湖,中兴湖|国立中兴大学中兴湖,lake,120.675,24.123,site_approx,true,1,public_memory,event-1990-nchu-zhongxing-lake,《我最难忘的一片小湖》围绕中兴大学中兴湖展开；坐标按中兴大学校内湖区暂定。
-place-taiwan-kaiming-bookstore-zhongshan77,台湾开明书店中山北路一段77号,台湾开明书店|开明书店台北店|中山北路一段77号,bookstore,121.5231,25.0498,address_approx,true,1,public_memory,event-1991-kaiming-bookstore-revisit,李敖回忆大学时期每年去一次，1991年前后再访时已搬到三楼；坐标按中山北路一段77号暂定。
+place-taipei-dunhua-south-road-residence,敦化南路金兰大厦住处线索,敦化南路大厦|金兰大厦|台北市敦化南路大厦住处,residence,121.548,25.033,street_approx,true,1,residence,event-1978-1998-dunhua-south-road-residence,《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”。本地全文另有敦化南路610号林肯大厦、490号白宫大厦、敦化南路一段306号等资料，涉及户籍、出版社、书房或后期住处，不能直接混同。当前坐标按敦化南路金兰大厦线索暂定，门牌待考。
+place-taipei-shandao-temple,善导寺,臺北善導寺|台北善导寺,religious_site,121.5233,25.0448,site_approx,false,1,residence,event-1954-shandao-temple-basement,《李敖快意恩仇录》称李敖到台北念台大，一开始借住善导寺地下室骨灰间旁。
+place-taipei-shuiyuan-19-8,水源路19号之八“水源大楼”,水源大楼|水源路19号之八,address,121.525,25.016,address_approx,true,1,residence,event-1964-shuiyuan-building,1964 年迁入，需核对旧址。
+place-taipei-wenxianhui-renai-hangzhou,开国五十年文献会（仁爱路二段9巷27号）,中华民国开国五十年文献编纂委员会|杭州南路文献会|文献会|仁爱路2段9巷27号文献会,institution,121.528,25.038,address_approx,true,1,work,event-1962-wenxianhui-hangzhou,《李敖自传与回忆》给出仁爱路2段9巷27号；《李敖回忆录》写“住进杭州南路文献会”；蒋君章回忆称办公室在仁爱路与杭州南路之交。坐标按仁爱路二段9巷与杭州南路一带暂定，旧址仍需地籍/旧门牌考证。
+place-taipei-xinsheng-south-60-lane-1,台北新生南路三段60巷1号“四席小屋”,四席小屋|新生南路三段60巷1号,address,121.5335,25.0215,address_approx,true,1,residence,event-1961-four-mat-room,1961 年租下的住处，暂按新生南路三段一带定位。
+place-taipei-xinyi-guotai,信义路国泰信义公寓,国泰信义公寓,address,121.562,25.033,address_approx,true,3,residence|public_life|imprisonment,event-1965-xinyi-apartment|event-1968-zheng-nanrong-first-meeting|event-1970-house-arrest-surveillance,1965年迁往，需核对具体门牌；《我最难忘的一位烈士》复查补充，郑南榕称此处后来门牌为安和路、当时为信义路，双并四楼公寓一侧为《文星》资料室，一侧为李敖第一个家。
+place-taiwan-high-court-taichung-branch,台湾高等法院台中分院,臺灣高等法院臺中分院|台中高分院|台湾高等法院台中分院,court,120.6688,24.1268,institution_approx,true,1,legal,event-1987-taichung-book-raid-lawsuit,《李敖快意恩仇录》“闹衙纪”多次写到台中高分院开庭和更审；坐标按现址台中市南区五权南路99号暂定，1988-1993年开庭地点是否同址仍需复查。
+place-taiwan-kaiming-bookstore-zhongshan77,台湾开明书店中山北路一段77号,台湾开明书店|开明书店台北店|中山北路一段77号,bookstore,121.5231,25.0498,address_approx,true,1,public_memory,event-1991-kaiming-bookstore-revisit,李敖回忆大学时期每年去一次，1991年前后再访时一楼已成面包公司，书店搬到三楼；坐标按中山北路一段77号暂定。
+place-taiyuan,太原,,city,112.5489,37.8706,city,false,1,travel,event-1940-taiyuan-taigu,1940 年随父亲到太原。
+place-taiyuan-opium-suppression-bureau,太原禁烟局,华北禁烟总局太原禁烟局|太原禁烟分局,site,112.5489,37.8706,city,true,1,travel,event-1941-taiyuan-opium-bureau,李敖五六岁随父住进禁烟局；具体旧址待考，暂用太原市级坐标。
+place-tianjin,天津,,city,117.3616,39.3434,city,false,2,migration,event-1948-tianjin-shanghai|event-1948-xilin-voyage-to-shanghai,1948 年去天津小住后转往上海。
+place-tsinghua-university,清华大学,清华,institution,116.3263,40.0007,institution_approx,false,1,lecture,event-2005-mainland-lectures,2005 年神州文化之旅演讲。
+place-tucheng-renai-institute,土城仁爱教育实验所,仁爱教育实验所|土城看守相关地点,site,121.438,24.966,site_approx,true,1,imprisonment,event-1975-tucheng-renai,1975 年 12 月 22 日移至此处，需进一步考证具体位置。
+place-wenxing-bookstore-emei,文星书店峨眉街店,峨眉街文星书店|坐落峨眉街的现代化书店,bookstore,121.506,25.0443,street_approx,true,1,media,event-1968-wenxing-bookstore-closure,《记文星事件》称文星书店为坐落峨眉街的现代化书店；坐标按台北峨眉街周边暂定。复查提醒：此地点只代表文星书店空间，不能自动代表《文星》杂志编辑部、发行办公室或被封地点。
+place-wenxing-bookstore-hengyang,文星书店衡阳街口小摊,衡阳街口文星书店|文星书店旧址,bookstore,121.5109,25.0423,street_approx,true,1,media,event-1968-wenxing-bookstore-closure,文星书店早期在台北衡阳街口租小摊经营；坐标按衡阳路西门町周边暂定。复查提醒：此地点只代表早期书店摊位，不代表《文星》杂志机构地点。
+place-wistaria-tea-house,紫藤庐,紫藤廬,site,121.534,25.024,site_approx,true,1,public_life,event-1982-wistaria-birthday,1982 年党外人士为李敖祝寿处，需复核当时地点。
+place-xiamen-university,厦门大学,,institution,118.097,24.437,institution_approx,false,1,lecture,event-2011-mainland-lectures,2011 年演讲。
+place-xindian-bitan-shitou-17,新店狮头路17号“碧潭山楼”,碧潭山楼|新店狮头路17号,address,121.537,24.957,address_approx,true,1,residence,event-1961-bitan-house,1961 年迁居地，需核对旧门牌。
+place-yangmingshan-qingshan-jianwo-lou,阳明山“青山见我楼”书房,草山“青山见我楼”|青山见我楼|草山之阳|阳明山书房,study,121.545,25.155,area_approx,true,1,writing,event-2006-2007-qingshan-jianwo-lou-yitan-writing,《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；未见门牌，坐标按阳明山/草山范围暂定。
