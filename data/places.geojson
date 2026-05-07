@@ -4,6 +4,78 @@
   "features": [
     {
       "type": "Feature",
+      "id": "place-academia-sinica-nangang",
+      "properties": {
+        "name_zh": "中央研究院南港院区 / 历史语言研究所",
+        "aliases": [
+          "南港中央研究院",
+          "中央研究院",
+          "历史语言研究所",
+          "史语所",
+          "中研院南港院区"
+        ],
+        "place_type": "research_institute",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《大学札记》1957年4月28日记李敖与姚从吾、庄申赴南港中央研究院，并到历史语言研究所书库。坐标按中央研究院南港院区校级暂定，具体书库位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.6148,
+          25.0416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-beigou-palace-museum-wufeng",
+      "properties": {
+        "name_zh": "北沟故宫文物旧址（雾峰）",
+        "aliases": [
+          "北沟",
+          "雾峰北沟",
+          "台中县雾峰乡北沟村",
+          "北沟古物展览",
+          "故宫北沟文物库房"
+        ],
+        "place_type": "heritage_site",
+        "coordinate_precision": "village_approx",
+        "needs_review": true,
+        "notes": "《大学札记》1957年8月14日、8月23日两次记赴北沟参观古物展览；复查以《李敖与庄因》“台中县雾峰乡北沟村，当时的故宫博物院就设在北沟”收窄为空间线索。坐标仍按雾峰北沟村一带近似，旧库房与展览空间旧址待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.705,
+          24.055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tunghai-university",
+      "properties": {
+        "name_zh": "东海大学",
+        "aliases": [
+          "东海大学",
+          "台中东海大学"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《大学札记》1957年8月14日记李敖与台大历史系同学参观东海大学；当前按校级定位，具体参观点待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6007,
+          24.181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-beijing",
       "properties": {
         "name_zh": "北京/北平",
@@ -1021,6 +1093,30 @@
         "coordinates": [
           121.5654,
           25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-songshan-airport",
+      "properties": {
+        "name_zh": "台北松山机场",
+        "aliases": [
+          "松山机场",
+          "台北松山机场候机室",
+          "台北机场",
+          "Taipei Songshan Airport"
+        ],
+        "place_type": "airport",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1958年11月4日李敖赴松山机场迎胡适返台，并在候机室及机梯旁留下胡适认出李敖、姚从吾谈论文指导的关键记载。坐标按现台北松山机场院区暂定，1958年候机室具体位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525,
+          25.0697
         ]
       }
     },
