@@ -323,6 +323,58 @@
     },
     {
       "type": "Feature",
+      "id": "place-renwu-17th-division-camp",
+      "properties": {
+        "name_zh": "高雄县仁武乡第十七师驻地线索",
+        "aliases": [
+          "第十七师",
+          "十七师",
+          "四十九团四二炮连",
+          "仁武营房",
+          "高雄仁武",
+          "仁武乡"
+        ],
+        "place_type": "military_base",
+        "coordinate_precision": "area_approx",
+        "needs_review": true,
+        "notes": "《一个预备军官的日记》1960年3月3日记李敖由步校分至第二军团第十七师，车过仁武，抵十七师，并分至四十九团四二炮连；3月5日信称“这个地方在仁武附近，凤山北面”。具体营房旧址待考，坐标按仁武区范围近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3506,
+          22.7015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-penghu-baisha-dachikan",
+      "properties": {
+        "name_zh": "澎湖白沙乡大赤崁",
+        "aliases": [
+          "大赤崁",
+          "赤崁",
+          "白沙岛大赤崁",
+          "澎湖县白沙乡大赤崁",
+          "白沙岛东北角之大赤崁",
+          "赤崁码头"
+        ],
+        "place_type": "village_port",
+        "coordinate_precision": "village_approx",
+        "needs_review": true,
+        "notes": "《一个预备军官的日记》1961年1月28日起多次署记“澎湖县白沙乡的大赤崁海边/白沙岛东北角之大赤崁”，并记驻在赤崁小港口民房、逛赤崁码头。复查后赤崁码头暂视为大赤崁局部空间，不另拆点；具体民房与码头旧址待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.599,
+          23.666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-hong-kong-book-fair",
       "properties": {
         "name_zh": "香港书展",
