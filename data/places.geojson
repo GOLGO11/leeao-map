@@ -1122,6 +1122,78 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-zhongshan-hall",
+      "properties": {
+        "name_zh": "台北中山堂",
+        "aliases": [
+          "中山堂",
+          "台北市中山堂",
+          "Taipei Zhongshan Hall"
+        ],
+        "place_type": "auditorium",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1959年6月18日李敖赴中山堂参加台大毕业典礼。坐标按现台北中山堂院区暂定，具体典礼厅室待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5107,
+          25.0436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-main-station",
+      "properties": {
+        "name_zh": "台北车站",
+        "aliases": [
+          "台北火车站",
+          "台北站",
+          "台北车站旧址",
+          "Taipei Main Station"
+        ],
+        "place_type": "station",
+        "coordinate_precision": "station_approx",
+        "needs_review": true,
+        "notes": "1959年8月2日李敖毕业后离开台北回台中，日记记朋友同车赴车站送行。坐标按现台北车站院区暂定，1959年旧站具体送行位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517,
+          25.0478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-ntu-hospital",
+      "properties": {
+        "name_zh": "台大医院",
+        "aliases": [
+          "台湾大学医院",
+          "台大医院四楼特别病房",
+          "台大医院203室",
+          "国立台湾大学医学院附设医院",
+          "National Taiwan University Hospital"
+        ],
+        "place_type": "hospital",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1959年4月13日李敖赴台大医院看胡适病于203室，4月30日在四楼特别病房与胡适谈《名公书判清明集》。坐标按台大医院本院院区暂定，1959年病房具体位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5188,
+          25.0408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-andong-231",
       "properties": {
         "name_zh": "台北安东街231号三楼",

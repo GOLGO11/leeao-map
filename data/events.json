@@ -912,10 +912,10 @@
     "id": "event-1958-nangang-hu-shih-sinica-study",
     "sequence": 105,
     "date_start": "1958-06-08",
-    "date_end": "1958-12-19",
-    "date_label": "1958年6月至12月",
-    "title": "南港拜访胡适并使用史语所资料",
-    "summary": "大学后期，李敖多次赴南港中央研究院与胡适、徐高阮、史语所图书室人员往来，参观中研院三十周年开放展览，阅读《清明集》《宋刑统》等资料，并把宋代婚姻、贞操观念研究同胡适、姚从吾等人的指导意见连接起来。此节点补强台大后期学术训练与胡适影响的空间证据。",
+    "date_end": "1959-04-28",
+    "date_label": "1958年6月至1959年4月",
+    "title": "南港拜访胡适、听讲并使用史语所资料",
+    "summary": "大学后期，李敖多次赴南港中央研究院与胡适、徐高阮、史语所图书室人员往来，参观中研院三十周年开放展览，阅读《清明集》《宋刑统》等资料，并把宋代婚姻、贞操观念研究同胡适、姚从吾等人的指导意见连接起来。《大学日记后期乙集》继续补出1959年2月24日听胡适《真历史与假历史》讲演、4月28日再赴史语所书库读书谈学的证据。",
     "place_ids": [
       "place-academia-sinica-nangang"
     ],
@@ -945,6 +945,24 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/003.大学日记后期甲集/007.1958年12月.txt",
         "locator": "第111、113、317、319、347、349行",
         "evidence_quote": "12月5日...赴南港一整天...读《宋刑统》颇愉快...12月17日...赴南港，送胡适旧版《四十自述》...12月19日...与启庆赴南港"
+      },
+      {
+        "source_id": "source-leeao-late-university-diary-b",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/002.1959年2月.txt",
+        "locator": "第301、305行",
+        "evidence_quote": "2月24日 星期二...赴南港，听胡适讲演《真历史与假历史》——用四百年的水经注研究史做例子。"
+      },
+      {
+        "source_id": "source-leeao-autobiography-and-memoirs",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/001.李敖自传与回忆/005.“北土非吾愿，东林怀我师”.txt",
+        "locator": "第99行",
+        "evidence_quote": "1959年2月24日——赴南港，听胡适讲演《真历史与假历史》——用四百年的水经注研究史做例子。"
+      },
+      {
+        "source_id": "source-leeao-late-university-diary-b",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/004.1959年4月.txt",
+        "locator": "第331、333行",
+        "evidence_quote": "4月28日 星期二...7点50分在温州街口见姚先生及庄申，同坐车赴中央研究院，读书竟日...又与高阮同到历史语言研究所书库中"
       }
     ]
   },
@@ -973,6 +991,93 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/001.李敖自传与回忆/005.“北土非吾愿，东林怀我师”.txt",
         "locator": "第75行",
         "evidence_quote": "1958年11月4日——赴松山机场迎胡适，12时飞机抵北...胡适叫我一声“李敖”...姚先生言及我论文事"
+      }
+    ]
+  },
+  {
+    "id": "event-1959-ntu-hospital-hu-shih-talk",
+    "sequence": 106.5,
+    "date_start": "1959-04-30",
+    "date_end": "1959-04-30",
+    "date_label": "1959年4月30日",
+    "title": "台大医院特别病房与胡适谈话",
+    "summary": "李敖在台大医院四楼特别病房探视胡适，经胡颂平秘书进入后与胡适长谈《名公书判清明集》等论文材料。复查确认《李敖自传与回忆》重录此条，《李敖自传与回忆续集》又概括称他与胡适实际小谈三次，其中一次即在台大医院，故单独入图。",
+    "place_ids": [
+      "place-ntu-hospital"
+    ],
+    "category": "education",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-late-university-diary-b",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/004.1959年4月.txt",
+        "locator": "第127、129、345、347行",
+        "evidence_quote": "4月13日...晨赴台大医院看胡适病于203室...4月30日...在台大医院四楼特別病房与胡适谈...胡适之见我大呼“李先生”"
+      },
+      {
+        "source_id": "source-leeao-autobiography-and-memoirs",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/001.李敖自传与回忆/005.“北土非吾愿，东林怀我师”.txt",
+        "locator": "第91行",
+        "evidence_quote": "1959年4月30日——上午10时后在台大医院四楼特别病房与胡适谈...胡适之见我大呼“李先生”"
+      },
+      {
+        "source_id": "source-leeao-autobiography-and-memoirs-sequel",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/002.李敖自传与回忆续集/005.我与胡适的“微妙关系”.txt",
+        "locator": "第9行",
+        "evidence_quote": "我跟胡适只小谈过三次，一次在台大医院、一次在台大文学院门口、一次在中央研究院"
+      }
+    ]
+  },
+  {
+    "id": "event-1959-ntu-graduation-zhongshan-hall",
+    "sequence": 108,
+    "date_start": "1959-06-18",
+    "date_end": "1959-06-18",
+    "date_label": "1959年6月18日",
+    "title": "台大毕业典礼",
+    "summary": "李敖晨赴中山堂参加台湾大学毕业典礼，正式结束台大历史系本科阶段；傍晚历史系同学在校园合照后赴玉楼东谢师宴。这一节点标志台大后期生活进入收束。",
+    "place_ids": [
+      "place-taipei-zhongshan-hall",
+      "place-ntu"
+    ],
+    "category": "education",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-late-university-diary-b",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/006.1959年6月.txt",
+        "locator": "第397、399、405行",
+        "evidence_quote": "6月18日 星期四...晨赴中山堂参加毕业典礼...傍晚6时本系先照相于校园...后集体坐校车赴玉楼东。"
+      }
+    ]
+  },
+  {
+    "id": "event-1959-return-taichung-before-army",
+    "sequence": 109,
+    "date_start": "1959-08-02",
+    "date_end": "1959-09-06",
+    "date_label": "1959年8月2日至9月6日",
+    "title": "毕业后返台中待役",
+    "summary": "李敖大学毕业后离开台北，8月2日由二十余位朋友送到车站，乘车返台中；此后在台中度过从军前一个多月，9月7日赴凤山接受第八期预官训练。",
+    "place_ids": [
+      "place-taipei-main-station",
+      "place-taichung-station",
+      "place-taichung-yunlongli"
+    ],
+    "category": "migration",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-late-university-diary-b",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/008.1959年8月.txt",
+        "locator": "第15、19、23行",
+        "evidence_quote": "8月2日 星期日...与弘、祝公、庭生、鼓应、克斌同车赴车站...今日送行者...抵台中后，夜10时48分接鼓应。取行李。"
+      },
+      {
+        "source_id": "source-leeao-early-diary",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/002.早年日记/002.毕业以后，从军以前.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "1959年8月3日到9月6日的日记...9月7日以后，我到凤山接受第八期预官训练"
       }
     ]
   },
