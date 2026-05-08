@@ -559,13 +559,36 @@
         "place_type": "lake",
         "coordinate_precision": "site_approx",
         "needs_review": true,
-        "notes": "《我最难忘的一片小湖》围绕中兴大学中兴湖展开；坐标按中兴大学校内湖区暂定。复查提醒：本篇未见明确到访日期，当前按地点对象型空间记忆处理。"
+        "notes": "《我最难忘的一片小湖》围绕中兴大学中兴湖展开；《李敖五五日记》又补证1990年5月11日清晨李敖在中兴大学快走并照相一个半小时。坐标按中兴大学校内湖区暂定，具体湖畔行走路线待考。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           120.675,
           24.123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-feng-chia-university",
+      "properties": {
+        "name_zh": "逢甲大学",
+        "aliases": [
+          "逢甲",
+          "逢甲大学",
+          "Feng Chia University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖五五日记》1990年4月27日记李敖南下台中，在逢甲演讲《逢甲甲与乙》；具体演讲馆舍未见于本轮文本，坐标按逢甲大学校级近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6467,
+          24.1789
         ]
       }
     },
@@ -1150,6 +1173,28 @@
     },
     {
       "type": "Feature",
+      "id": "place-democracy-foundation-taipei",
+      "properties": {
+        "name_zh": "民主基金会（台北，旧址待考）",
+        "aliases": [
+          "民主基金会",
+          "民基会"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖随写录后集》仅记1992年2月29日李敖到民主基金会参加“民间学者看二二八事件研究报告”并讲话，未给街道地址；当前按台北市级坐标暂置，待复查或外部资料确认旧址。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-songshan-airport",
       "properties": {
         "name_zh": "台北松山机场",
@@ -1302,6 +1347,56 @@
         "coordinate_precision": "street_approx",
         "needs_review": true,
         "notes": "《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”。本地全文另有敦化南路610号林肯大厦、490号白宫大厦、敦化南路一段306号等资料，涉及户籍、出版社、书房或后期住处，不能直接混同。当前坐标按敦化南路金兰大厦线索暂定，门牌待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.548,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-yeliu-geopark",
+      "properties": {
+        "name_zh": "野柳风景区 / 野柳地质公园",
+        "aliases": [
+          "野柳",
+          "野柳风景区",
+          "野柳地质公园",
+          "野柳岬",
+          "野柳灯塔"
+        ],
+        "place_type": "scenic_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "《李敖随写录前集》1991年9月1日记李敖与小屯去野柳，登到最后面的瞭望台，看大海、帆船和海蚀岩；9月7日又与陈又亮同去野柳，爬山到灯塔。坐标按野柳地质公园/野柳岬区域近似，瞭望台与灯塔具体路径待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.69,
+          25.207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-qiushi-newspaper-dunhua-490",
+      "properties": {
+        "name_zh": "求是报社文化企业有限公司（敦化南路490号）",
+        "aliases": [
+          "求是报社",
+          "求是报社文化企业有限公司",
+          "《求是报》发行所",
+          "敦化南路490号白宫大厦",
+          "白宫大厦十二楼之五"
+        ],
+        "place_type": "newspaper_office",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖五五日记》记1991年2月11日《求是报》试版、2月28日出刊；《你不知道的司法黑暗》所引新闻纸交寄执照载“发行所名称：求是报社文化企业有限公司”“发行所所在地：台北市敦化南路四九〇号十二楼之五”；《李敖放刁集》又以合约书说明李敖承包《求是报》编辑业务并使用白宫大厦十二楼之五房屋。坐标按敦化南路490号白宫大厦一带近似，楼层与实际编辑/发行分工仍待复查。"
       },
       "geometry": {
         "type": "Point",
@@ -1798,6 +1893,125 @@
         "coordinates": [
           121.599481,
           25.056549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-hualien-city-meilun",
+      "properties": {
+        "name_zh": "花莲市美仑区线索",
+        "aliases": [
+          "花莲",
+          "花莲之晨",
+          "美仑区",
+          "中信花莲大旅社",
+          "中信花莲大饭店"
+        ],
+        "place_type": "city_area",
+        "coordinate_precision": "area_approx",
+        "needs_review": true,
+        "notes": "《李敖秘藏日记》1985年4月3日至4日记夜宿中信花莲大旅社801房，次晨在美仑区永兴路附近照相，并写“花莲之晨极清爽”。具体旅馆旧址待考，本点按花莲市美仑区域近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.618,
+          23.993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taroko-gorge",
+      "properties": {
+        "name_zh": "太鲁阁峡谷",
+        "aliases": [
+          "太鲁阁",
+          "太鲁阁峡谷",
+          "横贯公路入口",
+          "天祥"
+        ],
+        "place_type": "scenic_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》1985年4月4日记由花莲租车转赴太鲁阁，至横贯公路入口处，并随河边在峡谷中采卵石；文中也提到天祥一带景观变化。本点按太鲁阁峡谷/入口区域表示。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.621,
+          24.159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-yuanshan-taiyuan-500-memorial",
+      "properties": {
+        "name_zh": "圆山太原五百完人成仁招魂冢",
+        "aliases": [
+          "太原五百完人招魂冢",
+          "太原五百完人成仁招魂冢",
+          "圆山招魂冢",
+          "招魂冢",
+          "太原五百完人塚"
+        ],
+        "place_type": "memorial",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》1984年5月12日记李敖午后独去圆山，查看“太原五百完人成仁招魂冢题辞”碑与纪念碑文；1985年1月3日日记又记饭后去太原五百完人招魂冢并散步至动物园。复查以台北旅游网“太原五百完人塚”资料核对，地点在中山区中山北路四段11巷、圆山山脚天文台前方；坐标按该历史建筑群近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.526,
+          25.079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kenting-caesar-park-hotel",
+      "properties": {
+        "name_zh": "垦丁凯撒大饭店",
+        "aliases": [
+          "凯撒大饭店",
+          "垦丁凯撒",
+          "凯撒饭店"
+        ],
+        "place_type": "hotel",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日至14日由夜车南下，经恒春抵垦丁凯撒大饭店，住202房，并在台湾海峡边、猫鼻头、关山夕照一带游览。复查以饭店官网地址“屏东县恒春镇垦丁路6号”及公开资料所示1986年开业互证，坐标按现址近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.801,
+          21.942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kenting-maobitou",
+      "properties": {
+        "name_zh": "垦丁猫鼻头",
+        "aliases": [
+          "猫鼻头",
+          "猫鼻头公园"
+        ],
+        "place_type": "scenic_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日下午四时半至六时半去猫鼻头，站在猫鼻头上面看海，随后再去看“关山夕照”。本点用于表示垦丁短行中的主要自然景观现场。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.736,
+          21.921
         ]
       }
     }
