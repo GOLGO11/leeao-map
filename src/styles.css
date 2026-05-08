@@ -337,18 +337,16 @@ h1 {
 .map-toolbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: flex-end;
   min-height: 58px;
   padding: 12px 20px;
-  border-bottom: 1px solid rgba(31, 41, 51, 0.12);
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(12px);
+  background: #d9e5eb;
 }
 
 .map-actions {
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
   gap: 10px;
 }
 
@@ -390,26 +388,6 @@ h1 {
 .map-tool-button:hover {
   border-color: var(--accent-2);
   color: var(--accent-2);
-}
-
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 14px;
-}
-
-.legend-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  color: #475467;
-  font-size: 13px;
-}
-
-.legend-swatch {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
 }
 
 .map-note {
@@ -662,7 +640,7 @@ h1 {
 
   .map-toolbar {
     align-items: flex-start;
-    flex-direction: column;
+    justify-content: flex-start;
   }
 
   .map-actions {

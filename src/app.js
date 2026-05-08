@@ -142,7 +142,6 @@
   drawBaseMap();
   drawTaiwanBaseMap();
   renderFilters();
-  renderLegend();
   setViewBox(state.viewBox);
   setTaiwanViewBox(state.taiwanViewBox);
   render();
@@ -176,7 +175,7 @@
 
   zoomInButton.addEventListener("click", () => zoomMap(0.72));
   zoomOutButton.addEventListener("click", () => zoomMap(1.38));
-  focusTaiwanButton.addEventListener("click", () => setNamedView("taiwan"));
+  focusTaiwanButton.addEventListener("click", focusTaiwanDetailMap);
   focusAllButton.addEventListener("click", () => setNamedView("all"));
   taiwanZoomInButton.addEventListener("click", () => zoomTaiwanMap(0.72));
   taiwanZoomOutButton.addEventListener("click", () => zoomTaiwanMap(1.38));
@@ -337,15 +336,6 @@
     });
   }
 
-  function renderLegend() {
-    const legend = document.querySelector("#legend");
-    const keyCategories = ["birth", "migration", "residence", "education", "imprisonment", "lecture"];
-    legend.innerHTML = keyCategories.map((category) => {
-      const meta = getCategoryMeta(category);
-      return `<span class="legend-item"><span class="legend-swatch" style="background:${meta.color}"></span>${meta.label}</span>`;
-    }).join("");
-  }
-
   function renderTimeline(visibleEvents) {
     if (!visibleEvents.length) {
       timeline.innerHTML = `<li class="empty-state">没有匹配的事件</li>`;
@@ -399,7 +389,6 @@
 
     const taiwanScale = Math.max(0.06, Math.min(1, state.taiwanViewBox.width / fullTaiwanViewBox.width));
     const taiwanEvents = visibleEvents.filter((event) => event.points.some((point) => isTaiwanPoint(point)));
-    document.querySelector("#taiwanCount").textContent = taiwanEvents.length;
     renderMapLayer({
       visibleEvents: taiwanEvents,
       routeLayer: taiwanRouteLayer,
@@ -811,6 +800,12 @@
   function setNamedView(name) {
     setViewBox(namedViewBoxes[name] || namedViewBoxes.all);
     renderMap(filteredEvents());
+  }
+
+  function focusTaiwanDetailMap() {
+    setTaiwanViewBox(fullTaiwanViewBox);
+    renderMap(filteredEvents());
+    document.querySelector(".taiwan-map-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function zoomMap(factor, center = null) {

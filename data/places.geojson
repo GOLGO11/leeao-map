@@ -1647,6 +1647,76 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-lincoln-building-dunhua-610",
+      "properties": {
+        "name_zh": "敦化南路610号林肯大厦",
+        "aliases": [
+          "林肯大厦",
+          "敦化南路610号",
+          "台北市敦化南路610号林肯大厦"
+        ],
+        "place_type": "residence",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖书笺集》“苍蝇也没那么好拍的！”记李敖户口自1982年3月15日迁入敦化南路610号林肯大厦，1983年6月10日短迁乐利路42巷2号七楼之六林正杰处，同年8月3日迁回林肯，1985年8月19日又迁出；并称前后三年多在林肯大厦所见怪现状不少。复查见公开社区资料载林肯大厦现址为台北市大安区敦化南路二段46号，坐标按现址近似；610号旧门牌与现址门牌沿革仍待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5485,
+          25.0318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-xueying-bookstore-roosevelt-341",
+      "properties": {
+        "name_zh": "学英书局（罗斯福路三段341号）",
+        "aliases": [
+          "学英书局",
+          "台北市罗斯福路三段341号学英书局",
+          "罗斯福路三段341号"
+        ],
+        "place_type": "bookstore",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖书笺集》“捞过了界的扣押”记1984年8月28日台北市政府指派便衣人员前往台北市罗斯福路三段341号学英书局，扣押《万岁评论丛书6》与《李敖千秋评论丛书35》，并出具“台北市政府取缔违禁出版品收据”。坐标按罗斯福路三段341号门牌近似，书局旧址待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5324,
+          25.0168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-guting-roosevelt-road-area",
+      "properties": {
+        "name_zh": "罗斯福路派出所辖区线索",
+        "aliases": [
+          "台北市警察局古亭分局罗斯福路派出所",
+          "古亭分局罗斯福路派出所",
+          "罗斯福路派出所",
+          "罗斯福路路段查扣"
+        ],
+        "place_type": "police_jurisdiction",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖书牍集》“贵市长言而无信，令人羞羞”记1986年10月28日台北市警察局古亭分局罗斯福路派出所警员胡鹏翔在马路上查扣《万岁评论丛书》等四十一册。复查见台北市政府警察局现行页面列罗斯福路派出所地址为台北市大安区罗斯福路4段113巷13号；但文本没有给出查扣路口，也不能证明1986年派出所位置与现址完全一致，当前坐标仅作机构/辖区近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.538,
+          25.0111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-xinyi-guotai",
       "properties": {
         "name_zh": "信义路国泰信义公寓",
