@@ -50,7 +50,68 @@
     media: { label: "媒体", color: "#8f3f71" },
     politics: { label: "政治", color: "#a13d2d" },
     lecture: { label: "演讲", color: "#0b5cad" },
+    speech: { label: "发言", color: "#28666e" },
+    writing: { label: "写作", color: "#7a5c2e" },
+    publication: { label: "出版", color: "#5a45a0" },
+    work: { label: "工作", color: "#486581" },
+    lawsuit: { label: "诉讼", color: "#8b2f3c" },
+    legal: { label: "司法", color: "#6b3f69" },
+    political_pressure: { label: "政治压力", color: "#7c2d12" },
     late_life: { label: "晚年", color: "#5b6472" }
+  };
+
+  const placeTypeLabels = {
+    address: "地址",
+    airport: "机场",
+    auditorium: "礼堂",
+    bookstore: "书店",
+    city: "城市",
+    city_area: "城区",
+    convention_center: "会议中心",
+    court: "法院",
+    detention_site: "关押/监所",
+    government_building_room: "政府建筑房间",
+    heritage_site: "历史遗址",
+    hospital: "医院",
+    hotel: "饭店/旅馆",
+    institution: "机构",
+    lake: "湖泊",
+    memorial: "纪念地",
+    memorial_hall: "纪念馆",
+    military_base: "军事基地",
+    newspaper_office: "报社",
+    police_station: "警局",
+    post_office: "邮局",
+    publisher: "出版社",
+    region: "区域",
+    religious_site: "宗教场所",
+    research_institute: "研究机构",
+    residence: "住所",
+    restaurant_event_venue: "餐饮/活动场地",
+    room: "房间",
+    scenic_site: "景点",
+    site: "地点",
+    station: "车站",
+    study: "书房",
+    television_station: "电视台",
+    university: "大学",
+    village_port: "村落/港口"
+  };
+
+  const precisionLabels = {
+    address_approx: "地址近似",
+    area_approx: "区域近似",
+    building_approx: "建筑近似",
+    city: "城市级",
+    community_approx: "社区近似",
+    district_approx: "行政区近似",
+    institution_approx: "机构近似",
+    region: "区域级",
+    site_approx: "地点近似",
+    station_approx: "车站近似",
+    street_approx: "街道近似",
+    unknown: "未知",
+    village_approx: "村落近似"
   };
 
   const svg = document.querySelector("#mapSvg");
@@ -257,7 +318,7 @@
   function renderFilters() {
     const categories = ["all", ...new Set(geocodedEvents.map((event) => event.category))];
     filters.innerHTML = categories.map((category) => {
-      const meta = categoryMeta[category] || { label: category, color: "#667085" };
+      const meta = getCategoryMeta(category);
       return `<button class="filter-button" type="button" data-category="${category}">${meta.label}</button>`;
     }).join("");
 
@@ -280,7 +341,7 @@
     const legend = document.querySelector("#legend");
     const keyCategories = ["birth", "migration", "residence", "education", "imprisonment", "lecture"];
     legend.innerHTML = keyCategories.map((category) => {
-      const meta = categoryMeta[category];
+      const meta = getCategoryMeta(category);
       return `<span class="legend-item"><span class="legend-swatch" style="background:${meta.color}"></span>${meta.label}</span>`;
     }).join("");
   }
@@ -317,7 +378,7 @@
   }
 
   function renderMap(visibleEvents) {
-    const mainScale = Math.max(0.24, Math.min(0.78, state.viewBox.width / fullViewBox.width));
+    const mainScale = Math.max(0.07, Math.min(1, state.viewBox.width / fullViewBox.width));
     renderMapLayer({
       visibleEvents,
       routeLayer,
@@ -325,14 +386,18 @@
       projectFn: project,
       pointFilter: () => true,
       markerScale: mainScale,
-      baseRadius: 4.2,
-      countRadius: 0.5,
-      maxRadius: 9,
-      labelSize: 10,
-      labelMode: "main"
+      baseRadius: 3.6,
+      countRadius: 0.34,
+      maxRadius: 6,
+      minRadius: 0.36,
+      labelSize: 12.5,
+      minLabelSize: 1.24,
+      labelMode: "main",
+      denseLabels: true,
+      labelBounds: fullViewBox
     });
 
-    const taiwanScale = Math.max(0.2, Math.min(0.85, state.taiwanViewBox.width / fullTaiwanViewBox.width));
+    const taiwanScale = Math.max(0.06, Math.min(1, state.taiwanViewBox.width / fullTaiwanViewBox.width));
     const taiwanEvents = visibleEvents.filter((event) => event.points.some((point) => isTaiwanPoint(point)));
     document.querySelector("#taiwanCount").textContent = taiwanEvents.length;
     renderMapLayer({
@@ -342,11 +407,15 @@
       projectFn: projectTaiwan,
       pointFilter: isTaiwanPoint,
       markerScale: taiwanScale,
-      baseRadius: 3.2,
-      countRadius: 0.38,
-      maxRadius: 7,
-      labelSize: 9,
-      labelMode: "all"
+      baseRadius: 3.6,
+      countRadius: 0.34,
+      maxRadius: 6,
+      minRadius: 0.36,
+      labelSize: 12.5,
+      minLabelSize: 1.24,
+      labelMode: "all",
+      denseLabels: true,
+      labelBounds: fullTaiwanViewBox
     });
   }
 
@@ -361,8 +430,12 @@
       baseRadius,
       countRadius,
       maxRadius,
+      minRadius = 0,
       labelSize,
-      labelMode
+      minLabelSize = 0.65,
+      labelMode,
+      denseLabels = false,
+      labelBounds = null
     } = options;
 
     routeLayer.innerHTML = "";
@@ -392,21 +465,18 @@
     const entries = separateDensePoints([...byPlace.values()].map((entry) => ({
       ...entry,
       basePosition: projectFn(entry.point.coordinates)
-    })), markerScale);
+    })), markerScale, denseLabels);
     const placedLabels = [];
 
     entries.forEach(({ point, events: pointEvents, basePosition, position }) => {
       const active = point.id === state.activePlaceId;
       const category = pointEvents[0].category;
-      const meta = categoryMeta[category] || categoryMeta.all;
-      const radius = Math.min(maxRadius, baseRadius + pointEvents.length * countRadius) * markerScale;
-      const computedLabelSize = Math.max(2.1, labelSize * markerScale);
-      const shouldShowLabel = labelMode === "all"
-        || active
-        || (labelMode === "main" && !isTaiwanPoint(point))
-        || (labelMode === "sparse" && pointEvents.length >= 3);
+      const meta = getCategoryMeta(category);
+      const radius = Math.max(minRadius, Math.min(maxRadius, baseRadius + pointEvents.length * countRadius) * markerScale);
+      const computedLabelSize = Math.max(minLabelSize, labelSize * markerScale);
+      const shouldShowLabel = shouldRenderLabel(labelMode, point, pointEvents, active);
       const labelPlacement = shouldShowLabel
-        ? placeLabel(shortName(point.name), position, radius, computedLabelSize, markerScale, placedLabels)
+        ? placeLabel(shortName(point.name), position, radius, computedLabelSize, markerScale, placedLabels, denseLabels, labelBounds)
         : null;
       if (labelPlacement) placedLabels.push(labelPlacement.box);
       const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
@@ -420,6 +490,8 @@
       group.innerHTML = `
         <title>${escapeSvgText(point.name)}</title>
         ${displaced ? `<line class="marker-leader" x1="${basePosition.x}" y1="${basePosition.y}" x2="${position.x}" y2="${position.y}"></line>` : ""}
+        ${labelPlacement?.leader ? `<line class="label-leader" x1="${position.x}" y1="${position.y}" x2="${labelPlacement.anchorX}" y2="${labelPlacement.anchorY}"></line>` : ""}
+        ${active ? `<circle class="marker-active-ring" cx="${position.x}" cy="${position.y}" r="${Math.max(radius * 3.2, radius + 2.4 * markerScale)}"></circle>` : ""}
         <circle class="marker-halo" cx="${position.x}" cy="${position.y}" r="${radius * 2.1}"></circle>
         <circle class="marker-dot" cx="${position.x}" cy="${position.y}" r="${radius}" fill="${meta.color}"></circle>
         ${labelPlacement ? `<text class="marker-label" x="${labelPlacement.x}" y="${labelPlacement.y}" style="font-size:${computedLabelSize}px">${escapeSvgText(shortName(point.name))}</text>` : ""}
@@ -445,14 +517,14 @@
     });
   }
 
-  function separateDensePoints(entries, markerScale) {
+  function separateDensePoints(entries, markerScale, denseLabels = false) {
     const remaining = [...entries].sort((a, b) => {
       return b.events.length - a.events.length
         || a.point.name.localeCompare(b.point.name, "zh-Hans-CN")
         || a.point.id.localeCompare(b.point.id);
     });
     const separated = [];
-    const threshold = 18 * markerScale;
+    const threshold = (denseLabels ? 22 : 18) * markerScale;
 
     while (remaining.length) {
       const seed = remaining.shift();
@@ -468,7 +540,7 @@
         continue;
       }
 
-      const spread = Math.min(34, 12 + group.length * 2.2) * markerScale;
+      const spread = Math.min(denseLabels ? 38 : 34, (denseLabels ? 12 : 12) + group.length * (denseLabels ? 2.4 : 2.2)) * markerScale;
       group.forEach((entry, index) => {
         const angle = -Math.PI / 2 + (index * 2 * Math.PI) / group.length;
         separated.push({
@@ -484,10 +556,20 @@
     return separated;
   }
 
-  function placeLabel(text, position, radius, fontSize, markerScale, placedLabels) {
-    const width = Math.max(16 * markerScale, text.length * fontSize * 0.64);
+  function shouldRenderLabel(labelMode, point, pointEvents, active) {
+    if (labelMode === "all") return true;
+    if (labelMode === "main") return !isTaiwanPoint(point);
+    if (labelMode === "sparse") return active || pointEvents.length >= 3;
+    return active;
+  }
+
+  function placeLabel(text, position, radius, fontSize, markerScale, placedLabels, denseLabels = false, labelBounds = null) {
+    const width = Math.max(16 * markerScale, estimateTextWidth(text, fontSize));
     const height = fontSize * 1.35;
-    const gap = Math.max(3 * markerScale, fontSize * 0.35);
+    const gap = Math.max(2.4 * markerScale, fontSize * 0.45);
+    const padding = Math.max(1.2 * markerScale, fontSize * (denseLabels ? 0.56 : 0.36));
+    const reach = Math.max(radius + gap, fontSize * (denseLabels ? 5.6 : 3.4));
+    const boundsPadding = Math.max(2.5, fontSize * 0.72);
     const candidates = [
       { x: position.x + radius + gap, y: position.y + height * 0.34 },
       { x: position.x - radius - gap - width, y: position.y + height * 0.34 },
@@ -499,19 +581,82 @@
       { x: position.x - radius - gap - width, y: position.y + radius + gap + height }
     ];
 
-    for (const candidate of candidates) {
-      const box = {
-        x1: candidate.x - 2 * markerScale,
-        y1: candidate.y - height - 2 * markerScale,
-        x2: candidate.x + width + 2 * markerScale,
-        y2: candidate.y + 2 * markerScale
-      };
-      if (!placedLabels.some((placed) => boxesOverlap(box, placed))) {
-        return { x: round(candidate.x), y: round(candidate.y), box };
+    for (let ring = 1; ring <= 24; ring += 1) {
+      const slots = 10 + ring * (denseLabels ? 8 : 5);
+      const distanceFromPoint = reach + ring * reach * (denseLabels ? 1.08 : 0.82);
+      for (let index = 0; index < slots; index += 1) {
+        const angle = -Math.PI / 2 + (index * 2 * Math.PI) / slots;
+        const centerX = position.x + Math.cos(angle) * distanceFromPoint;
+        const centerY = position.y + Math.sin(angle) * distanceFromPoint;
+        candidates.push({
+          x: centerX - width / 2,
+          y: centerY + height / 2,
+          leader: true
+        });
       }
     }
 
-    return null;
+    for (const candidate of candidates) {
+      const box = labelBox(candidate, width, height, padding);
+      if (isLabelBoxInBounds(box, labelBounds, boundsPadding) && !placedLabels.some((placed) => boxesOverlap(box, placed))) {
+        return {
+          x: round(candidate.x),
+          y: round(candidate.y),
+          box,
+          leader: Boolean(candidate.leader),
+          anchorX: round(clamp(position.x, box.x1, box.x2)),
+          anchorY: round(clamp(position.y, box.y1, box.y2))
+        };
+      }
+    }
+
+    const fallback = clampLabelCandidate(candidates[candidates.length - 1], width, height, padding, labelBounds, boundsPadding);
+    const box = labelBox(fallback, width, height, padding);
+    return {
+      x: round(fallback.x),
+      y: round(fallback.y),
+      box,
+      leader: true,
+      anchorX: round(clamp(position.x, box.x1, box.x2)),
+      anchorY: round(clamp(position.y, box.y1, box.y2))
+    };
+  }
+
+  function labelBox(candidate, width, height, padding) {
+    return {
+      x1: candidate.x - padding,
+      y1: candidate.y - height - padding,
+      x2: candidate.x + width + padding,
+      y2: candidate.y + padding
+    };
+  }
+
+  function estimateTextWidth(text, fontSize) {
+    return [...text].reduce((total, char) => {
+      return total + fontSize * (/[\u0000-\u00ff]/.test(char) ? 0.62 : 1.02);
+    }, 0);
+  }
+
+  function isLabelBoxInBounds(box, bounds, padding = 0) {
+    if (!bounds) return true;
+    return box.x1 >= bounds.x + padding
+      && box.y1 >= bounds.y + padding
+      && box.x2 <= bounds.x + bounds.width - padding
+      && box.y2 <= bounds.y + bounds.height - padding;
+  }
+
+  function clampLabelCandidate(candidate, width, height, padding, bounds, boundsPadding = 0) {
+    if (!bounds) return candidate;
+    const minX = bounds.x + boundsPadding + padding;
+    const maxX = bounds.x + bounds.width - boundsPadding - padding - width;
+    const minY = bounds.y + boundsPadding + padding + height;
+    const maxY = bounds.y + bounds.height - boundsPadding - padding;
+    return {
+      ...candidate,
+      x: clamp(candidate.x, minX, Math.max(minX, maxX)),
+      y: clamp(candidate.y, minY, Math.max(minY, maxY)),
+      leader: true
+    };
   }
 
   function boxesOverlap(a, b) {
@@ -522,8 +667,28 @@
     return Math.hypot(a.x - b.x, a.y - b.y);
   }
 
+  function clamp(value, min, max) {
+    return Math.max(min, Math.min(max, value));
+  }
+
+  function getCategoryMeta(category) {
+    return categoryMeta[category] || { label: category || "未分类", color: "#667085" };
+  }
+
+  function translatePlaceType(type) {
+    return placeTypeLabels[type] || type || "-";
+  }
+
+  function translatePrecision(precision) {
+    return precisionLabels[precision] || precision || "-";
+  }
+
   function selectEvent(eventId) {
     state.activeEventId = eventId;
+    const event = geocodedEvents.find((item) => item.id === eventId);
+    if (event && !event.points.some((point) => point.id === state.activePlaceId)) {
+      state.activePlaceId = primaryPointForEvent(event)?.id || null;
+    }
   }
 
   function selectPlace(placeId, eventId = null) {
@@ -532,6 +697,10 @@
       ? geocodedEvents.find((event) => event.id === eventId)
       : placeEventMap.get(placeId)?.[0];
     if (relatedEvent) state.activeEventId = relatedEvent.id;
+  }
+
+  function primaryPointForEvent(event) {
+    return event?.points?.find((point) => !point.needsReview) || event?.points?.[0] || null;
   }
 
   function renderPlaceDetail(visibleEvents) {
@@ -567,8 +736,8 @@
     document.querySelector("#detailTitle").textContent = properties.name_zh || place.id;
     document.querySelector("#detailSummary").textContent = properties.notes || "暂未记录地点说明。";
     document.querySelector("#detailPlaces").innerHTML = `
-      <span>类型：${escapeHtml(properties.place_type || "-")}</span>
-      <span>精度：${escapeHtml(properties.coordinate_precision || "-")}</span>
+      <span>类型：${escapeHtml(translatePlaceType(properties.place_type))}</span>
+      <span>精度：${escapeHtml(translatePrecision(properties.coordinate_precision))}</span>
       <span>状态：${escapeHtml(review)}</span>
       <span>坐标：${escapeHtml(coordinateText)}</span>
       <span>别名：${escapeHtml(aliases)}</span>
@@ -599,7 +768,7 @@
     const activeIndex = visibleEvents.findIndex((event) => event.id === state.activeEventId);
     state.playing = true;
     state.playIndex = activeIndex >= 0 && activeIndex < visibleEvents.length - 1 ? activeIndex : 0;
-    state.activeEventId = visibleEvents[state.playIndex].id;
+    activatePlaybackEvent(visibleEvents[state.playIndex]);
     render();
     state.timer = window.setInterval(() => {
       const current = filteredEvents();
@@ -613,9 +782,14 @@
         return;
       }
       state.playIndex += 1;
-      state.activeEventId = current[state.playIndex].id;
+      activatePlaybackEvent(current[state.playIndex]);
       render();
     }, 1500);
+  }
+
+  function activatePlaybackEvent(event) {
+    state.activeEventId = event?.id;
+    state.activePlaceId = primaryPointForEvent(event)?.id || null;
   }
 
   function stopPlayback() {

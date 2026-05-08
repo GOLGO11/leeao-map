@@ -468,13 +468,13 @@
         "place_type": "hotel",
         "coordinate_precision": "address_approx",
         "needs_review": false,
-        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日至14日由夜车南下，经恒春抵垦丁凯撒大饭店，住202房，并在台湾海峡边、猫鼻头、关山夕照一带游览。复查以饭店官网地址“屏东县恒春镇垦丁路6号”及公开资料所示1986年开业互证，坐标按现址近似。"
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日至14日由夜车南下，经恒春抵垦丁凯撒大饭店，住202房，并在台湾海峡边、猫鼻头、关山夕照一带游览。复查以饭店官网地址“屏东县恒春镇垦丁路6号”及公开地图坐标互证，坐标按现址近似。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.801,
-          21.942
+          120.80534,
+          21.9426
         ]
       }
     },
@@ -490,13 +490,13 @@
         "place_type": "scenic_site",
         "coordinate_precision": "site_approx",
         "needs_review": false,
-        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日下午四时半至六时半去猫鼻头，站在猫鼻头上面看海，随后再去看“关山夕照”。本点用于表示垦丁短行中的主要自然景观现场。"
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日下午四时半至六时半去猫鼻头，站在猫鼻头上面看海，随后再去看“关山夕照”。复查以大鹏湾国家风景区猫鼻头公园资料所列经纬度校准，本点用于表示垦丁短行中的主要自然景观现场。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          120.736,
-          21.921
+          120.73761,
+          21.9228
         ]
       }
     },
@@ -1668,6 +1668,30 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-four-seasons-publishing-xinsheng-94",
+      "properties": {
+        "name_zh": "四季出版公司（新生南路三段94号六楼）",
+        "aliases": [
+          "四季出版公司",
+          "四季公司",
+          "台北市新生南路三段九十四号六楼四季公司",
+          "新生南路三段94号六楼"
+        ],
+        "place_type": "publisher",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖书简集》所收1982年8月20日信引查禁命令，明写第十一期《放火·放水·逃》由台北市新生南路三段94号6楼四季公司出版发行；《李敖书札集》又记1982年12月1日《千秋评论》第十六期在四季出版公司被查扣四百余本。坐标按新生南路三段94号附近近似，楼层与旧址仍待复核。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5334,
+          25.0185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-zhongshan-hall",
       "properties": {
         "name_zh": "台北中山堂",
@@ -2015,6 +2039,35 @@
         "coordinates": [
           121.537,
           24.957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-xindian-military-prison-ankeng",
+      "properties": {
+        "name_zh": "新店军人监狱 / 安坑看守所",
+        "aliases": [
+          "安坑监狱",
+          "新店军人监狱",
+          "新店军监",
+          "安坑看守所",
+          "国防部台湾军人监狱",
+          "国防部新店监狱",
+          "安坑分所",
+          "新店戒治所",
+          "新北市新店区莒光路42号"
+        ],
+        "place_type": "detention_site",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "国家人权记忆库“原国防部台湾军人监狱（新店安坑）／原台湾省保安司令部军法处看守所安坑分所”载地址为新北市新店区莒光路42号，惯用名称含新店军人监狱、新店军监、安坑看守所，并说明雷震曾关押于此；现为法务部矫正署新店戒治所。本项目用于1969年李敖赴安坑监狱探雷震遭驱逐线索。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5235786,
+          24.9573913
         ]
       }
     },
