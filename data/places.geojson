@@ -54,28 +54,6 @@
     },
     {
       "type": "Feature",
-      "id": "place-tunghai-university",
-      "properties": {
-        "name_zh": "东海大学",
-        "aliases": [
-          "东海大学",
-          "台中东海大学"
-        ],
-        "place_type": "university",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "《大学札记》1957年8月14日记李敖与台大历史系同学参观东海大学；当前按校级定位，具体参观点待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.6007,
-          24.181
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "place-beijing",
       "properties": {
         "name_zh": "北京/北平",
@@ -199,6 +177,53 @@
     },
     {
       "type": "Feature",
+      "id": "place-china-television-building-chongyang-120",
+      "properties": {
+        "name_zh": "中国电视公司中视大楼（重阳路120号）",
+        "aliases": [
+          "中国电视公司",
+          "中视",
+          "中视大楼",
+          "中国电视大厦",
+          "China Television Building"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "1990年中国电视公司赵宁节目亮相事件的地点锚点。外部复查显示中视大楼为第二代总部暨第一代独栋总部，1986年10月13日启用，地址为台北市南港区重阳路120号；与1999年落成的重阳路118号中视第二大楼区分。录影棚/节目具体棚别待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.599481,
+          25.056549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-democracy-foundation-taipei",
+      "properties": {
+        "name_zh": "民主基金会（台北，旧址待考）",
+        "aliases": [
+          "民主基金会",
+          "民基会"
+        ],
+        "place_type": "institution",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖随写录后集》仅记1992年2月29日李敖到民主基金会参加“民间学者看二二八事件研究报告”并讲话，未给街道地址；当前按台北市级坐标暂置，待复查或外部资料确认旧址。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-feiye-bookstore",
       "properties": {
         "name_zh": "飞页书屋",
@@ -209,6 +234,29 @@
         "notes": "2017 年最后一次演讲地点，需考证具体地址。"
       },
       "geometry": null
+    },
+    {
+      "type": "Feature",
+      "id": "place-feng-chia-university",
+      "properties": {
+        "name_zh": "逢甲大学",
+        "aliases": [
+          "逢甲",
+          "逢甲大学",
+          "Feng Chia University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖五五日记》1990年4月27日记李敖南下台中，在逢甲演讲《逢甲甲与乙》；具体演讲馆舍未见于本轮文本，坐标按逢甲大学校级近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6467,
+          24.1789
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -323,58 +371,6 @@
     },
     {
       "type": "Feature",
-      "id": "place-renwu-17th-division-camp",
-      "properties": {
-        "name_zh": "高雄县仁武乡第十七师驻地线索",
-        "aliases": [
-          "第十七师",
-          "十七师",
-          "四十九团四二炮连",
-          "仁武营房",
-          "高雄仁武",
-          "仁武乡"
-        ],
-        "place_type": "military_base",
-        "coordinate_precision": "area_approx",
-        "needs_review": true,
-        "notes": "《一个预备军官的日记》1960年3月3日记李敖由步校分至第二军团第十七师，车过仁武，抵十七师，并分至四十九团四二炮连；3月5日信称“这个地方在仁武附近，凤山北面”。具体营房旧址待考，坐标按仁武区范围近似。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.3506,
-          22.7015
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-penghu-baisha-dachikan",
-      "properties": {
-        "name_zh": "澎湖白沙乡大赤崁",
-        "aliases": [
-          "大赤崁",
-          "赤崁",
-          "白沙岛大赤崁",
-          "澎湖县白沙乡大赤崁",
-          "白沙岛东北角之大赤崁",
-          "赤崁码头"
-        ],
-        "place_type": "village_port",
-        "coordinate_precision": "village_approx",
-        "needs_review": true,
-        "notes": "《一个预备军官的日记》1961年1月28日起多次署记“澎湖县白沙乡的大赤崁海边/白沙岛东北角之大赤崁”，并记驻在赤崁小港口民房、逛赤崁码头。复查后赤崁码头暂视为大赤崁局部空间，不另拆点；具体民房与码头旧址待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          119.599,
-          23.666
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "place-hong-kong-book-fair",
       "properties": {
         "name_zh": "香港书展",
@@ -391,6 +387,31 @@
         "coordinates": [
           114.1722,
           22.282
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-hualien-city-meilun",
+      "properties": {
+        "name_zh": "花莲市美仑区线索",
+        "aliases": [
+          "花莲",
+          "花莲之晨",
+          "美仑区",
+          "中信花莲大旅社",
+          "中信花莲大饭店"
+        ],
+        "place_type": "city_area",
+        "coordinate_precision": "area_approx",
+        "needs_review": true,
+        "notes": "《李敖秘藏日记》1985年4月3日至4日记夜宿中信花莲大旅社801房，次晨在美仑区永兴路附近照相，并写“花莲之晨极清爽”。具体旅馆旧址待考，本点按花莲市美仑区域近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.618,
+          23.993
         ]
       }
     },
@@ -431,6 +452,51 @@
         "coordinates": [
           121.741,
           25.134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kenting-caesar-park-hotel",
+      "properties": {
+        "name_zh": "垦丁凯撒大饭店",
+        "aliases": [
+          "凯撒大饭店",
+          "垦丁凯撒",
+          "凯撒饭店"
+        ],
+        "place_type": "hotel",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日至14日由夜车南下，经恒春抵垦丁凯撒大饭店，住202房，并在台湾海峡边、猫鼻头、关山夕照一带游览。复查以饭店官网地址“屏东县恒春镇垦丁路6号”及公开资料所示1986年开业互证，坐标按现址近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.801,
+          21.942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kenting-maobitou",
+      "properties": {
+        "name_zh": "垦丁猫鼻头",
+        "aliases": [
+          "猫鼻头",
+          "猫鼻头公园"
+        ],
+        "place_type": "scenic_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日下午四时半至六时半去猫鼻头，站在猫鼻头上面看海，随后再去看“关山夕照”。本点用于表示垦丁短行中的主要自然景观现场。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.736,
+          21.921
         ]
       }
     },
@@ -571,29 +637,6 @@
     },
     {
       "type": "Feature",
-      "id": "place-feng-chia-university",
-      "properties": {
-        "name_zh": "逢甲大学",
-        "aliases": [
-          "逢甲",
-          "逢甲大学",
-          "Feng Chia University"
-        ],
-        "place_type": "university",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "《李敖五五日记》1990年4月27日记李敖南下台中，在逢甲演讲《逢甲甲与乙》；具体演讲馆舍未见于本轮文本，坐标按逢甲大学校级近似。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.6467,
-          24.1789
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "place-nctu-hsinchu",
       "properties": {
         "name_zh": "交通大学（新竹）",
@@ -658,6 +701,31 @@
     },
     {
       "type": "Feature",
+      "id": "place-ntu-hospital",
+      "properties": {
+        "name_zh": "台大医院",
+        "aliases": [
+          "台湾大学医院",
+          "台大医院四楼特别病房",
+          "台大医院203室",
+          "国立台湾大学医学院附设医院",
+          "National Taiwan University Hospital"
+        ],
+        "place_type": "hospital",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1959年4月13日李敖赴台大医院看胡适病于203室，4月30日在四楼特别病房与胡适谈《名公书判清明集》。坐标按台大医院本院院区暂定，1959年病房具体位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5188,
+          25.0408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-ntu-wenzhou-73-first-dorm",
       "properties": {
         "name_zh": "温州街73号台大第一宿舍第四室",
@@ -716,6 +784,83 @@
         "coordinates": [
           119.5793,
           23.5711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-penghu-baisha-dachikan",
+      "properties": {
+        "name_zh": "澎湖白沙乡大赤崁",
+        "aliases": [
+          "大赤崁",
+          "赤崁",
+          "白沙岛大赤崁",
+          "澎湖县白沙乡大赤崁",
+          "白沙岛东北角之大赤崁",
+          "赤崁码头"
+        ],
+        "place_type": "village_port",
+        "coordinate_precision": "village_approx",
+        "needs_review": true,
+        "notes": "《一个预备军官的日记》1961年1月28日起多次署记“澎湖县白沙乡的大赤崁海边/白沙岛东北角之大赤崁”，并记驻在赤崁小港口民房、逛赤崁码头。复查后赤崁码头暂视为大赤崁局部空间，不另拆点；具体民房与码头旧址待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          119.599,
+          23.666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-qiushi-newspaper-dunhua-490",
+      "properties": {
+        "name_zh": "求是报社文化企业有限公司（敦化南路490号）",
+        "aliases": [
+          "求是报社",
+          "求是报社文化企业有限公司",
+          "《求是报》发行所",
+          "敦化南路490号白宫大厦",
+          "白宫大厦十二楼之五"
+        ],
+        "place_type": "newspaper_office",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖五五日记》记1991年2月11日《求是报》试版、2月28日出刊；《你不知道的司法黑暗》所引新闻纸交寄执照载“发行所名称：求是报社文化企业有限公司”“发行所所在地：台北市敦化南路四九〇号十二楼之五”；《李敖放刁集》又以合约书说明李敖承包《求是报》编辑业务并使用白宫大厦十二楼之五房屋。坐标按敦化南路490号白宫大厦一带近似，楼层与实际编辑/发行分工仍待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.548,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-renwu-17th-division-camp",
+      "properties": {
+        "name_zh": "高雄县仁武乡第十七师驻地线索",
+        "aliases": [
+          "第十七师",
+          "十七师",
+          "四十九团四二炮连",
+          "仁武营房",
+          "高雄仁武",
+          "仁武乡"
+        ],
+        "place_type": "military_base",
+        "coordinate_precision": "area_approx",
+        "needs_review": true,
+        "notes": "《一个预备军官的日记》1960年3月3日记李敖由步校分至第二军团第十七师，车过仁武，抵十七师，并分至四十九团四二炮连；3月5日信称“这个地方在仁武附近，凤山北面”。具体营房旧址待考，坐标按仁武区范围近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.3506,
+          22.7015
         ]
       }
     },
@@ -1173,124 +1318,6 @@
     },
     {
       "type": "Feature",
-      "id": "place-democracy-foundation-taipei",
-      "properties": {
-        "name_zh": "民主基金会（台北，旧址待考）",
-        "aliases": [
-          "民主基金会",
-          "民基会"
-        ],
-        "place_type": "institution",
-        "coordinate_precision": "city",
-        "needs_review": true,
-        "notes": "《李敖随写录后集》仅记1992年2月29日李敖到民主基金会参加“民间学者看二二八事件研究报告”并讲话，未给街道地址；当前按台北市级坐标暂置，待复查或外部资料确认旧址。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5654,
-          25.033
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-songshan-airport",
-      "properties": {
-        "name_zh": "台北松山机场",
-        "aliases": [
-          "松山机场",
-          "台北松山机场候机室",
-          "台北机场",
-          "Taipei Songshan Airport"
-        ],
-        "place_type": "airport",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1958年11月4日李敖赴松山机场迎胡适返台，并在候机室及机梯旁留下胡适认出李敖、姚从吾谈论文指导的关键记载。坐标按现台北松山机场院区暂定，1958年候机室具体位置待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5525,
-          25.0697
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-zhongshan-hall",
-      "properties": {
-        "name_zh": "台北中山堂",
-        "aliases": [
-          "中山堂",
-          "台北市中山堂",
-          "Taipei Zhongshan Hall"
-        ],
-        "place_type": "auditorium",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1959年6月18日李敖赴中山堂参加台大毕业典礼。坐标按现台北中山堂院区暂定，具体典礼厅室待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5107,
-          25.0436
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-main-station",
-      "properties": {
-        "name_zh": "台北车站",
-        "aliases": [
-          "台北火车站",
-          "台北站",
-          "台北车站旧址",
-          "Taipei Main Station"
-        ],
-        "place_type": "station",
-        "coordinate_precision": "station_approx",
-        "needs_review": true,
-        "notes": "1959年8月2日李敖毕业后离开台北回台中，日记记朋友同车赴车站送行。坐标按现台北车站院区暂定，1959年旧站具体送行位置待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.517,
-          25.0478
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-ntu-hospital",
-      "properties": {
-        "name_zh": "台大医院",
-        "aliases": [
-          "台湾大学医院",
-          "台大医院四楼特别病房",
-          "台大医院203室",
-          "国立台湾大学医学院附设医院",
-          "National Taiwan University Hospital"
-        ],
-        "place_type": "hospital",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "1959年4月13日李敖赴台大医院看胡适病于203室，4月30日在四楼特别病房与胡适谈《名公书判清明集》。坐标按台大医院本院院区暂定，1959年病房具体位置待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5188,
-          25.0408
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "place-taipei-andong-231",
       "properties": {
         "name_zh": "台北安东街231号三楼",
@@ -1307,6 +1334,29 @@
         "coordinates": [
           121.543,
           25.043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-daan-police-precinct",
+      "properties": {
+        "name_zh": "台北市警察局大安分局",
+        "aliases": [
+          "大安分局",
+          "台北市大安分局",
+          "大安分局刑事第三组"
+        ],
+        "place_type": "police_station",
+        "coordinate_precision": "district_approx",
+        "needs_review": true,
+        "notes": "《波波颂》称1986年11月19日李敖因吴某涉嫌恐吓及预备杀人事到大安分局，警方请证人到刑事第三组做笔录；原文未给门牌，坐标先按台北大安区机关/区级近似，旧址待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.543,
+          25.033
         ]
       }
     },
@@ -1330,6 +1380,30 @@
         "coordinates": [
           121.4514,
           24.9882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-district-court",
+      "properties": {
+        "name_zh": "台北地方法院",
+        "aliases": [
+          "臺灣臺北地方法院",
+          "台湾台北地方法院",
+          "台北地方法院公证处",
+          "台北地院"
+        ],
+        "place_type": "court",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖对话录》之《书店升天，作者扫地》记朱婉坚1987年4月返台，与李敖互商文星复业事，并在台北地方法院公证签立出版权授与契约；同文又多次谈蔡文甫等文星旧作者版权诉讼。官方现址资料显示臺灣臺北地方法院院本部位于台北市博爱路131号；但现行公证处页面另列新店办公大楼，不能倒推1987年公证处位置。当前坐标仍按院本部/博爱路司法机关区域近似，1987年公证处与审判庭具体旧址待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5117,
+          25.0399
         ]
       }
     },
@@ -1361,51 +1435,74 @@
     },
     {
       "type": "Feature",
-      "id": "place-yeliu-geopark",
+      "id": "place-taipei-international-convention-center",
       "properties": {
-        "name_zh": "野柳风景区 / 野柳地质公园",
+        "name_zh": "台北国际会议中心",
         "aliases": [
-          "野柳",
-          "野柳风景区",
-          "野柳地质公园",
-          "野柳岬",
-          "野柳灯塔"
+          "臺北國際會議中心",
+          "Taipei International Convention Center",
+          "TICC",
+          "台北国际会议中心会场"
         ],
-        "place_type": "scenic_site",
+        "place_type": "convention_center",
         "coordinate_precision": "site_approx",
         "needs_review": true,
-        "notes": "《李敖随写录前集》1991年9月1日记李敖与小屯去野柳，登到最后面的瞭望台，看大海、帆船和海蚀岩；9月7日又与陈又亮同去野柳，爬山到灯塔。坐标按野柳地质公园/野柳岬区域近似，瞭望台与灯塔具体路径待复查。"
+        "notes": "《李敖访谈录1990-2018》之《中国时报》1999年8月19日报道，李敖出席新党六周年党庆并发表专题演讲，近五千名群众涌到台北国际会议中心会场。台北国际会议中心官方资料列地址为台北市信义区信义路五段1号；当前坐标按现址近似，具体会场厅别待复查。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.69,
-          25.207
+          121.5604,
+          25.0339
         ]
       }
     },
     {
       "type": "Feature",
-      "id": "place-qiushi-newspaper-dunhua-490",
+      "id": "place-taipei-main-post-office-beimen",
       "properties": {
-        "name_zh": "求是报社文化企业有限公司（敦化南路490号）",
+        "name_zh": "台北邮政总局 / 台北北门邮局",
         "aliases": [
-          "求是报社",
-          "求是报社文化企业有限公司",
-          "《求是报》发行所",
-          "敦化南路490号白宫大厦",
-          "白宫大厦十二楼之五"
+          "台北邮政总局",
+          "台北邮局",
+          "台北北门邮局",
+          "臺北北門郵局",
+          "臺北郵局"
         ],
-        "place_type": "newspaper_office",
-        "coordinate_precision": "address_approx",
+        "place_type": "post_office",
+        "coordinate_precision": "building_approx",
         "needs_review": true,
-        "notes": "《李敖五五日记》记1991年2月11日《求是报》试版、2月28日出刊；《你不知道的司法黑暗》所引新闻纸交寄执照载“发行所名称：求是报社文化企业有限公司”“发行所所在地：台北市敦化南路四九〇号十二楼之五”；《李敖放刁集》又以合约书说明李敖承包《求是报》编辑业务并使用白宫大厦十二楼之五房屋。坐标按敦化南路490号白宫大厦一带近似，楼层与实际编辑/发行分工仍待复查。"
+        "notes": "《李敖书翰集》1966年11月24日致台北邮政总局局长，记11月19日下午在“贵局”寄出新著大宗函件四百三十四件；附录复函称“台北邮局”。坐标按今日台北北门邮局/台北邮局营业据点，经纬度来自邮政据点资料；历史称谓大体可对应，具体窗口与大宗函件作业位置待复核。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.548,
-          25.033
+          121.512212,
+          25.047246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-main-station",
+      "properties": {
+        "name_zh": "台北车站",
+        "aliases": [
+          "台北火车站",
+          "台北站",
+          "台北车站旧址",
+          "Taipei Main Station"
+        ],
+        "place_type": "station",
+        "coordinate_precision": "station_approx",
+        "needs_review": true,
+        "notes": "1959年8月2日李敖毕业后离开台北回台中，日记记朋友同车赴车站送行。坐标按现台北车站院区暂定，1959年旧站具体送行位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.517,
+          25.0478
         ]
       }
     },
@@ -1431,29 +1528,6 @@
         "coordinates": [
           121.55586,
           25.041162
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-daan-police-precinct",
-      "properties": {
-        "name_zh": "台北市警察局大安分局",
-        "aliases": [
-          "大安分局",
-          "台北市大安分局",
-          "大安分局刑事第三组"
-        ],
-        "place_type": "police_station",
-        "coordinate_precision": "district_approx",
-        "needs_review": true,
-        "notes": "《波波颂》称1986年11月19日李敖因吴某涉嫌恐吓及预备杀人事到大安分局，警方请证人到刑事第三组做笔录；原文未给门牌，坐标先按台北大安区机关/区级近似，旧址待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.543,
-          25.033
         ]
       }
     },
@@ -1498,6 +1572,30 @@
         "coordinates": [
           121.525,
           25.016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-songshan-airport",
+      "properties": {
+        "name_zh": "台北松山机场",
+        "aliases": [
+          "松山机场",
+          "台北松山机场候机室",
+          "台北机场",
+          "Taipei Songshan Airport"
+        ],
+        "place_type": "airport",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1958年11月4日李敖赴松山机场迎胡适返台，并在候机室及机梯旁留下胡适认出李敖、姚从吾谈论文指导的关键记载。坐标按现台北松山机场院区暂定，1958年候机室具体位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5525,
+          25.0697
         ]
       }
     },
@@ -1570,6 +1668,30 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-zhongshan-hall",
+      "properties": {
+        "name_zh": "台北中山堂",
+        "aliases": [
+          "中山堂",
+          "台北市中山堂",
+          "中山堂堡垒厅",
+          "Taipei Zhongshan Hall"
+        ],
+        "place_type": "auditorium",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "1959年6月18日李敖赴中山堂参加台大毕业典礼；《李敖情书集》又记1962年11月5日文星五周年纪念会在中山堂堡垒厅举行。坐标按现台北中山堂院区暂定，具体厅室沿革待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5107,
+          25.0436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taiwan-high-court-taichung-branch",
       "properties": {
         "name_zh": "台湾高等法院台中分院",
@@ -1588,6 +1710,31 @@
         "coordinates": [
           120.6688,
           24.1268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taiwan-high-court-taichung-branch-wufeng",
+      "properties": {
+        "name_zh": "台湾高等法院台中分院雾峰旧址线索",
+        "aliases": [
+          "雾峰高分院",
+          "台湾高等法院台中分院旧址",
+          "台中高分院雾峰旧址",
+          "台中县雾峰乡中正路738号",
+          "台中市雾峰区中正路738之1号址"
+        ],
+        "place_type": "court",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖书翰集》1966年2月24日信写“今早去雾峰高分院打官司”。外部机构沿革资料显示台中高分院1963年迁入台中县雾峰乡中正路738号/738之1号址一带，1989年迁回台中市自由路；复查后坐标按中正路738号地址资料近似点校准。法治街资料指向高分院及检察署职务宿舍，不作为开庭地点；旧院舍建筑边界与738之1对应仍待复核。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.69844,
+          24.058169
         ]
       }
     },
@@ -1657,6 +1804,30 @@
     },
     {
       "type": "Feature",
+      "id": "place-taroko-gorge",
+      "properties": {
+        "name_zh": "太鲁阁峡谷",
+        "aliases": [
+          "太鲁阁",
+          "太鲁阁峡谷",
+          "横贯公路入口",
+          "天祥"
+        ],
+        "place_type": "scenic_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖秘藏日记》1985年4月4日记由花莲租车转赴太鲁阁，至横贯公路入口处，并随河边在峡谷中采卵石；文中也提到天祥一带景观变化。本点按太鲁阁峡谷/入口区域表示。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.621,
+          24.159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-tianjin",
       "properties": {
         "name_zh": "天津",
@@ -1714,6 +1885,28 @@
         "coordinates": [
           121.438,
           24.966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tunghai-university",
+      "properties": {
+        "name_zh": "东海大学",
+        "aliases": [
+          "东海大学",
+          "台中东海大学"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《大学札记》1957年8月14日记李敖与台大历史系同学参观东海大学；当前按校级定位，具体参观点待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6007,
+          24.181
         ]
       }
     },
@@ -1876,75 +2069,26 @@
     },
     {
       "type": "Feature",
-      "id": "place-china-television-building-chongyang-120",
+      "id": "place-yeliu-geopark",
       "properties": {
-        "name_zh": "中国电视公司中视大楼（重阳路120号）",
+        "name_zh": "野柳风景区 / 野柳地质公园",
         "aliases": [
-          "中国电视公司",
-          "中视",
-          "中视大楼",
-          "中国电视大厦",
-          "China Television Building"
-        ],
-        "place_type": "television_station",
-        "coordinate_precision": "address_approx",
-        "needs_review": true,
-        "notes": "1990年中国电视公司赵宁节目亮相事件的地点锚点。外部复查显示中视大楼为第二代总部暨第一代独栋总部，1986年10月13日启用，地址为台北市南港区重阳路120号；与1999年落成的重阳路118号中视第二大楼区分。录影棚/节目具体棚别待考。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.599481,
-          25.056549
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-hualien-city-meilun",
-      "properties": {
-        "name_zh": "花莲市美仑区线索",
-        "aliases": [
-          "花莲",
-          "花莲之晨",
-          "美仑区",
-          "中信花莲大旅社",
-          "中信花莲大饭店"
-        ],
-        "place_type": "city_area",
-        "coordinate_precision": "area_approx",
-        "needs_review": true,
-        "notes": "《李敖秘藏日记》1985年4月3日至4日记夜宿中信花莲大旅社801房，次晨在美仑区永兴路附近照相，并写“花莲之晨极清爽”。具体旅馆旧址待考，本点按花莲市美仑区域近似。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.618,
-          23.993
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taroko-gorge",
-      "properties": {
-        "name_zh": "太鲁阁峡谷",
-        "aliases": [
-          "太鲁阁",
-          "太鲁阁峡谷",
-          "横贯公路入口",
-          "天祥"
+          "野柳",
+          "野柳风景区",
+          "野柳地质公园",
+          "野柳岬",
+          "野柳灯塔"
         ],
         "place_type": "scenic_site",
         "coordinate_precision": "site_approx",
-        "needs_review": false,
-        "notes": "《李敖秘藏日记》1985年4月4日记由花莲租车转赴太鲁阁，至横贯公路入口处，并随河边在峡谷中采卵石；文中也提到天祥一带景观变化。本点按太鲁阁峡谷/入口区域表示。"
+        "needs_review": true,
+        "notes": "《李敖随写录前集》1991年9月1日记李敖与小屯去野柳，登到最后面的瞭望台，看大海、帆船和海蚀岩；9月7日又与陈又亮同去野柳，爬山到灯塔。坐标按野柳地质公园/野柳岬区域近似，瞭望台与灯塔具体路径待复查。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.621,
-          24.159
+          121.69,
+          25.207
         ]
       }
     },
@@ -1970,99 +2114,6 @@
         "coordinates": [
           121.526,
           25.079
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-kenting-caesar-park-hotel",
-      "properties": {
-        "name_zh": "垦丁凯撒大饭店",
-        "aliases": [
-          "凯撒大饭店",
-          "垦丁凯撒",
-          "凯撒饭店"
-        ],
-        "place_type": "hotel",
-        "coordinate_precision": "address_approx",
-        "needs_review": false,
-        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日至14日由夜车南下，经恒春抵垦丁凯撒大饭店，住202房，并在台湾海峡边、猫鼻头、关山夕照一带游览。复查以饭店官网地址“屏东县恒春镇垦丁路6号”及公开资料所示1986年开业互证，坐标按现址近似。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.801,
-          21.942
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-kenting-maobitou",
-      "properties": {
-        "name_zh": "垦丁猫鼻头",
-        "aliases": [
-          "猫鼻头",
-          "猫鼻头公园"
-        ],
-        "place_type": "scenic_site",
-        "coordinate_precision": "site_approx",
-        "needs_review": false,
-        "notes": "《李敖秘藏日记》“垦丁随记”记1986年9月13日下午四时半至六时半去猫鼻头，站在猫鼻头上面看海，随后再去看“关山夕照”。本点用于表示垦丁短行中的主要自然景观现场。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          120.736,
-          21.921
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-district-court",
-      "properties": {
-        "name_zh": "台北地方法院",
-        "aliases": [
-          "臺灣臺北地方法院",
-          "台湾台北地方法院",
-          "台北地方法院公证处",
-          "台北地院"
-        ],
-        "place_type": "court",
-        "coordinate_precision": "institution_approx",
-        "needs_review": true,
-        "notes": "《李敖对话录》之《书店升天，作者扫地》记朱婉坚1987年4月返台，与李敖互商文星复业事，并在台北地方法院公证签立出版权授与契约；同文又多次谈蔡文甫等文星旧作者版权诉讼。官方现址资料显示臺灣臺北地方法院院本部位于台北市博爱路131号；但现行公证处页面另列新店办公大楼，不能倒推1987年公证处位置。当前坐标仍按院本部/博爱路司法机关区域近似，1987年公证处与审判庭具体旧址待复查。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5117,
-          25.0399
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "place-taipei-international-convention-center",
-      "properties": {
-        "name_zh": "台北国际会议中心",
-        "aliases": [
-          "臺北國際會議中心",
-          "Taipei International Convention Center",
-          "TICC",
-          "台北国际会议中心会场"
-        ],
-        "place_type": "convention_center",
-        "coordinate_precision": "site_approx",
-        "needs_review": true,
-        "notes": "《李敖访谈录1990-2018》之《中国时报》1999年8月19日报道，李敖出席新党六周年党庆并发表专题演讲，近五千名群众涌到台北国际会议中心会场。台北国际会议中心官方资料列地址为台北市信义区信义路五段1号；当前坐标按现址近似，具体会场厅别待复查。"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          121.5604,
-          25.0339
         ]
       }
     }
