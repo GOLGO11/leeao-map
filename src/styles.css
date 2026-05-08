@@ -337,10 +337,18 @@ h1 {
 .map-toolbar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 16px;
   min-height: 58px;
   padding: 12px 20px;
   background: #d9e5eb;
+}
+
+.map-toolbar h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .map-actions {
@@ -441,6 +449,13 @@ h1 {
   min-width: 0;
 }
 
+.main-map-panel {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0;
+  touch-action: pan-y;
+}
+
 .taiwan-map-panel {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -448,7 +463,7 @@ h1 {
   touch-action: pan-y;
 }
 
-.taiwan-map-header {
+.map-section-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -465,14 +480,14 @@ h1 {
   gap: 10px;
 }
 
-.taiwan-map-header h2 {
+.map-section-header h2 {
   margin: 0;
   color: var(--ink);
   font-size: 17px;
   line-height: 1.2;
 }
 
-.taiwan-map-header strong {
+.map-section-header strong {
   color: var(--ink);
 }
 
@@ -639,8 +654,8 @@ h1 {
   }
 
   .map-toolbar {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .map-actions {

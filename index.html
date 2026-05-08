@@ -52,6 +52,7 @@
 
       <section class="map-panel" aria-label="交互地图">
         <div class="map-toolbar">
+          <h2>全图</h2>
           <div class="map-actions" aria-label="地图缩放">
             <div class="zoom-controls">
               <button id="zoomOutButton" class="map-tool-button" type="button" title="缩小" aria-label="缩小">-</button>
@@ -67,23 +68,25 @@
         </div>
         <div id="mapStage" class="map-stage">
           <div class="map-grid">
-            <svg id="mapSvg" class="map-svg main-map-svg" viewBox="0 0 1000 760" role="img" aria-label="李敖人生地理轨迹地图">
-              <defs>
-                <radialGradient id="cityGlow" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
-                  <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
-                </radialGradient>
-                <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
-                  <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18" />
-                </filter>
-              </defs>
-              <rect class="water" x="0" y="0" width="1000" height="760" />
-              <g id="baseMap"></g>
-              <g id="routeLayer"></g>
-              <g id="markerLayer"></g>
-            </svg>
+            <section class="main-map-panel" aria-label="全图">
+              <svg id="mapSvg" class="map-svg main-map-svg" viewBox="0 0 1000 760" role="img" aria-label="李敖人生地理轨迹地图">
+                <defs>
+                  <radialGradient id="cityGlow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+                  </radialGradient>
+                  <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18" />
+                  </filter>
+                </defs>
+                <rect class="water" x="0" y="0" width="1000" height="760" />
+                <g id="baseMap"></g>
+                <g id="routeLayer"></g>
+                <g id="markerLayer"></g>
+              </svg>
+            </section>
             <section class="taiwan-map-panel" aria-label="台湾详图">
-              <div class="taiwan-map-header">
+              <div class="map-section-header taiwan-map-header">
                 <h2>台湾详图</h2>
                 <div class="taiwan-map-tools">
                   <div class="zoom-controls">

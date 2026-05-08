@@ -79,6 +79,7 @@
     memorial: "纪念地",
     memorial_hall: "纪念馆",
     military_base: "军事基地",
+    mixed_use_building: "综合楼宇",
     newspaper_office: "报社",
     police_station: "警局",
     post_office: "邮局",
