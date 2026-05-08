@@ -406,6 +406,10 @@ h1 {
   white-space: nowrap;
 }
 
+.map-note[hidden] {
+  display: none;
+}
+
 .map-note span:first-child {
   color: var(--ink);
   font-weight: 800;
