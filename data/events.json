@@ -5045,6 +5045,31 @@
     ]
   },
   {
+    "id": "event-2005-mainland-cultural-revisit",
+    "sequence": 269.8,
+    "date_start": "2005-09-19",
+    "date_end": "2005-09-23",
+    "date_label": "2005年9月19日至9月23日",
+    "title": "神州文化之旅：北京旧地与法源寺重访",
+    "summary": "《李敖政论综艺集》059篇央视《东方时空》把神州文化之旅中的旧地重访补出来：9月19日回到阔别五十六/五十七年的北京，9月20日再进新鲜胡同小学，9月23日下午踏进神往已久的北京法源寺。法源寺此前是小说资料空间，这次变成实际到场。",
+    "place_ids": [
+      "place-beijing",
+      "place-beijing-xinxian-hutong-primary-school",
+      "place-beijing-fayuan-temple"
+    ],
+    "category": "public_memory",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-beijing-fayuan-temple",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/059.20050926《东方时空》.txt",
+        "locator": "第9、17、19、21行",
+        "evidence_quote": "2005年9月19日下午...回到了阔别56年的北京...2005年9月20日...再一次踏进...新鲜胡同小学...9月23日下午...踏进...北京法源寺"
+      }
+    ]
+  },
+  {
     "id": "event-2005-mainland-lectures",
     "sequence": 270,
     "date_start": "2005-09-22",
@@ -5095,6 +5120,12 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/040.20050926李敖复旦演讲.txt",
         "locator": "第1、3、11行",
         "evidence_quote": "20050926李敖复旦演讲...对李敖先生来复旦大学访问...让我们以热烈的掌声欢迎李敖先生演讲"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/059.20050926《东方时空》.txt",
+        "locator": "第21行",
+        "evidence_quote": "9月21日，9月23日上午，李敖分别走进了北大、清华的校园。"
       }
     ]
   },
@@ -5196,6 +5227,61 @@
     ]
   },
   {
+    "id": "event-2010-shanghai-expo-family-trip",
+    "sequence": 281,
+    "date_start": "2010-08-27",
+    "date_end": "2010-08-31",
+    "date_label": "2010年8月27日至31日",
+    "title": "上海世博行与“神州文化之旅”续集",
+    "summary": "2010年8月，李敖率家人赴上海参观世博会，被凤凰卫视包装为“神州文化之旅”的续集。文本明确出现台湾馆、中国馆、上海馆、浙江馆、黑龙江馆等参观线索；媒体见面会又记他参观上海博物馆题“富可敌台”，到上海国际饭店题“重来上海，故地重游”。复查补入金门大酒店旧地感受和中共一大会址参访；上海图书馆、广州街书店旧址只见安排线索，暂不入图。",
+    "place_ids": [
+      "place-shanghai-world-expo-china-pavilion",
+      "place-shanghai-museum",
+      "place-park-hotel-shanghai",
+      "place-golden-gate-hotel-shanghai",
+      "place-site-cpc-first-congress-shanghai"
+    ],
+    "category": "travel",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-shanghai-world-expo-china-pavilion",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/093.20100827《李敖世博行》.txt",
+        "locator": "第3、5、15、17、23、29、41行",
+        "evidence_quote": "到了台湾馆...中国馆...浙江馆、黑龙江馆、上海馆...最后到上海，也许是全家旅行的最后一个机会"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-shanghai-museum",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/094.20100829《李敖世博行媒体见面会》.txt",
+        "locator": "第5、7、9行",
+        "evidence_quote": "率全家来到了世博，来到了上海...参观了上海博物馆，就提了富可敌台，到了国际饭店重来上海，故地重游...神州文化之旅的续集"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-shanghai-world-expo-china-pavilion",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/100.20100924《李敖世博行》.txt",
+        "locator": "第5、9、21、39、43、69行",
+        "evidence_quote": "2010年8月...去上海看世界博览会...第二次踏进台湾桃园机场...27、28、29三天在上海...中国馆是一定要看的...中国国家馆60米观景台"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-golden-gate-hotel-shanghai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/093.20100827《李敖世博行》.txt",
+        "locator": "第105、111、119、125行",
+        "evidence_quote": "聊一下对金门大饭店的感受吧...61年前我只是经过这里...可是我也老了，饭店也老了...它能够保存好，像我一样75岁还保存的这么好"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-site-cpc-first-congress-shanghai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/100.20100924《李敖世博行》.txt",
+        "locator": "第157、159、161、165、173行",
+        "evidence_quote": "转换场景，从现代高科技坠入怀旧寻古的历史陈迹...谈到了上海博物馆...这个位于上海闹区的中国共产党诞生地中共一大会址是李敖指明要参观"
+      }
+    ]
+  },
+  {
     "id": "event-2009-tv-leeao-yumiao-tianxia",
     "sequence": 279,
     "date_start": "2009-01-01",
@@ -5258,6 +5344,36 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/074.2009-04-21：我家凶悍的老太(四).txt",
         "locator": "第25行",
         "evidence_quote": "我在阳明山书房里面开窗一望，就看到我妈妈的灵骨塔，她常在我心头"
+      }
+    ]
+  },
+  {
+    "id": "event-2009-2011-yangmingshan-study-tv-visits",
+    "sequence": 279.3,
+    "date_start": "2009-03-19",
+    "date_end": "2011-09-18",
+    "date_label": "2009年3月19日至2011年9月18日",
+    "title": "阳明山书房电视访谈与家中拍摄",
+    "summary": "《李敖政论综艺集》复查发现，两组电视访谈直接把镜头带进李敖阳明山书房/家中：2009年《鲁豫有约》记摄制组在阳明山烟雨中走进其从未对外展示过的书房，并说明东丰街书房卖掉后资料拥挤到阳明山；2011年《文化大观园》又以“如约来到李敖家中”开场，李敖自述一周六天在阳明山、六天六夜不出门。此节点补强阳明山书房作为晚年媒体访问和独处工作的空间，但仍不收窄门牌。",
+    "place_ids": [
+      "place-yangmingshan-qingshan-jianwo-lou"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-yangmingshan-qingshan-jianwo-lou",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/087.20090319《鲁豫有约》.txt",
+        "locator": "第3、113、429、535、549行",
+        "evidence_quote": "2009年初春，伴随着阳明山的蒙蒙烟雨...走进了大师李敖从未对外展示过的书房...东风街书房...被我卖掉了...搬到阳明山不过是近几年的事"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-yangmingshan-qingshan-jianwo-lou",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/136.20110918《文化大观园》.txt",
+        "locator": "第7、51行",
+        "evidence_quote": "如约来到李敖家中...现在我在台北，一个礼拜六天在阳明山一个人，六天六夜都不出门"
       }
     ]
   },
@@ -5374,6 +5490,20 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/050.20110723李敖香港书展演讲.txt",
         "locator": "第1、3、5、7行",
         "evidence_quote": "20110723李敖香港书展演讲...中国知识分子的走向...地点：香港会展中心...今天非常精彩的演讲"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-xiamen-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/114.20110403《两岸新新闻》.txt",
+        "locator": "第3、5、9、57、59行",
+        "evidence_quote": "台湾名嘴李敖在厦门大学建南大礼堂登台演讲...厦大我来了...今天谈的题目"
+      },
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-xiamen-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/115.20110404《国学高峰论坛》.txt",
+        "locator": "第3、5、9、11行",
+        "evidence_quote": "庆祝厦门大学建校90周年国学高峰论坛...在这里隆重举办...欢迎李敖先生作为本次论坛的主持人"
       }
     ]
   },
@@ -5397,6 +5527,29 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/049.20110618李敖薇阁中学演讲.txt",
         "locator": "第1、3、5、7行",
         "evidence_quote": "李敖薇阁中学演讲...从《富春山居图》说起...由凤凰卫视主办的山水合璧《富春山居图》的人文讲座...今天凤凰电视的刘老板使我旧梦重温"
+      }
+    ]
+  },
+  {
+    "id": "event-2011-martyrs-shrine-influence-100",
+    "sequence": 291.2,
+    "date_start": "2011-06-19",
+    "date_end": "2011-06-19",
+    "date_label": "2011年6月19日",
+    "title": "台北忠烈祠《影响力100》外景谈《第73烈士》",
+    "summary": "《李敖政论综艺集》131篇《影响力100》把访谈带到台北忠烈祠，主持人说“今天我们就来到了台北忠烈祠”，围绕《第73烈士》、黄花岗七十二烈士和中华民国百年叙事展开。此节点不同于2009年《笑傲六十年》旧地拍摄，是2011年电视外景与新书叙事的到场节点。",
+    "place_ids": [
+      "place-national-revolutionary-martyrs-shrine-taipei"
+    ],
+    "category": "public_memory",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-political-variety",
+        "place_id": "place-national-revolutionary-martyrs-shrine-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/012.李敖政论综艺集/131.20110619《影响力100》.txt",
+        "locator": "第1、3、21、23、35行",
+        "evidence_quote": "今天我们就来到了台北忠烈祠...第73烈士...黄花岗...现场章太炎写的"
       }
     ]
   },

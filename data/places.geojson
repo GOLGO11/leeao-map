@@ -156,6 +156,29 @@
     },
     {
       "type": "Feature",
+      "id": "place-beijing-fayuan-temple",
+      "properties": {
+        "name_zh": "北京法源寺",
+        "aliases": [
+          "法源寺",
+          "北京法源寺",
+          "Fayuan Temple"
+        ],
+        "place_type": "temple",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》059篇央视《东方时空》记2005年9月23日下午，李敖踏进神往已久的北京法源寺，并说明此前虽未到过，已通过照片和资料写成长篇历史小说《北京法源寺》。坐标按北京市西城区法源寺前街7号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.3704,
+          39.8849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-cathay-general-hospital-taipei",
       "properties": {
         "name_zh": "国泰综合医院（台北）",
@@ -370,7 +393,7 @@
         "place_type": "study",
         "coordinate_precision": "city",
         "needs_review": true,
-        "notes": "《李敖秘密书房》第一集说明《李敖笑傲江湖》是在摄影棚录制，而《李敖秘密书房》改在李敖书房与家中录制；同篇又说他有四个书房，节目所见为最大的一个，并把杨凡曾拍摄的“敦化南路一个十二楼的书房”与“现在这个书房是二楼”区分开。第一轮复查未找到当前二楼书房的门牌；新党义卖/书展、励馨基金会义卖和来宾到访线索也未给出稳定会场。当前不能据此把节目书房直接等同于金兰大厦、白宫大厦、林肯大厦或阳明山书房，故暂按台北市级定位。"
+        "notes": "《李敖秘密书房》第一集说明《李敖笑傲江湖》是在摄影棚录制，而《李敖秘密书房》改在李敖书房与家中录制；同篇又说他有四个书房，节目所见为最大的一个，并把杨凡曾拍摄的“敦化南路一个十二楼的书房”与“现在这个书房是二楼”区分开。《李敖政论综艺集》017篇《杨澜访谈录》开头又明说“位于台北的东丰街，名作家李敖的书房就位于这里”，并称这里成为媒体经常光顾的场所。第一轮复查仍未找到当前二楼书房/东丰街书房的门牌；新党义卖/书展、励馨基金会义卖和来宾到访线索也未给出稳定会场。当前不能据此把节目书房直接等同于金兰大厦、白宫大厦、林肯大厦或阳明山书房，故暂按台北市级定位。"
       },
       "geometry": {
         "type": "Point",
@@ -1880,6 +1903,127 @@
     },
     {
       "type": "Feature",
+      "id": "place-shanghai-world-expo-china-pavilion",
+      "properties": {
+        "name_zh": "上海世博会中国馆 / 中华艺术宫",
+        "aliases": [
+          "上海世博会中国馆",
+          "中国馆",
+          "中华艺术宫",
+          "中华艺术宫（上海美术馆）",
+          "China Pavilion",
+          "China Art Museum"
+        ],
+        "place_type": "exhibition_site",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》093、100篇记2010年8月李敖参观上海世博会中国馆、台湾馆、上海馆、浙江馆、黑龙江馆等，并站在中国国家馆60米观景台俯瞰世博园。坐标按2010年上海世博会中国馆后继中华艺术宫上南路161号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4933,
+          31.1854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-shanghai-museum",
+      "properties": {
+        "name_zh": "上海博物馆",
+        "aliases": [
+          "上海博物馆人民广场馆",
+          "Shanghai Museum"
+        ],
+        "place_type": "museum",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》094篇媒体见面会提到2010年上海世博行期间，李敖参观上海博物馆并题“富可敌台”。坐标按人民大道201号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4752,
+          31.2288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-park-hotel-shanghai",
+      "properties": {
+        "name_zh": "上海国际饭店",
+        "aliases": [
+          "国际饭店",
+          "上海国际饭店",
+          "Park Hotel Shanghai",
+          "锦江国际饭店"
+        ],
+        "place_type": "historic_hotel",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》094篇媒体见面会提到2010年上海世博行期间，李敖到国际饭店并题“重来上海，故地重游”。坐标按南京西路170号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4736,
+          31.2342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-golden-gate-hotel-shanghai",
+      "properties": {
+        "name_zh": "上海金门大酒店",
+        "aliases": [
+          "金门大饭店",
+          "金门大酒店",
+          "上海金门大酒店",
+          "Pacific Hotel Shanghai",
+          "Golden Gate Hotel Shanghai"
+        ],
+        "place_type": "historic_hotel",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》093篇《李敖世博行》记2010年上海行中，记者询问李敖对金门大饭店的感受，李敖说61年前只是经过这里、现在作为贵宾进入，感到饭店保存完好而有岁月感。坐标按上海文旅推广网所列黄浦区南京西路108号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4751,
+          31.2345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-site-cpc-first-congress-shanghai",
+      "properties": {
+        "name_zh": "中共一大会址 / 中共一大纪念馆",
+        "aliases": [
+          "中共一大会址",
+          "中国共产党第一次全国代表大会会址",
+          "中共一大纪念馆",
+          "Site of the First National Congress of the CPC"
+        ],
+        "place_type": "museum",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖政论综艺集》100篇《李敖世博行》记2010年上海行中，李敖指明要参观中共一大会址，并在现场听取会址与建党历程说明。坐标按中共一大纪念馆官方地址上海市黄浦区黄陂南路374号近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.475,
+          31.222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-shanghai-bund-central-bank",
       "properties": {
         "name_zh": "黄浦滩中央银行一带",
@@ -3274,7 +3418,7 @@
         "place_type": "study",
         "coordinate_precision": "area_approx",
         "needs_review": true,
-        "notes": "《李敖书启集》“我与邓丽君后一章”1995年5月24日信称“我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里”；《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖秘密书房》2000年4月12日“万书如海一身藏（一）”又称“我有四个窝，还有一个在阳明山”，可补强阳明山书房/山居长期线索，但不能证明《李敖秘密书房》节目就在阳明山录制；《李敖语妙天下》022集复查进一步说明阳明山书房在十层大楼第五层、两户打通，并展示山路、窗景与书房一角，007集又证明李敖从此处下山录影；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
+        "notes": "《李敖书启集》“我与邓丽君后一章”1995年5月24日信称“我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里”；《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖秘密书房》2000年4月12日“万书如海一身藏（一）”又称“我有四个窝，还有一个在阳明山”，可补强阳明山书房/山居长期线索，但不能证明《李敖秘密书房》节目就在阳明山录制；《李敖语妙天下》022集复查进一步说明阳明山书房在十层大楼第五层、两户打通，并展示山路、窗景与书房一角，007集又证明李敖从此处下山录影；《李敖政论综艺集》087篇《鲁豫有约》记2009年初春摄制组走进阳明山书房，并说明东丰街书房卖掉后资料拥挤到此处；136篇《文化大观园》又记“如约来到李敖家中”，并由李敖自述一周六天在阳明山、六天六夜不出门；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
       },
       "geometry": {
         "type": "Point",

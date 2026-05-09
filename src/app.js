@@ -371,6 +371,15 @@
   }
 
   function renderMap(visibleEvents) {
+    const sharedDenseLabelLayout = {
+      labelSize: 10.4,
+      minLabelSize: 1.02,
+      denseLabels: true,
+      pointSeparationScale: 0.78,
+      labelPaddingScale: 0.55,
+      labelReachScale: 0.72,
+      labelBoundsPaddingScale: 0.55
+    };
     const mainScale = Math.max(0.07, Math.min(1, state.viewBox.width / fullViewBox.width));
     renderMapLayer({
       visibleEvents,
@@ -383,10 +392,8 @@
       countRadius: 0.34,
       maxRadius: 6,
       minRadius: 0.36,
-      labelSize: 12.5,
-      minLabelSize: 1.24,
+      ...sharedDenseLabelLayout,
       labelMode: "main",
-      denseLabels: true,
       labelBounds: fullViewBox
     });
 
@@ -403,15 +410,9 @@
       countRadius: 0.34,
       maxRadius: 6,
       minRadius: 0.36,
-      labelSize: 10.4,
-      minLabelSize: 1.02,
+      ...sharedDenseLabelLayout,
       labelMode: "all",
-      denseLabels: true,
-      labelBounds: fullTaiwanViewBox,
-      pointSeparationScale: 0.78,
-      labelPaddingScale: 0.55,
-      labelReachScale: 0.72,
-      labelBoundsPaddingScale: 0.55
+      labelBounds: fullTaiwanViewBox
     });
   }
 
