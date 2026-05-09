@@ -403,11 +403,15 @@
       countRadius: 0.34,
       maxRadius: 6,
       minRadius: 0.36,
-      labelSize: 12.5,
-      minLabelSize: 1.24,
+      labelSize: 10.4,
+      minLabelSize: 1.02,
       labelMode: "all",
       denseLabels: true,
-      labelBounds: fullTaiwanViewBox
+      labelBounds: fullTaiwanViewBox,
+      pointSeparationScale: 0.78,
+      labelPaddingScale: 0.55,
+      labelReachScale: 0.72,
+      labelBoundsPaddingScale: 0.55
     });
   }
 
@@ -427,7 +431,11 @@
       minLabelSize = 0.65,
       labelMode,
       denseLabels = false,
-      labelBounds = null
+      labelBounds = null,
+      pointSeparationScale = 1,
+      labelPaddingScale = 1,
+      labelReachScale = 1,
+      labelBoundsPaddingScale = 1
     } = options;
 
     routeLayer.innerHTML = "";
@@ -457,7 +465,7 @@
     const entries = separateDensePoints([...byPlace.values()].map((entry) => ({
       ...entry,
       basePosition: projectFn(entry.point.coordinates)
-    })), markerScale, denseLabels);
+    })), markerScale, denseLabels, pointSeparationScale);
     const placedLabels = [];
 
     entries.forEach(({ point, events: pointEvents, basePosition, position }) => {
@@ -468,7 +476,11 @@
       const computedLabelSize = Math.max(minLabelSize, labelSize * markerScale);
       const shouldShowLabel = shouldRenderLabel(labelMode, point, pointEvents, active);
       const labelPlacement = shouldShowLabel
-        ? placeLabel(shortName(point.name), position, radius, computedLabelSize, markerScale, placedLabels, denseLabels, labelBounds)
+        ? placeLabel(shortName(point.name), position, radius, computedLabelSize, markerScale, placedLabels, denseLabels, labelBounds, {
+          paddingScale: labelPaddingScale,
+          reachScale: labelReachScale,
+          boundsPaddingScale: labelBoundsPaddingScale
+        })
         : null;
       if (labelPlacement) placedLabels.push(labelPlacement.box);
       const group = document.createElementNS("http://www.w3.org/2000/svg", "g");
@@ -509,14 +521,14 @@
     });
   }
 
-  function separateDensePoints(entries, markerScale, denseLabels = false) {
+  function separateDensePoints(entries, markerScale, denseLabels = false, separationScale = 1) {
     const remaining = [...entries].sort((a, b) => {
       return b.events.length - a.events.length
         || a.point.name.localeCompare(b.point.name, "zh-Hans-CN")
         || a.point.id.localeCompare(b.point.id);
     });
     const separated = [];
-    const threshold = (denseLabels ? 22 : 18) * markerScale;
+    const threshold = (denseLabels ? 22 : 18) * markerScale * separationScale;
 
     while (remaining.length) {
       const seed = remaining.shift();
@@ -532,7 +544,7 @@
         continue;
       }
 
-      const spread = Math.min(denseLabels ? 38 : 34, (denseLabels ? 12 : 12) + group.length * (denseLabels ? 2.4 : 2.2)) * markerScale;
+      const spread = Math.min(denseLabels ? 38 : 34, (denseLabels ? 12 : 12) + group.length * (denseLabels ? 2.4 : 2.2)) * markerScale * separationScale;
       group.forEach((entry, index) => {
         const angle = -Math.PI / 2 + (index * 2 * Math.PI) / group.length;
         separated.push({
@@ -555,13 +567,16 @@
     return active;
   }
 
-  function placeLabel(text, position, radius, fontSize, markerScale, placedLabels, denseLabels = false, labelBounds = null) {
+  function placeLabel(text, position, radius, fontSize, markerScale, placedLabels, denseLabels = false, labelBounds = null, layout = {}) {
+    const paddingScale = layout.paddingScale ?? 1;
+    const reachScale = layout.reachScale ?? 1;
+    const boundsPaddingScale = layout.boundsPaddingScale ?? 1;
     const width = Math.max(16 * markerScale, estimateTextWidth(text, fontSize));
     const height = fontSize * 1.35;
     const gap = Math.max(2.4 * markerScale, fontSize * 0.45);
-    const padding = Math.max(1.2 * markerScale, fontSize * (denseLabels ? 0.56 : 0.36));
-    const reach = Math.max(radius + gap, fontSize * (denseLabels ? 5.6 : 3.4));
-    const boundsPadding = Math.max(2.5, fontSize * 0.72);
+    const padding = Math.max(0.8 * markerScale, fontSize * (denseLabels ? 0.56 : 0.36) * paddingScale);
+    const reach = Math.max(radius + gap, fontSize * (denseLabels ? 5.6 : 3.4) * reachScale);
+    const boundsPadding = Math.max(1.4, fontSize * 0.72 * boundsPaddingScale);
     const candidates = [
       { x: position.x + radius + gap, y: position.y + height * 0.34 },
       { x: position.x - radius - gap - width, y: position.y + height * 0.34 },

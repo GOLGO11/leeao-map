@@ -2277,6 +2277,12 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/002.李敖书序集/007.《调查局研究》序.txt",
         "locator": "第41-45行",
         "evidence_quote": "1971年2月28日，我自警总保安处移到看守所，住在第二房...1975年12月22日...解送土城仁爱教育实验所。景美军法看守所时代，便就此告一结束。"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/003.20090805文星之火·火首燎原.txt",
+        "locator": "第65、67、71、73行",
+        "evidence_quote": "多少年以后，我做了所谓的立法委员...我要去看看当年你们关我的监狱...这就是我住的第一间房，第二号房...这次去过以后，这个监狱荒废了以后...改成一个观光饭店的样子"
       }
     ]
   },
@@ -2851,6 +2857,12 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/004.李敖书简集/009.揭发黑幕以后.txt",
         "locator": "第5、7、15、53、109、171行",
         "evidence_quote": "一出狱门即被记者们缠住...自从发难揭发司法、法务黑暗后，法务部即令各监所戒备...举行记者会...出狱当天下午...一出来就举行记者招待会，揭发看守所内幕"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/004.20090806隐居谈情·东山再起.txt",
+        "locator": "第27、29、31行",
+        "evidence_quote": "我又走回到台北看守所，就是台北监狱的分监...孝一舍的三十二房...我在里面关了半年，出来的时候看守所所长跑来跟我握手"
       }
     ]
   },
@@ -3550,7 +3562,7 @@
     "date_end": "1991-02-28",
     "date_label": "1991年2月11日至2月28日",
     "title": "《求是报》试版与出刊",
-    "summary": "李敖在五十五岁日记前记中把《求是报》列为这一年的重要成就。1991年2月11日，他从林肯开会早退，回去做《求是报》试版七小时；2月28日，《求是报》出刊。复查以新闻纸交寄执照和合约书线索，将发行所/编辑业务空间收窄到台北市敦化南路490号白宫大厦十二楼之五；林肯会议地点仍不并入本节点。",
+    "summary": "李敖在五十五岁日记前记中把《求是报》列为这一年的重要成就。1991年2月11日，他从林肯开会早退，回去做《求是报》试版七小时；2月28日，《求是报》出刊。复查以新闻纸交寄执照和合约书线索，将发行所/编辑业务空间收窄到台北市敦化南路490号白宫大厦十二楼之五；《李敖语妙天下》088集又以空照图说明其家在金兰大厦、报社在白宫大厦，半年内几乎不离开报社50公尺。林肯会议地点仍不并入本节点。",
     "place_ids": [
       "place-qiushi-newspaper-dunhua-490"
     ],
@@ -3587,12 +3599,19 @@
         "locator": "第3、5、7行",
         "evidence_quote": "由李敖任发行人的特立独行报纸《求是报》，于公元1991年2月27日创刊...同日在中国台湾发行东方版、在美洲美国发行西方版...中国台湾发行的东方版...1月16日局版台报字第0354号"
       },
-      {
-        "source_id": "source-leeao-shuhanji-008",
-        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/008.李敖书函集/037.答辅大女学生.txt",
-        "locator": "第3、7、21、33、37行",
-        "evidence_quote": "新庄辅仁大学女生来信二封...《求是报》是我读过最“精彩”的报纸...《求是报》自当接受劝告，酌为刊登男性裸照...李敖 1991年4月24日"
-      }
+    {
+      "source_id": "source-leeao-shuhanji-008",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/008.李敖书函集/037.答辅大女学生.txt",
+      "locator": "第3、7、21、33、37行",
+      "evidence_quote": "新庄辅仁大学女生来信二封...《求是报》是我读过最“精彩”的报纸...《求是报》自当接受劝告，酌为刊登男性裸照...李敖 1991年4月24日"
+    },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-qiushi-newspaper-dunhua-490",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/088.2009-05-11：宪法中的言论自由是假的.txt",
+      "locator": "第11行",
+      "evidence_quote": "我家住在台北市敦化南路一段东丰街口金兰大厦...我搞了一间房子变成我的报社...我办报的地方，就是在这个白宫大厦楼房，这是我家里就是金兰大厦"
+    }
     ]
   },
   {
@@ -3938,6 +3957,52 @@
     ]
   },
   {
+    "id": "event-1989-taiwan-40-gengxin-lecture",
+    "sequence": 231.5,
+    "date_start": "1989-04-14",
+    "date_end": "1989-04-14",
+    "date_label": "1989年4月14日",
+    "title": "来台四十周年台北耕莘文教院演讲",
+    "summary": "1989年4月14日，李敖在台北耕莘文教院举行来台四十周年纪念演讲。主持人说明这是李敖来台湾四十年来第一次对社会大众直接公开演讲；李敖在演讲中回看1949年来台、台中一中讲演比赛、军中讲演受挫、台大讲演遭官方封锁等经历。此节点补出解严后李敖重新进入公共讲台的重要现场。",
+    "place_ids": [
+      "place-taipei-gengxin-cultural-center"
+    ],
+    "category": "lecture",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-taipei-gengxin-cultural-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/001.19890414李敖来台40周年演讲.txt",
+        "locator": "第1、3、7、9、23、25行",
+        "evidence_quote": "19890414李敖来台40周年演讲...台北耕莘文教院...李敖李先生来台湾这四十年，从来没有对社会大众直接公开演讲过...今天是我来台湾40年以后的第二天...台湾大学有人请我讲演...教室的门被校警锁起来了"
+      }
+    ]
+  },
+  {
+    "id": "event-1999-taiwan-50-ticc-lecture",
+    "sequence": 256.8,
+    "date_start": "1999-05-09",
+    "date_end": "1999-05-09",
+    "date_label": "1999年5月9日",
+    "title": "来台五十周年台北国际会议中心演讲",
+    "summary": "1999年5月9日，李敖在台北国际会议中心举行来台五十周年演讲“残山剩水我独行”。文本注明会场挤进6000人，创历年来最多人次纪录；此节点位于他1999年参选总统前夜，是从个人回望转入大规模公共动员的重要讲台。",
+    "place_ids": [
+      "place-taipei-international-convention-center"
+    ],
+    "category": "lecture",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-taipei-international-convention-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/003.19990509李敖来台50周年演讲.txt",
+        "locator": "第1、3、5、17行",
+        "evidence_quote": "19990509李敖来台50周年演讲...残山剩水我独行...地点：台北市国际会议中心...会场挤进了6000人...李敖五十年，没有离开过台湾一步"
+      }
+    ]
+  },
+  {
     "id": "event-1999-new-party-presidential-campaign-ticc",
     "sequence": 257,
     "date_start": "1999-08-18",
@@ -3956,6 +4021,12 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/005.李敖访谈录1990-2018/008.19990819《中国时报》专访李敖.txt",
         "locator": "第5、79、81行",
         "evidence_quote": "知名作家李敖将代表新党参选总统...昨天出席新党六周年党庆，并发表一场专题演讲...将近五千名群众涌到台北国际会议中心会场聆听李敖的演讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/004.19990822李敖新党六周年党庆演讲.txt",
+        "locator": "第1、3、5、7、11行",
+        "evidence_quote": "19990822李敖新党六周年党庆演讲...新党六周年庆祝大会总统提名人演讲...李总统好...新党真正的胸襟，是在于李敖还没有加入新党以前，就选了李敖...今天我到现场来"
       }
     ]
   },
@@ -3990,22 +4061,31 @@
   {
     "id": "event-1999-2000-challenge-leeao-live-tour",
     "sequence": 257.4,
-    "date_start": "1999-10-21",
+    "date_start": "1999-10-07",
     "date_end": "2000-02-29",
-    "date_label": "1999年10月21日至2000年2月29日",
+    "date_label": "1999年10月7日至2000年2月29日",
     "title": "《挑战李敖》校园与社区现场巡回",
-    "summary": "《挑战李敖》在总统选举期多次离开摄影棚，到大学校园、地方场地进行现场播出、现场录影或演讲。复查后把台北医学院、高雄中山大学、淡江大学、东吴大学、台湾大学、中正大学、政治大学、海洋大学、中华大学、成功大学、板桥国小活动中心合并为一个巡回节点：它表现的是李敖把电视节目、校园演讲、社区演讲和竞选表达接在一起的空间路线，而不是每一期谈话中的地名。",
+    "summary": "《挑战李敖》在总统选举期多次离开摄影棚，到大学校园、地方场地进行现场播出、现场录影或演讲。《李敖演讲集》初筛进一步补出1999年10月7日台湾大学法学院礼堂校园开讲，以及“跨越2000”高雄技击馆、台南市劳工育乐中心、交通大学、苗栗县立文化中心中正堂等站点。复查轮再补入文化大学、中兴法商、中兴大学、世新大学、台湾师范大学，以及海洋大学、中华大学的演讲集互证。此节点表现的是李敖把电视节目、校园演讲、城市演讲和竞选表达接在一起的空间路线，而不是每一期谈话中的地名。",
     "place_ids": [
       "place-taipei-medical-university",
       "place-national-sun-yat-sen-university-kaohsiung",
+      "place-kaohsiung-martial-arts-stadium",
       "place-tamkang-university",
       "place-soochow-university",
       "place-ntu",
+      "place-tainan-labor-recreation-center",
       "place-national-chung-cheng-university",
       "place-national-chengchi-university",
+      "place-chinese-culture-university",
+      "place-national-taipei-university-taipei-campus",
+      "place-taichung-agricultural-college",
+      "place-shih-hsin-university",
+      "place-national-taiwan-normal-university",
+      "place-nctu-hsinchu",
       "place-national-taiwan-ocean-university",
       "place-chung-hua-university",
       "place-national-cheng-kung-university",
+      "place-miaoli-culture-center-zhongzheng-hall",
       "place-banqiao-elementary-school-activity-center"
     ],
     "category": "lecture",
@@ -4024,6 +4104,13 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/031.19991110挑战李敖.txt",
         "locator": "第3、7行",
         "evidence_quote": "中山大学演讲...今天的演讲的题目叫做——别再中山了"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-kaohsiung-martial-arts-stadium",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/008.19991114李敖高雄演讲.txt",
+        "locator": "第3、5、11、13行",
+        "evidence_quote": "李敖跨越2000高雄演讲会...11月14日...于高雄技击馆揭开序幕...随即请李敖先生上台演讲...讲题：高雄人缺了什么？"
       },
       {
         "source_id": "source-leeao-challenge",
@@ -4047,6 +4134,20 @@
         "evidence_quote": "明天晚上到台湾大学讲演...现场在这环球电视台播出"
       },
       {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-ntu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/005.19991007李敖台湾大学演讲.txt",
+        "locator": "第1、3、7、9、11行",
+        "evidence_quote": "19991007李敖台湾大学演讲...李敖校园开讲——台大人的失败...时间：1999年10月7日...地点：台湾大学法学院礼堂...主办单位：台大政治系、经济系学会"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-tainan-labor-recreation-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/012.19991128李敖台南演讲.txt",
+        "locator": "第3、5、9行",
+        "evidence_quote": "李敖跨越2000台南演讲会...11月28日下午移师台南，假台南市劳工育乐中心举办...讲题：新台南人与新郑成功"
+      },
+      {
         "source_id": "source-leeao-challenge",
         "place_id": "place-national-chung-cheng-university",
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/052.19991209挑战李敖.txt",
@@ -4061,11 +4162,60 @@
         "evidence_quote": "我是政治大学历史系四年级...今天政大很了不起，能够这样的开放"
       },
       {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-chinese-culture-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/015.19991208李敖文化大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "今天这个活动是我们文化大学行政管理系系学会办的...今天我到贵校来很高兴"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-national-taipei-university-taipei-campus",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/018.19991216李敖中兴法商演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "欢迎大家来到中兴法商参与这个盛会...李敖先生来到法商这个小的校园...今天到贵校来"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-taichung-agricultural-college",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/019.19991221李敖中兴大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "我们中兴大学非常荣幸，今天邀请到李敖先生...很高兴今天到了贵校...常常绕这个中兴湖绕湖一周"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-shih-hsin-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/020.19991228李敖世新大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "世新大学新闻人报社很荣幸的...邀请李敖先生来做演讲...你们的学务长吴教授"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-national-taiwan-normal-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/022.20000104李敖师范大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "很多年以前，就是这个房间里面...我在师大讲的是师大新与旧...今天谢瑞智走了，我又来了，到贵校讲这个题目"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-nctu-hsinchu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/021.19991229李敖交通大学演讲.txt",
+        "locator": "第1、3、5行",
+        "evidence_quote": "19991229李敖交通大学演讲...邀请到...李敖先生来一次演讲...交通大学能够请我来演讲，证明你们有言论自由"
+      },
+      {
         "source_id": "source-leeao-challenge",
         "place_id": "place-national-taiwan-ocean-university",
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/070.20000106挑战李敖.txt",
         "locator": "第23行",
         "evidence_quote": "我今天到海洋大学来，也是向你们学习"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-national-taiwan-ocean-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/023.20000106李敖海洋大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "莅临我们本校，来给我们讲演由陆地看海洋...今天我到贵校来讲这个题目"
       },
       {
         "source_id": "source-leeao-challenge",
@@ -4075,11 +4225,25 @@
         "evidence_quote": "今天是我们中华大学为了迎接我们十周年校庆所举办的一系列演讲活动...各位中华的小朋友"
       },
       {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-chung-hua-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/024.20000107李敖中华大学演讲.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "今天是我们中华大学为了迎接我们十周年校庆所举办的一系列演讲活动的第三场...你们这个讲演场所"
+      },
+      {
         "source_id": "source-leeao-challenge",
         "place_id": "place-national-cheng-kung-university",
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/072.20000110挑战李敖.txt",
         "locator": "第3、5行",
         "evidence_quote": "邀请到李敖先生到我们成大来演讲...赶到了台南来...这个节目现场录影"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-miaoli-culture-center-zhongzheng-hall",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/027.20000116李敖苗栗演讲.txt",
+        "locator": "第3、5、13行",
+        "evidence_quote": "李敖跨越2000苗栗演讲会...元月16日下午移师到苗栗县立文化中心中正堂...今天第一次到苗栗"
       },
       {
         "source_id": "source-leeao-challenge",
@@ -4122,6 +4286,29 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/081.20000121挑战李敖.txt",
         "locator": "第3、103行",
         "evidence_quote": "今天我到这个地方应邀来做一个演讲...谢许英文教基金会，还有国父纪念馆"
+      }
+    ]
+  },
+  {
+    "id": "event-2000-juvenile-observation-home-lecture",
+    "sequence": 257.7,
+    "date_start": "2000-03-29",
+    "date_end": "2000-03-29",
+    "date_label": "2000年3月29日",
+    "title": "台北少年观护所“活出你自己”演讲",
+    "summary": "《李敖演讲集》034篇收录李敖在少年观护所的“活出你自己”演讲。开场中他说“我今天在这里跟各位讲话”，并特别以“我是你们的邻居，我在隔壁土城看守所住过半年”把现场与自身第二次入狱记忆连在一起。本轮作为2000年大选后面向收容少年的特殊公共演讲节点入图。",
+    "place_ids": [
+      "place-taipei-juvenile-observation-home-tucheng"
+    ],
+    "category": "lecture",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-taipei-juvenile-observation-home-tucheng",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/034.20000329李敖少年观护所演讲.txt",
+        "locator": "第1、3、5、7、13行",
+        "evidence_quote": "少年观护所演讲...活出你自己...我今天在这里跟各位讲话...我是你们的邻居，我在隔壁土城看守所住过半年"
       }
     ]
   },
@@ -4458,6 +4645,29 @@
     ]
   },
   {
+    "id": "event-2004-fu-jen-university-lecture",
+    "sequence": 258.9,
+    "date_start": "2004-04-27",
+    "date_end": "2004-04-27",
+    "date_label": "2004年4月27日",
+    "title": "辅仁大学圣言楼百链展演中心演讲",
+    "summary": "《李敖演讲集》035篇题为“李敖校园演讲——辅仁大学”，正文标出地点为“圣言楼百链展演中心”，并记听众在百链展演中心门口等候进场。本轮不并入1999-2000竞选巡回，而作为2004年单独校园演讲节点入图。",
+    "place_ids": [
+      "place-fu-jen-university-pailian-center"
+    ],
+    "category": "lecture",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-fu-jen-university-pailian-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/035.20040427李敖辅仁大学演讲.txt",
+        "locator": "第3、5、9、11行",
+        "evidence_quote": "李敖校园演讲——辅仁大学...圣言楼百链展演中心...四点多到了辅大...找到了圣言楼。在百链展演中心门口等了好一会儿"
+      }
+    ]
+  },
+  {
     "id": "event-2004-sys-memorial-campaign-speech",
     "sequence": 259,
     "date_start": "2004-11-14",
@@ -4567,7 +4777,7 @@
     "date_end": "2006-10-24",
     "date_label": "2006年10月24日",
     "title": "立法院程序委员会喷瓦斯阻军购案",
-    "summary": "为阻挡军购案付委，李敖突然现身立法院程序委员会，发言后取出催泪瓦斯喷射，引发台湾媒体头条报道，并成为其立法院时期最具争议的政治行动之一。",
+    "summary": "为阻挡军购案付委，李敖突然现身立法院程序委员会，发言后取出催泪瓦斯喷射，引发台湾媒体头条报道，并成为其立法院时期最具争议的政治行动之一。《笑敖年代》2006年10月29日节目复盘此事时，李敖强调现场是36个立法委员、地点在立法院，并继续把事件放在反军购主轴中解释。",
     "place_ids": [
       "place-legislative-yuan"
     ],
@@ -4597,6 +4807,107 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/006.李敖议坛哀思录/003.一网成擒，笑话伺候.txt",
         "locator": "第17行",
         "evidence_quote": "我在程序委员会喷瓦斯赶他们出场"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-niandai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/008.笑敖年代/014.20061029笑敖年代.txt",
+        "locator": "第185、201、213行",
+        "evidence_quote": "要消灭女人在立法院就够了...当你到了立法院...如果说我用催泪瓦斯害了他们，是现场的36个立法委员"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/004.20090806隐居谈情·东山再起.txt",
+        "locator": "第95、99、101、105行",
+        "evidence_quote": "在现场，在立法院里面...在立法院里面，君子不得已而放瓦斯...我就用瓦斯来喷你们...我喷了瓦斯，然后扬长而去"
+      }
+    ]
+  },
+  {
+    "id": "event-2004-2006-phoenix-leeao-youhuashuo",
+    "sequence": 262.5,
+    "date_start": "2004-03-08",
+    "date_end": "2006-12-29",
+    "date_label": "2004年3月8日至2006年12月29日",
+    "title": "凤凰卫视《李敖有话说》开播并告一段落",
+    "summary": "《李敖有话说》目录列出2004年3月8日至2006年12月29日共735篇节目稿，目录说明其中有6集重复，实际约729集。首集李敖说自己在台湾藏了55年，终于有机会“抛头露面”、向祖国播音；2004年12月7日篇又说通过吴思远、王祥基取得刘长乐等共识，在凤凰电视台开出《李敖有话说》，每周五次向祖国发音。2006年12月15日篇交代节目原由刘长乐、王祥基促成，2004年3月8日开播，后决定提前到2006年12月31日结束；2006年12月29日篇称节目告一段落，自己要抽回时间写书。文本尚不能定位具体录影棚或台北制作地点，本节点先以台北市级录影空间暂置，不把香港凤凰总部当作李敖到场点。",
+    "place_ids": [
+      "place-phoenix-youhuashuo-taipei-recording-site"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-phoenix-youhuashuo-taipei-recording-site",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/001.2004-03-08：我终于有一个机会在这里抛头露面.txt",
+        "locator": "第3、9、57行",
+        "evidence_quote": "各位终于看到我了。我在台湾藏了五十五年...我终于有一个机会在这里抛头露面...我有机会能够开这个节目，向祖国为主的播音...这就是我今天第一场“李敖有话说”"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-phoenix-youhuashuo-taipei-recording-site",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/197.2004-12-07：叶落归根的中国人.txt",
+        "locator": "第35、37、39行",
+        "evidence_quote": "取得了刘长乐先生和其他的朋友们大家的共识，觉得我在凤凰电视台开一个节目，开这个李敖有话说...每周五次的李敖有话说...每个礼拜有五次时间向我的祖国发音"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-phoenix-youhuashuo-taipei-recording-site",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/725.2006-12-15：说说我不再做节目的理由.txt",
+        "locator": "第21、23行",
+        "evidence_quote": "我跟刘长乐我们签约，是3月8号开始的...我先拿钱的，全部给了我，我就开播了，开播到现在，开播出来700多集...今年12月31号结束"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-phoenix-youhuashuo-taipei-recording-site",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/735.2006-12-29：节目告一段落的原因.txt",
+        "locator": "第7、9、17行",
+        "evidence_quote": "在我凤凰电视台，能够做731集的节目...在两年十个月以前...我才想未来这一年以内，我要回去写书，不想做电视节目了"
+      }
+    ]
+  },
+  {
+    "id": "event-2006-tv-xiaoao-niandai-era",
+    "sequence": 263,
+    "date_start": "2006-05-07",
+    "date_end": "2006-11-12",
+    "date_label": "2006年5月7日至11月12日",
+    "title": "年代电视《笑敖年代》开播与节目现场",
+    "summary": "《李敖议坛哀思录》091篇记严智径主持年代电视时，安排每周日晚上8到9点推出《笑敖年代》专集，由女主播访问李敖，2006年5月7日起播出；节目开播前十七天，年代又在台北喜来登二楼办开播记者会。本书《笑敖年代》收16篇节目稿，时间从2006年6月18日至11月12日，主持人口播反复说明节目在年代频道/年代新闻频道播出，李敖为固定主讲人。当前以年代电视瑞湖街39号媒体空间与喜来登开播记者会为双地点入图；具体摄影棚、二楼厅房与完整播出集数仍待复查。",
+    "place_ids": [
+      "place-era-tv-ruihu-39",
+      "place-sheraton-grand-taipei"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-yitan-aisi",
+        "place_id": "place-era-tv-ruihu-39",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/006.李敖议坛哀思录/091.“笑‘敖’年代”.txt",
+        "locator": "第3、13行",
+        "evidence_quote": "严智径...主持年代电视时，想在每周日晚上8到9点，推出“笑‘敖’年代”专集...在2006年5月7日起播出...我进了立法院，依法不能主持节目。严智径让非我本人主持了我本人"
+      },
+      {
+        "source_id": "source-leeao-yitan-aisi",
+        "place_id": "place-sheraton-grand-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/006.李敖议坛哀思录/091.“笑‘敖’年代”.txt",
+        "locator": "第3行",
+        "evidence_quote": "节目开播前十七天，年代在喜来登二楼办开播记者会，并约王金平、宋楚瑜及市长候选人等二十多位“贵宾”前来"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-niandai",
+        "place_id": "place-era-tv-ruihu-39",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/008.笑敖年代/001.20060618笑敖年代.txt",
+        "locator": "第3行",
+        "evidence_quote": "欢迎收看笑敖年代节目，节目一开始要来跟大家介绍我们的固定主讲人，李敖大师"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-niandai",
+        "place_id": "place-era-tv-ruihu-39",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/008.笑敖年代/016.20061112笑敖年代.txt",
+        "locator": "第3、199行",
+        "evidence_quote": "欢迎锁定年代新闻频道收看笑敖年代节目...感谢李敖大哥来到我们的笑敖年代节目现场来跟大家开讲"
       }
     ]
   },
@@ -4607,7 +4918,7 @@
     "date_end": "2006-12-09",
     "date_label": "2006年10月至12月",
     "title": "参选台北市长传播政治理念",
-    "summary": "台北市长选举期间，李敖自知胜算不高，仍以参选作为传播中国统一、反军购和“拉高台北”政治理念的舞台；11月25日政见发表会集中呈现这一主张。",
+    "summary": "台北市长选举期间，李敖自知胜算不高，仍以参选作为传播中国统一、反军购和“拉高台北”政治理念的舞台。复查《笑敖年代》后，补入两条节目内证：2006年10月15日节目主持人直接问他“今天宣布”参选台北市长，他随即说明登记、保证金与“对抗中央”的理由；2006年11月12日节目又回顾前一天五位台北市长参选人的首场电视辩论。11月25日政见发表会则集中呈现“拉高台北”主张。具体宣布现场和电视辩论会场，本书没有给出可定位地址，故仍以台北市级竞选节点承载。",
     "place_ids": [
       "place-taipei"
     ],
@@ -4637,6 +4948,99 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/006.李敖议坛哀思录/087.与五大名模同裸.txt",
         "locator": "第3行",
         "evidence_quote": "2006年12月4日，我花了45万，在《苹果日报》登出两大全版广告。"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-niandai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/008.笑敖年代/012.20061015笑敖年代.txt",
+        "locator": "第7、11、92行",
+        "evidence_quote": "会不会到年底以后开始，我们的节目介绍您的时候就要介绍我们的台北市长？...今天宣布说您要参选年底的台北市长选战...今天登记，15号16号17号18号19号登记"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-niandai",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/008.笑敖年代/016.20061112笑敖年代.txt",
+        "locator": "第7、111、161、165行",
+        "evidence_quote": "昨天的时候，这五位台北市长参选人举办了一场辩论会...昨天您的表现感觉起来在那个辩论会现场就是还蛮快乐的...今天我李敖花了200万参加这个台北市市长的选举...在台湾也在用一个激烈的方式来道别，就是选台北市长"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/043.20061111李敖决战北高大辩论.txt",
+        "locator": "第1、3、7行",
+        "evidence_quote": "由TVBS新闻部所直播的决战北高TVBS大辩论节目...邀请到五位台北市长参选人在我们的现场...接下来是无党籍的李敖李先生"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/044.20061128李敖竞选台北市长政见演说.txt",
+        "locator": "第1、3、9、11行",
+        "evidence_quote": "今天到这里来发表政见...今天谈台北市的所谓市政...如果我李敖做了台北市长"
+      }
+    ]
+  },
+  {
+    "id": "event-2006-youhuashuo-cultural-field-trips",
+    "sequence": 264.5,
+    "date_start": "2006-07-14",
+    "date_end": "2006-11-16",
+    "date_label": "2006年7月至11月",
+    "title": "《李敖有话说》外景特辑文化行走",
+    "summary": "《李敖有话说》后期从棚内独白转出几组外景特辑：2006年7月14日起由国民党党史馆主任邵铭煌带李敖参观党史馆史料库；10月18日至23日到阳明山阎锡山故居与墓园，由守墓人张日明带看墓园，并在阎锡山书房/房间中就地录影；10月25日起探访阳明山林语堂故居；11月6日到士林东吴大学旁钱穆故居/素书楼；11月10日至16日连续五集参访淡水红毛城与前英国领事官邸。它们不是节目中的谈论对象，而是李敖本人到场、边走边讲的电视现场，故合并为一条2006年台北周边文化记忆外景路线。",
+    "place_ids": [
+      "place-kmt-party-history-institute-zhongshan-south-road",
+      "place-yan-xishan-residence-tomb-yangmingshan",
+      "place-lin-yutang-house-yangmingshan",
+      "place-qianmu-house-shilin",
+      "place-fort-san-domingo-tamsui"
+    ],
+    "category": "public_memory",
+    "certainty": "high",
+    "source_refs": [
+    {
+      "source_id": "source-leeao-youhuashuo",
+      "place_id": "place-kmt-party-history-institute-zhongshan-south-road",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/615.2006-07-14：参观国民党党史馆.txt",
+      "locator": "第3、9、173行",
+      "evidence_quote": "身边是什么人？是中国国民党党史委员会主任，邵铭煌主任，也就是中国国民党党史馆主任...大师能够光临指教...亲自踏入我们这个史库"
+    },
+    {
+      "source_id": "source-leeao-youhuashuo",
+      "place_id": "place-yan-xishan-residence-tomb-yangmingshan",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/683.2006-10-18：采访阎锡山公墓.txt",
+      "locator": "第3、5、11、75、167行",
+      "evidence_quote": "今天我做一次外场，我到了台北市的近郊阳明山...今天我来到的这个地方，就是当年把国民党这个流亡政府带到台湾来的阎锡山上将的家...我们要不要先到墓园去看看？请您带我到墓园先看一下...现在就到了阎先生故居的门口"
+    },
+    {
+      "source_id": "source-leeao-youhuashuo",
+      "place_id": "place-yan-xishan-residence-tomb-yangmingshan",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/684.2006-10-19：谈山西王阎锡山.txt",
+      "locator": "第3、9、17、25行",
+      "evidence_quote": "我是在中国台湾台北，阳明山上的一个奇怪的房屋里面录影...46年以后我李敖到了他的房间里面...这块地没有电灯，没有自来水...这间房就是他的五间房中的一个，就是他的书房"
+    },
+    {
+      "source_id": "source-leeao-youhuashuo",
+      "place_id": "place-lin-yutang-house-yangmingshan",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/688.2006-10-25：探访林语堂故居（1）.txt",
+        "locator": "第15行",
+        "evidence_quote": "我现在到了台北市阳明山的林语堂故居...现在麻烦她带着我们去参观一下"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-qianmu-house-shilin",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/696.2006-11-06：钱穆故居前发表荒谬言论.txt",
+        "locator": "第3行",
+        "evidence_quote": "现在话说到了台北市士林区东吴大学旁边的钱穆故居...今天我来参观钱穆故居，并且就地讲一讲"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-fort-san-domingo-tamsui",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/700.2006-11-10：参访淡水红毛城（1）.txt",
+        "locator": "第3、5、13行",
+        "evidence_quote": "外景特辑——参访淡水红毛城...到了中国台湾台北淡水的河口...我在的地方...就是所谓的红毛城...现在请大师跟我一起到里面去看一看"
+      },
+      {
+        "source_id": "source-leeao-youhuashuo",
+        "place_id": "place-fort-san-domingo-tamsui",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/007.李敖有话说/704.2006-11-16：参访淡水红毛城（5）.txt",
+        "locator": "第3、23行",
+        "evidence_quote": "在台湾连续住了五十七年，忽然大发游兴到各处走一走...今天我就在收回的红毛城旁边的英国领事他们家里面"
       }
     ]
   },
@@ -4673,6 +5077,24 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/005.李敖访谈录1990-2018/042.20050929《南方周末》专访李敖.txt",
         "locator": "第107、113、115、127行",
         "evidence_quote": "出现在北大校办公楼二层演讲报告厅的李敖...在清华大学演讲开始的时候...无论是北大、清华还是复旦...9月21日...等在北京大学的校办公楼二层的演讲厅"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/038.20050922李敖北大演讲.txt",
+        "locator": "第1、3、5行",
+        "evidence_quote": "20050922李敖北大演讲...李敖先生北京大学演讲会现在开始...李敖先生...来到我们北京大学发表演讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/039.20050923李敖清华演讲.txt",
+        "locator": "第1、5行",
+        "evidence_quote": "20050923李敖清华演讲...又一次来到清华大学主楼的报告厅，在这里即将录制一场世纪大讲堂的特别节目"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/040.20050926李敖复旦演讲.txt",
+        "locator": "第1、3、11行",
+        "evidence_quote": "20050926李敖复旦演讲...对李敖先生来复旦大学访问...让我们以热烈的掌声欢迎李敖先生演讲"
       }
     ]
   },
@@ -4751,7 +5173,7 @@
     "date_end": "2010-05-25",
     "date_label": "2010年5月25日",
     "title": "台湾大学演讲",
-    "summary": "2010 年 5 月 25 日在台湾大学演讲。",
+    "summary": "2010 年 5 月 25 日在台湾大学霖泽馆演讲“我的学思历程”，台大校长李嗣涔主持并称这是“学思历程”十三年来终于请到李敖。",
     "place_ids": [
       "place-ntu"
     ],
@@ -4763,6 +5185,142 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/001.李敖五十年表.txt",
         "locator": "2010条",
         "evidence_quote": "5月25日台湾大学演讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-ntu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/045.20100525李敖台湾大学演讲.txt",
+        "locator": "第1、3、5、7行",
+        "evidence_quote": "20100525李敖台湾大学演讲...台大霖泽馆——我的学思历程...主持人——台大校长李嗣涔...我们的“学思历程”已经十三年了，终于我们请到了李敖大师"
+      }
+    ]
+  },
+  {
+    "id": "event-2009-tv-leeao-yumiao-tianxia",
+    "sequence": 279,
+    "date_start": "2009-01-01",
+    "date_end": "2009-06-12",
+    "date_label": "2009年1月1日至6月12日",
+    "title": "《李敖语妙天下》重返萤光幕",
+    "summary": "《李敖语妙天下》是李敖2009年重返电视讲坛的文化节目，本地文本存113篇节目稿，目录注明若干集缺分钟数与112集后半并入113集。001集说明节目由郑乃嘉、佳思比媒体行销安排，从新加坡作为起点，面向22亿华人人口；075集说明节目采取录影与后制，繁体字幕给台湾高点电视台用，简体字幕面向以新加坡为主的华人观众；007集直接记下李敖从台北阳明山工作间下山录影；复查022集进一步说明录影小房间内有助理导播、两位摄影师和佳思比现场记录人员，小孟负责阳明山接送与后制，阳明山书房为十层大楼五楼两户打通；099集又称节目出现在YR亚太卫视上。当前以高点电视/台北录影播出空间和阳明山“青山见我楼”书房两个地点入图，具体录影棚、制作公司办公室与播出链条仍待复查。",
+    "place_ids": [
+      "place-gaodian-tv-yumiao-tianxia-taipei",
+      "place-yangmingshan-qingshan-jianwo-lou"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-yumiao-tianxia",
+        "place_id": "place-gaodian-tv-yumiao-tianxia-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/001.2009-01-01：为什么重返萤光幕？.txt",
+        "locator": "第13、15行",
+        "evidence_quote": "今天这个电视做出来，又和一个好朋友有关，他的名字叫做郑乃嘉，他主持的佳思比媒体行销有限公司...开放到从新加坡作为一个起点，朝22亿华人人口来播音...在郑乃嘉佳思比公司安排之下，推出这个节目"
+      },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-yangmingshan-qingshan-jianwo-lou",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/007.2009-01-09：许历农才是觉悟了的国民党.txt",
+      "locator": "第3行",
+      "evidence_quote": "刚刚我从阳明山下来录影...我在台北的阳明山有一间小的工作间...每一次录影都由公司专车接我下山"
+    },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-gaodian-tv-yumiao-tianxia-taipei",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/022.2009-02-06：蠢到怎么死的都不知道.txt",
+      "locator": "第3、9、11行",
+      "evidence_quote": "基本上我在这个小房间里面录影...佳思比公司派来做现场记录...负责到阳明山接我下山...我们到电视台来...小孟最主要她拿这支笔，干什么呢？现场随时记录我在做节目"
+    },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-yangmingshan-qingshan-jianwo-lou",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/022.2009-02-06：蠢到怎么死的都不知道.txt",
+      "locator": "第7、17行",
+      "evidence_quote": "我有一个小书房，在台北市的阳明山...这山里面有一栋楼房，楼房里面的五楼，五楼里面的两间房打通的就是我的书房...所有的资料都是在我阳明山的小房间里面，自己用手工艺做出来的"
+    },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-gaodian-tv-yumiao-tianxia-taipei",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/075.2009-04-22：录影当天是二二八.txt",
+      "locator": "第3、5行",
+      "evidence_quote": "我做这个节目是录影的...繁体字的，是给台湾高点电视台用的；有的要改成简体字，是给以新加坡为主的22亿华人人口为对象的简体字...我这个节目坐在这里录影，现场有工作人员"
+    },
+    {
+      "source_id": "source-leeao-yumiao-tianxia",
+      "place_id": "place-gaodian-tv-yumiao-tianxia-taipei",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/099.2009-05-26：历史纵深语妙天下.txt",
+      "locator": "第9、11、15行",
+      "evidence_quote": "由于他的安排，所以我在《李敖语妙天下出现》...这个节目就出现在YR亚太卫视上面...对象...以22亿华人人口为目标的，所以我们的目标是以天下为目标"
+    },
+      {
+        "source_id": "source-leeao-yumiao-tianxia",
+        "place_id": "place-yangmingshan-qingshan-jianwo-lou",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/009.李敖语妙天下/074.2009-04-21：我家凶悍的老太(四).txt",
+        "locator": "第25行",
+        "evidence_quote": "我在阳明山书房里面开窗一望，就看到我妈妈的灵骨塔，她常在我心头"
+      }
+    ]
+  },
+  {
+    "id": "event-2009-xiaoao-60-retrospective-fieldwork",
+    "sequence": 279.5,
+    "date_start": "2009-05-12",
+    "date_end": "2009-08-08",
+    "date_label": "2009年5月12日至6月12日制作，8月3日至8日播出",
+    "title": "《笑傲六十年·有话说李敖》旧地重游与史料拍摄",
+    "summary": "2009年李敖到台湾六十年之际，六集《笑傲六十年·有话说李敖》以旧地重游和史料展示回看其人生与台湾现代史。001集明记1949年5月12日自上海到基隆港，整整六十年后的2009年5月12日又旧地重游基隆港码头；同集又以傅园和台湾大学旧照/新照回看大学时期。002集回到衡阳路文星旧址，见老式日本房屋已成永和豆浆店并入内喝豆浆；006集又到台北忠烈祠拿拐杖模仿操枪，到被烧过的草山行馆谈蒋介石记忆，并经故宫博物院库藏亲眼看《南京条约》。本节点将这些可确认的2009年节目实地拍摄/旧地重游合并处理，回忆中的台中、军中、监狱、立法院等既有主线只补证不重复建点。",
+    "place_ids": [
+      "place-keelung-port",
+      "place-wenxing-bookstore-hengyang",
+      "place-ntu",
+      "place-national-revolutionary-martyrs-shrine-taipei",
+      "place-caoshan-guest-house-yangmingshan",
+      "place-national-palace-museum-taipei"
+    ],
+    "category": "public_memory",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-keelung-port",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/001.20090803惨绿少年·初抵台湾.txt",
+        "locator": "第5、11行",
+        "evidence_quote": "1949年5月12号...从中国的上海到了中国台湾的基隆港...整整60年以后，2009年5月12号...又旧地重游到了基隆港，我坐在码头上面...所以我说在基隆港的码头，我要神气活现，我要笑"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-wenxing-bookstore-hengyang",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/002.20090804狂妄青年·崭露头角.txt",
+        "locator": "第51、65行",
+        "evidence_quote": "在台北市衡阳路十五号开了一家书店，叫做文星书店...文星今天什么样子，今天还在，我特别到这个老字号的房子...现在里面开了一家店，就是永和豆浆店...我还在里面喝了点豆浆"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-ntu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/001.20090803惨绿少年·初抵台湾.txt",
+        "locator": "第51、57行",
+        "evidence_quote": "今天还存在的傅园...重新旧地重游...多少年以后我回到台湾大学，同样地给历史系女学生照相"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-national-revolutionary-martyrs-shrine-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/006.20090808独坐孤岛·创格完人.txt",
+        "locator": "第3行",
+        "evidence_quote": "台北的观光地点有一个地方叫做忠烈祠...我也跑到忠烈祠，我也做了操枪表演，拿着我的拐杖...我李敖在这里，旁边就是戴笠的牌位"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-caoshan-guest-house-yangmingshan",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/006.20090808独坐孤岛·创格完人.txt",
+        "locator": "第9行",
+        "evidence_quote": "今天我们也看到了，我李敖走到了被烧掉的草山行馆，看到别人恨蒋介石，一把火把它烧掉，把行馆烧掉了"
+      },
+      {
+        "source_id": "source-leeao-xiaoao-60-youhuashuo",
+        "place_id": "place-national-palace-museum-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/010.笑傲六十年·有话说李敖/006.20090808独坐孤岛·创格完人.txt",
+        "locator": "第52行",
+        "evidence_quote": "这一次为了做这个节目...由故宫博物院院长陪我在故宫博物院里面，库藏里面，找出了当年的《南京条约》...当这个《南京条约》摆在我眼前"
       }
     ]
   },
@@ -4773,7 +5331,7 @@
     "date_end": "2011-07-23",
     "date_label": "2011年4月1日至7月23日",
     "title": "暨南、汕头、厦门、香港书展演讲",
-    "summary": "2011 年先后在暨南大学、汕头大学、厦门大学和香港书展演讲。",
+    "summary": "2011 年先后在暨南大学、汕头大学、厦门大学和香港书展演讲。《李敖演讲集》进一步补出暨南大学礼堂、香港会展中心等现场文本，并将四站演讲作为2011年晚期大陆/香港公共讲坛路线处理。",
     "place_ids": [
       "place-jinan-university",
       "place-shantou-university",
@@ -4788,6 +5346,57 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/001.李敖五十年表.txt",
         "locator": "2011条",
         "evidence_quote": "暨南大学演讲...汕头大学...厦门大学...香港书展"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-jinan-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/046.20110401李敖暨南大学演讲.txt",
+        "locator": "第1、3行",
+        "evidence_quote": "20110401李敖暨南大学演讲...今天是2011年4月1号，我们现在所在的位置是暨南大学礼堂内...将举行由李敖先生为我们主讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-shantou-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/047.20110402李敖汕头大学演讲.txt",
+        "locator": "第1、3、13行",
+        "evidence_quote": "20110402李敖汕头大学演讲...X计划“思辨进行时”之对话大师...你这次倒是尊重了我们学院"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-xiamen-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/048.20110403李敖厦门大学演讲.txt",
+        "locator": "第1、3、13行",
+        "evidence_quote": "20110403李敖厦门大学演讲...庆祝厦门大学建校...走进大师系列讲座...大家看到了厦门大学四个字"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-hong-kong-book-fair",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/050.20110723李敖香港书展演讲.txt",
+        "locator": "第1、3、5、7行",
+        "evidence_quote": "20110723李敖香港书展演讲...中国知识分子的走向...地点：香港会展中心...今天非常精彩的演讲"
+      }
+    ]
+  },
+  {
+    "id": "event-2011-weigo-fuchun-lecture",
+    "sequence": 291,
+    "date_start": "2011-06-18",
+    "date_end": "2011-06-18",
+    "date_label": "2011年6月18日",
+    "title": "薇阁中学《富春山居图》人文讲座",
+    "summary": "《李敖演讲集》049篇题为“李敖薇阁中学演讲”，副题为“从《富春山居图》说起”。主持人说明这是凤凰卫视主办的山水合璧《富春山居图》人文讲座；李敖也在开场回忆凤凰电视时期的节目布置。本轮作为2011年台湾本地公开演讲节点补入。",
+    "place_ids": [
+      "place-weigo-high-school"
+    ],
+    "category": "lecture",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-weigo-high-school",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/049.20110618李敖薇阁中学演讲.txt",
+        "locator": "第1、3、5、7行",
+        "evidence_quote": "李敖薇阁中学演讲...从《富春山居图》说起...由凤凰卫视主办的山水合璧《富春山居图》的人文讲座...今天凤凰电视的刘老板使我旧梦重温"
       }
     ]
   },
@@ -4810,6 +5419,13 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/001.李敖五十年表.txt",
         "locator": "2014条",
         "evidence_quote": "和李戡在香港书展演讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-hong-kong-book-fair",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/052.20140716李敖香港书展演讲.txt",
+        "locator": "第1、3、7、9行",
+        "evidence_quote": "20140716香港书展演讲...讲座题目：国民党员毛泽东...讲者：李敖、李戡...今天是香港书展开幕的第一天"
       }
     ]
   },
@@ -4854,7 +5470,7 @@
     "date_end": "2017-06-09",
     "date_label": "2017年6月9日",
     "title": "飞页书屋最后一次演讲",
-    "summary": "年表记载李敖在飞页书屋举办最后一次演讲；地点坐标待考。",
+    "summary": "年表记载李敖2017年6月9日在飞页书屋举办最后一次演讲。《李敖演讲集》054篇题名日期为2017年1月21日，现场文本由远景出版发行人、飞页书餐厅执行长叶丽晴开场，说明现场有《文星》杂志陈列展和书封墙。本轮按公开店家资料先把飞页书餐厅坐标落到新生南路二段30巷1-3号近似点；年表日期与演讲集题名日期的差异继续标记复核。",
     "place_ids": [
       "place-feiye-bookstore"
     ],
@@ -4866,6 +5482,13 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/008.李敖相关/001.李敖五十年表.txt",
         "locator": "2017条",
         "evidence_quote": "在飞页书屋举办了最后一次演讲"
+      },
+      {
+        "source_id": "source-leeao-speeches",
+        "place_id": "place-feiye-bookstore",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/011.李敖演讲集/054.20170121李敖飞页书屋演讲.txt",
+        "locator": "第1、3、15、19行",
+        "evidence_quote": "20170121李敖飞页书屋演讲...这一家飞页书餐厅的执行长...为什么办这个《文星》杂志陈列展...这个展示代表主持人的一个错误"
       }
     ]
   },

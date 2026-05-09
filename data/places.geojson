@@ -462,6 +462,332 @@
     },
     {
       "type": "Feature",
+      "id": "place-phoenix-youhuashuo-taipei-recording-site",
+      "properties": {
+        "name_zh": "凤凰卫视《李敖有话说》台北录影空间（旧址待考）",
+        "aliases": [
+          "李敖有话说录影空间",
+          "凤凰卫视李敖有话说",
+          "凤凰电视台李敖有话说",
+          "凤凰卫视",
+          "凤凰电视台",
+          "Phoenix TV"
+        ],
+        "place_type": "television_studio",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖有话说》文本反复说明李敖在台湾连续居住，并通过凤凰卫视画面向大陆/华文世界发声；节目由刘长乐、王祥基等促成，2004年3月8日开播，2006年12月底告一段落。现阶段文本不能定位台北录影棚、制作公司办公室或具体住处，香港凤凰卫视总部也只是签约/播出平台，故先以台北市级录影空间暂置，待复查轮或影音资料交叉核对。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-era-tv-ruihu-39",
+      "properties": {
+        "name_zh": "年代电视台 / 年代新闻台（瑞湖街39号）",
+        "aliases": [
+          "年代电视",
+          "年代新闻台",
+          "年代频道",
+          "年代新闻频道",
+          "年代网际",
+          "年代网际事业股份有限公司",
+          "ERA TV",
+          "ERA News"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖议坛哀思录》091篇记严智径主持年代电视，安排每周日晚上8到9点推出《笑敖年代》，并由年代派专车接送录影；《笑敖年代》16篇节目稿反复称“欢迎锁定年代频道/年代新闻频道收看笑敖年代节目”，李敖为固定主讲人。外部公开资料列年代电视/年代网际事业股份有限公司地址为台北市内湖区瑞湖街39号或39号2楼。本点按该媒体机构地址近似定位；2006年节目具体摄影棚、楼层与录影动线仍待复查。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5758,
+          25.0787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-gaodian-tv-yumiao-tianxia-taipei",
+      "properties": {
+        "name_zh": "高点电视台 / 《李敖语妙天下》录影播出空间（旧址待考）",
+        "aliases": [
+          "高点电视台",
+          "高點電視台",
+          "高点综合台",
+          "高點綜合台",
+          "高点传播",
+          "高點傳播",
+          "Top TV",
+          "GOTV",
+          "李敖语妙天下录影空间"
+        ],
+        "place_type": "television_studio",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖语妙天下》075集明说节目为录影节目，繁体字幕给台湾高点电视台用，简体字幕面向以新加坡为主的华人人口；007集又说李敖每次从阳明山工作间由公司专车接下山录影。复查022集可知李敖是在“小房间”录影，现场有助理导播、两位摄影师和佳思比公司现场记录人员，小孟负责阳明山接送与后制；同集第9行还说“我们到电视台来”。现阶段文本只能证明台北/台湾高点电视链条与录影现场存在，不能定位具体摄影棚或公司门牌。外部公开资料对高点电视台/高点传播地址有馆前路、重庆南路、新北土城等不同线索，佳思比媒体行销也有信义路、敦化北路两组登记/黄页线索；故本点仍按台北市级媒体空间暂置，待影音片头、制作名单或工商原始登记复核。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-sheraton-grand-taipei",
+      "properties": {
+        "name_zh": "台北喜来登大饭店（忠孝东路一段12号）",
+        "aliases": [
+          "台北喜来登",
+          "台北喜來登大飯店",
+          "喜来登二楼",
+          "Sheraton Grand Taipei Hotel"
+        ],
+        "place_type": "hotel",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖议坛哀思录》091篇记《笑敖年代》开播前十七天，年代在喜来登二楼办开播记者会，王金平、宋楚瑜及市长候选人等到场。本点按台北喜来登大饭店官方地址台北市中正区忠孝东路一段12号近似定位；具体二楼厅房待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5222,
+          25.0446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kmt-party-history-institute-zhongshan-south-road",
+      "properties": {
+        "name_zh": "中国国民党党史馆 / 旧中央党部大楼（中山南路11号）",
+        "aliases": [
+          "国民党党史馆",
+          "中国国民党党史馆",
+          "中國國民黨黨史館",
+          "国民党中央党部旧址",
+          "旧中央党部大楼",
+          "张荣发基金会大楼",
+          "中山南路11号"
+        ],
+        "place_type": "archive",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖有话说》2006年7月14日外景由中国国民党党史委员会主任邵铭煌带李敖参观党史馆史料库，并称中央党部卖掉后史料仍留在“这个房子里面”。2005年新闻资料称党史馆位于台北市中心国民党中央党部大楼七层；2006年国民党中央党部大楼售予张荣发基金会，地址为台北市中正区中山南路11号。本点按该旧中央党部/今张荣发基金会大楼近似，党史馆当时具体楼层与史料库位置仍待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51868,
+          25.03871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-yan-xishan-residence-tomb-yangmingshan",
+      "properties": {
+        "name_zh": "阎锡山故居 / 阎锡山墓（阳明山）",
+        "aliases": [
+          "阎锡山故居",
+          "閻錫山故居",
+          "阎锡山墓",
+          "閻錫山墓",
+          "阎伯川先生之墓",
+          "种能洞",
+          "種能洞",
+          "红砖屋",
+          "紅磚屋",
+          "永公路245巷34弄273号",
+          "永公路245巷34弄277号"
+        ],
+        "place_type": "historic_residence",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖有话说》2006年10月18日至23日连续数集到阳明山阎锡山晚年故居与墓园外景录影；第683集开头给出永公路245巷34弄多组门牌，并说“今天我做一次外场，我到了台北市的近郊阳明山”，随后由守墓人张日明带李敖看墓园、进入故居；第684至686集又说明李敖在阎锡山书房/房间中就地录影。地址复核为台北市士林区永公路245巷34弄273、277号，墓园在同巷弄内；坐标按故居与墓园近似点处理。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.560464,
+          25.134041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-lin-yutang-house-yangmingshan",
+      "properties": {
+        "name_zh": "林语堂故居 / 林语堂纪念馆（阳明山）",
+        "aliases": [
+          "林语堂故居",
+          "林語堂故居",
+          "林语堂纪念馆",
+          "林語堂紀念館",
+          "林语堂图书馆",
+          "The Lin Yutang House"
+        ],
+        "place_type": "memorial_house",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖有话说》2006年10月25日《探访林语堂故居（1）》中，李敖明确说“我现在到了台北市阳明山的林语堂故居”，由馆长蔡佳芳带领参观。地址复核为台北市士林区仰德大道二段141号，坐标按故居建筑近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54694,
+          25.10972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-qianmu-house-shilin",
+      "properties": {
+        "name_zh": "钱穆故居 / 素书楼（士林外双溪）",
+        "aliases": [
+          "钱穆故居",
+          "錢穆故居",
+          "素书楼",
+          "素書樓",
+          "钱穆先生纪念馆",
+          "Chien Mu House"
+        ],
+        "place_type": "memorial_house",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖有话说》2006年11月6日《钱穆故居前发表荒谬言论》开头明确定位到“台北市士林区东吴大学旁边的钱穆故居”，并说今天来参观钱穆故居、就地谈钱穆背景。地址复核为台北市士林区临溪路72号，坐标按素书楼/钱穆故居近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54765,
+          25.09459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-fort-san-domingo-tamsui",
+      "properties": {
+        "name_zh": "淡水红毛城 / 前英国领事官邸",
+        "aliases": [
+          "淡水红毛城",
+          "淡水紅毛城",
+          "红毛城",
+          "紅毛城",
+          "Fort San Domingo",
+          "圣多明哥城",
+          "安东尼堡",
+          "前英国领事官邸"
+        ],
+        "place_type": "heritage_site",
+        "coordinate_precision": "site_approx",
+        "needs_review": false,
+        "notes": "《李敖有话说》2006年11月10日至16日连续五集外景特辑参访淡水红毛城；第1集开头称“到了中国台湾台北淡水的河口”，李敖在红毛城现场与馆长张宝钏导览，第5集又在英国领事官邸室内回顾台湾史。地址复核为今新北市淡水区中正路28巷1号，坐标按新北市立淡水古迹博物馆/交通部观光署资料近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.43317,
+          25.175238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-revolutionary-martyrs-shrine-taipei",
+      "properties": {
+        "name_zh": "国民革命忠烈祠 / 台北忠烈祠",
+        "aliases": [
+          "忠烈祠",
+          "台北忠烈祠",
+          "臺北忠烈祠",
+          "国民革命忠烈祠",
+          "國民革命忠烈祠",
+          "National Revolutionary Martyrs' Shrine",
+          "National Martyrs' Shrine"
+        ],
+        "place_type": "memorial_shrine",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《笑傲六十年·有话说李敖》006篇开头写李敖“跑到忠烈祠”，拿拐杖模仿宪兵操枪，由赖岳忠拍下照片，并在现场批判忠烈祠中的戴笠牌位和蒋介石历史叙事。本点按台北忠烈祠官方/旅游资料所列台北市中山区北安路139号及公开坐标近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.532753,
+          25.080458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-caoshan-guest-house-yangmingshan",
+      "properties": {
+        "name_zh": "草山行馆（阳明山）",
+        "aliases": [
+          "草山行馆",
+          "草山行館",
+          "蒋公草山行馆",
+          "蔣公草山行館",
+          "Grass Mountain Chateau",
+          "湖底路89号"
+        ],
+        "place_type": "historic_residence",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《笑傲六十年·有话说李敖》006篇写李敖“走到了被烧掉的草山行馆”，借草山行馆火灾与蒋介石记忆展开评论。草山行馆原为台湾糖业会社招待所，1949年国民政府迁台后蒋介石入住；本点按台北市旅游/草山行馆资料所列台北市北投区湖底路89号及站点坐标近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.539109,
+          25.154632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-palace-museum-taipei",
+      "properties": {
+        "name_zh": "国立故宫博物院（台北外双溪）",
+        "aliases": [
+          "国立故宫博物院",
+          "國立故宮博物院",
+          "故宫博物院",
+          "故宮博物院",
+          "台北故宫",
+          "台北故宮",
+          "National Palace Museum",
+          "至善路二段221号"
+        ],
+        "place_type": "museum",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《笑傲六十年·有话说李敖》006篇记为做节目，李敖经由“外交部”与故宫博物院安排，由院长陪同进入故宫博物院库藏，亲眼查看《南京条约》原件。本点按文化部/旅游资料所列台北市士林区至善路二段221号与坐标近似；具体库房不公开，故只定位到院区。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.548492,
+          25.102357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-medical-university",
       "properties": {
         "name_zh": "台北医学院 / 台北医学大学",
@@ -601,6 +927,100 @@
     },
     {
       "type": "Feature",
+      "id": "place-chinese-culture-university",
+      "properties": {
+        "name_zh": "中国文化大学",
+        "aliases": [
+          "文化大学",
+          "华冈",
+          "Chinese Culture University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》015篇记1999年12月8日由文化大学行政管理系系学会主办演讲，李敖称“今天我到贵校来”。坐标按阳明山华冈路55号校园近似，具体讲堂待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5397,
+          25.137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-taipei-university-taipei-campus",
+      "properties": {
+        "name_zh": "中兴法商 / 台北大学台北校区",
+        "aliases": [
+          "中兴法商",
+          "国立中兴大学法商学院",
+          "国立台北大学台北校区",
+          "台北大学民生校区",
+          "National Taipei University Taipei Campus"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》018篇为1999年12月16日中兴法商演讲，主持人称“来到中兴法商参与这个盛会”，李敖称“今天到贵校来”。坐标按中兴法商后继国立台北大学台北校区民生东路三段67号近似，具体校内会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.54227,
+          25.058049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-shih-hsin-university",
+      "properties": {
+        "name_zh": "世新大学",
+        "aliases": [
+          "世新",
+          "Shih Hsin University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》020篇记1999年12月28日世新大学新闻人报社邀请李敖演讲。坐标按台北市文山区木栅路一段17巷1号校本部近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5436,
+          24.9887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-taiwan-normal-university",
+      "properties": {
+        "name_zh": "台湾师范大学",
+        "aliases": [
+          "师范大学",
+          "师大",
+          "国立台湾师范大学",
+          "National Taiwan Normal University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》022篇为2000年1月4日师范大学演讲，文中回忆旧日在同一房间演讲并称“今天谢瑞智走了，我又来了，到贵校讲这个题目”。坐标按和平东路一段162号和平校区近似，具体讲堂待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52749,
+          25.02591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-chung-hua-university",
       "properties": {
         "name_zh": "中华大学",
@@ -698,13 +1118,92 @@
       "id": "place-feiye-bookstore",
       "properties": {
         "name_zh": "飞页书屋",
-        "aliases": [],
+        "aliases": [
+          "飞页书餐厅"
+        ],
         "place_type": "site",
-        "coordinate_precision": "unknown",
+        "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "2017 年最后一次演讲地点，需考证具体地址。"
+        "notes": "《李敖演讲集》054篇由远景出版发行人、飞页书餐厅执行长叶丽晴开场。公开店家资料载飞页书餐厅在台北市大安区新生南路二段30巷1-3号；坐标按此地址近似，仍需继续核对2017年演讲是否即在同一店址。"
       },
-      "geometry": null
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.53261,
+          25.03175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-fu-jen-university-pailian-center",
+      "properties": {
+        "name_zh": "辅仁大学圣言楼百链展演中心",
+        "aliases": [
+          "辅仁大学",
+          "辅大",
+          "圣言楼百链展演中心",
+          "百链展演中心",
+          "Fu Jen Catholic University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "building_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》035篇题为2004年4月27日辅仁大学演讲，正文第5、11行指向圣言楼百链展演中心。坐标按辅仁大学圣言楼/中正路510号校园近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4334,
+          25.0358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-juvenile-observation-home-tucheng",
+      "properties": {
+        "name_zh": "台北少年观护所",
+        "aliases": [
+          "台北少年观护所",
+          "法务部矫正署台北少年观护所",
+          "臺北少年觀護所"
+        ],
+        "place_type": "detention",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》034篇为2000年3月29日少年观护所演讲，李敖称“我是你们的邻居，我在隔壁土城看守所住过半年”。公开机构地址为新北市土城区石门路4号，坐标按地址近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.45901,
+          24.969095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-weigo-high-school",
+      "properties": {
+        "name_zh": "薇阁中学",
+        "aliases": [
+          "薇阁高中",
+          "台北市私立薇阁高级中学",
+          "Taipei Wego Private Senior High School"
+        ],
+        "place_type": "school",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》049篇题为2011年6月18日薇阁中学演讲，主持人说明为凤凰卫视主办的山水合璧《富春山居图》人文讲座。坐标按台北市北投区珠海路50号薇阁中学近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5059,
+          25.1373
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -1120,7 +1619,7 @@
         "place_type": "university",
         "coordinate_precision": "institution_approx",
         "needs_review": true,
-        "notes": "《给马戈的五十封信》1958年9月16日信记李敖赴台中农学院看李善培。坐标按今日国立中兴大学校区近似；1958年台中农学院具体院舍位置待考。"
+        "notes": "《给马戈的五十封信》1958年9月16日信记李敖赴台中农学院看李善培；《李敖演讲集》019篇又记1999年12月21日中兴大学演讲，李敖称“很高兴今天到了贵校”并回忆中兴湖。坐标按今日国立中兴大学校区近似；1958年台中农学院院舍与1999年演讲会场待考。"
       },
       "geometry": {
         "type": "Point",
@@ -1184,7 +1683,7 @@
         "place_type": "institution",
         "coordinate_precision": "institution_approx",
         "needs_review": false,
-        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。《给马戈的五十封信》跋文又记1955年暑假后李敖在历史系迎新会上结识马戈，此后三年常与朋友在台大校园草地清谈终夜。"
+        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。《给马戈的五十封信》跋文又记1955年暑假后李敖在历史系迎新会上结识马戈，此后三年常与朋友在台大校园草地清谈终夜。《笑傲六十年·有话说李敖》001篇又见2009年前后回到台大傅园和历史系旧地重游。"
       },
       "geometry": {
         "type": "Point",
@@ -1961,6 +2460,99 @@
     },
     {
       "type": "Feature",
+      "id": "place-taipei-gengxin-cultural-center",
+      "properties": {
+        "name_zh": "台北耕莘文教院",
+        "aliases": [
+          "耕莘文教院",
+          "天主教耕莘文教院",
+          "Tien Educational Center"
+        ],
+        "place_type": "cultural_center",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖演讲集》001篇标题下明列“台北耕莘文教院”，为1989年4月14日来台四十周年公开演讲地点。耕莘文教院现址按官方资料为台北市中正区辛亥路一段22号，坐标按现址近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5286,
+          25.0208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kaohsiung-martial-arts-stadium",
+      "properties": {
+        "name_zh": "高雄中正技击馆",
+        "aliases": [
+          "高雄技击馆",
+          "中正技击馆",
+          "高雄市立中正技击馆",
+          "Martial Arts Stadium"
+        ],
+        "place_type": "sports_arena",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖演讲集》008篇记1999年11月14日“跨越2000高雄演讲会”于高雄技击馆揭开序幕。公开场馆资料列地址为高雄市苓雅区中正一路96号，坐标按场馆/捷运技击馆站公开资料近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.334583,
+          22.627314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tainan-labor-recreation-center",
+      "properties": {
+        "name_zh": "台南市劳工育乐中心",
+        "aliases": [
+          "台南市劳工育乐中心",
+          "台南市南门劳工育乐中心",
+          "臺南市勞工育樂中心"
+        ],
+        "place_type": "civic_venue",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖演讲集》012篇记1999年11月28日“跨越2000台南演讲会”假台南市劳工育乐中心举办。台南市政府劳工局资料列南门劳工育乐中心地址为台南市南区南门路261号；坐标按地址近似，待复查精确馆舍。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.204,
+          22.979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-miaoli-culture-center-zhongzheng-hall",
+      "properties": {
+        "name_zh": "苗栗县立文化中心中正堂",
+        "aliases": [
+          "苗栗县立文化中心",
+          "苗栗文化中心中正堂",
+          "苗栗縣立文化中心中正堂"
+        ],
+        "place_type": "cultural_center",
+        "coordinate_precision": "address_approx",
+        "needs_review": false,
+        "notes": "《李敖演讲集》027篇记2000年1月16日“跨越2000苗栗演讲会”移师苗栗县立文化中心中正堂。苗栗县政府文化观光局资料列中正堂地址为苗栗县苗栗市自治路50号，坐标按公开经纬度近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.820405,
+          24.565969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-taipei-main-post-office-beimen",
       "properties": {
         "name_zh": "台北邮政总局 / 台北北门邮局",
@@ -2682,7 +3274,7 @@
         "place_type": "study",
         "coordinate_precision": "area_approx",
         "needs_review": true,
-        "notes": "《李敖书启集》“我与邓丽君后一章”1995年5月24日信称“我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里”；《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖秘密书房》2000年4月12日“万书如海一身藏（一）”又称“我有四个窝，还有一个在阳明山”，可补强阳明山书房/山居长期线索，但不能证明《李敖秘密书房》节目就在阳明山录制；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
+        "notes": "《李敖书启集》“我与邓丽君后一章”1995年5月24日信称“我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里”；《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖秘密书房》2000年4月12日“万书如海一身藏（一）”又称“我有四个窝，还有一个在阳明山”，可补强阳明山书房/山居长期线索，但不能证明《李敖秘密书房》节目就在阳明山录制；《李敖语妙天下》022集复查进一步说明阳明山书房在十层大楼第五层、两户打通，并展示山路、窗景与书房一角，007集又证明李敖从此处下山录影；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
       },
       "geometry": {
         "type": "Point",
