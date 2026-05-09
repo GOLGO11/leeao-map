@@ -39,6 +39,7 @@ for (const event of events) {
   for (const placeId of event.place_ids || []) {
     const place = places.get(placeId);
     if (!place) continue;
+    const sourceRef = event.source_refs?.find((ref) => ref.place_id === placeId) || event.source_refs?.[0];
     const coordinates = place.geometry?.coordinates || [];
     eventPlaceRows.push({
       event_id: event.id,
@@ -55,9 +56,9 @@ for (const event of events) {
       lat: coordinates[1] ?? "",
       coordinate_precision: place.properties.coordinate_precision || "",
       needs_review: String(Boolean(place.properties.needs_review)),
-      source_id: event.source_refs?.[0]?.source_id || "",
-      source_locator: event.source_refs?.[0]?.locator || "",
-      evidence_quote: event.source_refs?.[0]?.evidence_quote || ""
+      source_id: sourceRef?.source_id || "",
+      source_locator: sourceRef?.locator || "",
+      evidence_quote: sourceRef?.evidence_quote || ""
     });
   }
 }

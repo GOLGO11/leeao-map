@@ -202,6 +202,290 @@
     },
     {
       "type": "Feature",
+      "id": "place-truth-news-network-taipei",
+      "properties": {
+        "name_zh": "真相新闻网（台北，旧址待考）",
+        "aliases": [
+          "真相新闻网",
+          "真相新闻",
+          "真相",
+          "Truth News Network"
+        ],
+        "place_type": "media_organization",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖笑傲江湖》第一集称李敖经十个月谈判，于1995年10月20日与真相新闻网签约，达成《李敖笑傲江湖》节目合约书；第73集又称节目作满一年后与真相新闻网重新订下一年合约。复查又见第24集称真相新闻网请他到“台里面”做节目，第28集称前方有三台摄影机与三位工作人员，第113集称周荃、周菲主持真相新闻网电视台。本书没有给出真相新闻网门牌或录影棚位置，暂按台北市级坐标处理。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-global-tv-taipei",
+      "properties": {
+        "name_zh": "环球电视台（台北，旧址待考）",
+        "aliases": [
+          "环球电视台",
+          "环球电视",
+          "环球",
+          "Universal Television"
+        ],
+        "place_type": "media_organization",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年10月20日节目称该节目“在环球电视台开播满一个月”；2000年2月9日节目又称吴子嘉请李敖进驻环球电视台开《挑战李敖》，并提到节目成为台柱。本书没有给出环球电视台旧址、楼层或摄影棚，暂按台北市级坐标处理。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-leeao-secret-study-taipei",
+      "properties": {
+        "name_zh": "《李敖秘密书房》台北家中书房（旧址待考）",
+        "aliases": [
+          "李敖秘密书房",
+          "秘密书房",
+          "李敖书房",
+          "李敖家中书房",
+          "二楼书房"
+        ],
+        "place_type": "study",
+        "coordinate_precision": "city",
+        "needs_review": true,
+        "notes": "《李敖秘密书房》第一集说明《李敖笑傲江湖》是在摄影棚录制，而《李敖秘密书房》改在李敖书房与家中录制；同篇又说他有四个书房，节目所见为最大的一个，并把杨凡曾拍摄的“敦化南路一个十二楼的书房”与“现在这个书房是二楼”区分开。第一轮复查未找到当前二楼书房的门牌；新党义卖/书展、励馨基金会义卖和来宾到访线索也未给出稳定会场。当前不能据此把节目书房直接等同于金兰大厦、白宫大厦、林肯大厦或阳明山书房，故暂按台北市级定位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5654,
+          25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-medical-university",
+      "properties": {
+        "name_zh": "台北医学院 / 台北医学大学",
+        "aliases": [
+          "台北医学院",
+          "台北医学大学",
+          "台北医大",
+          "Taipei Medical University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年10月20日节目预告次日改在吴兴街的台北医学院现场播出，1999年10月21日篇题即为“台北医学院演讲”；坐标按今台北医学大学校园近似，具体讲堂待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5615,
+          25.0259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-sun-yat-sen-university-kaohsiung",
+      "properties": {
+        "name_zh": "高雄中山大学",
+        "aliases": [
+          "中山大学",
+          "国立中山大学",
+          "National Sun Yat-sen University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年11月10日篇题为“中山大学演讲”，正文称“今天的演讲题目叫做——别再中山了！”并以贵校校名展开；坐标按高雄国立中山大学校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2649,
+          22.6263
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tamkang-university",
+      "properties": {
+        "name_zh": "淡江大学",
+        "aliases": [
+          "淡江",
+          "Tamkang University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年11月22日节目预告次日晚间在淡江大学现场播出；1999年11月23日节目开场由淡江大学大传系张煦华主任主持，并宣布成立李敖先生言论自由国际传播讲座。坐标按淡江大学淡水校园近似，具体场地待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4486,
+          25.1747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-chung-cheng-university",
+      "properties": {
+        "name_zh": "中正大学",
+        "aliases": [
+          "国立中正大学",
+          "中正大学",
+          "National Chung Cheng University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年12月9日节目开场由中正大学校长与政治系主任致辞，李敖称“今天我到贵校来”；同篇又记环球电视台到现场录影。坐标按嘉义民雄中正大学校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.4728,
+          23.5615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-chengchi-university",
+      "properties": {
+        "name_zh": "政治大学",
+        "aliases": [
+          "国立政治大学",
+          "政大",
+          "National Chengchi University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》1999年12月15日节目为政治大学现场演讲，问答中有政治大学历史系、经济系、大学报记者等现场发问，并称“今天政大很了不起，能够这样的开放”。坐标按政治大学文山校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.576,
+          24.987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-taiwan-ocean-university",
+      "properties": {
+        "name_zh": "海洋大学",
+        "aliases": [
+          "国立台湾海洋大学",
+          "台湾海洋大学",
+          "海洋大学",
+          "National Taiwan Ocean University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》2000年1月6日节目中李敖称“我今天到海洋大学来”，并以海洋视野展开演讲；坐标按基隆国立台湾海洋大学校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.7726,
+          25.1506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-chung-hua-university",
+      "properties": {
+        "name_zh": "中华大学",
+        "aliases": [
+          "中华大学",
+          "Chung Hua University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》2000年1月7日节目由中华大学演讲开场，主持人称本场为中华大学十周年校庆系列演讲第三场；坐标按新竹中华大学校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.946,
+          24.758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-national-cheng-kung-university",
+      "properties": {
+        "name_zh": "成功大学",
+        "aliases": [
+          "成大",
+          "国立成功大学",
+          "National Cheng Kung University"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》2000年1月10日节目开场称李敖到成功大学演讲，环球电视台随行并现场录影；坐标按台南成功大学校园近似，具体会场待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.2195,
+          22.9972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-banqiao-elementary-school-activity-center",
+      "properties": {
+        "name_zh": "板桥国小活动中心",
+        "aliases": [
+          "板桥国小",
+          "板桥国民小学",
+          "板橋國小",
+          "板橋國民小學",
+          "板桥市文化路1段23号",
+          "板橋區文化路一段23號",
+          "Banqiao Elementary School"
+        ],
+        "place_type": "school",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《挑战李敖》2000年2月18日节目预告次日下午在板桥国小活动中心演讲，明写地址为板桥市文化路1段23号，题目为“从郑板桥到板桥”；2000年2月29日节目开场称“今天我来到板桥”。坐标按文本地址与校园范围近似，活动中心具体建筑待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.4596,
+          25.0115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "place-democracy-foundation-taipei",
       "properties": {
         "name_zh": "民主基金会（台北，旧址待考）",
@@ -609,7 +893,7 @@
         "place_type": "room",
         "coordinate_precision": "unknown",
         "needs_review": true,
-        "notes": "李敖第一次政治犯时期住得最久的独居牢房；《李敖风流自传》称其在景美军法看守所第八房独居约二年半。属于看守所内部空间，暂不单独设坐标，地点详情随景美军法看守所呈现。"
+        "notes": "李敖第一次政治犯时期住得最久的独居牢房；《李敖风流自传》称其在景美军法看守所第八房独居约二年半。《坐牢家爸爸给女儿的八十封信》自序进一步说明，1973年1月24日至1975年11月1日这些给女儿李文的家书，也是在景美军法处看守所第八房独居期间写成。属于看守所内部空间，暂不单独设坐标，地点详情随景美军法看守所呈现。"
       },
       "geometry": null
     },
@@ -632,6 +916,30 @@
         "coordinates": [
           120.675,
           24.123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taichung-agricultural-college",
+      "properties": {
+        "name_zh": "台中农学院",
+        "aliases": [
+          "台中农学院",
+          "台湾省立农学院",
+          "台湾省立中兴大学农学院",
+          "国立中兴大学"
+        ],
+        "place_type": "university",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《给马戈的五十封信》1958年9月16日信记李敖赴台中农学院看李善培。坐标按今日国立中兴大学校区近似；1958年台中农学院具体院舍位置待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.6753,
+          24.1237
         ]
       }
     },
@@ -689,7 +997,7 @@
         "place_type": "institution",
         "coordinate_precision": "institution_approx",
         "needs_review": false,
-        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。"
+        "notes": "1954 年入法律专修科，1955 年重考历史系，1961 年入历史研究所。《给马戈的五十封信》跋文又记1955年暑假后李敖在历史系迎新会上结识马戈，此后三年常与朋友在台大校园草地清谈终夜。"
       },
       "geometry": {
         "type": "Point",
@@ -1050,12 +1358,15 @@
       "properties": {
         "name_zh": "东吴大学",
         "aliases": [
-          "東吳大學"
+          "东吴大学",
+          "東吳大學",
+          "东吴",
+          "Soochow University"
         ],
-        "place_type": "institution",
+        "place_type": "university",
         "coordinate_precision": "institution_approx",
         "needs_review": true,
-        "notes": "1993 年起任兼任特聘教师；需确认对应校区。"
+        "notes": "1993年起任兼任特聘教师；需确认对应校区。《挑战李敖》1999年11月24日节目开场又称李敖“又回到这个东吴的校园”，并提及其过去就是东吴大学教授。坐标按东吴大学外双溪校区近似，具体讲堂待考。"
       },
       "geometry": {
         "type": "Point",
@@ -1418,13 +1729,16 @@
           "金兰大厦",
           "台北市敦化南路大厦住处",
           "台北市敦化南路496号金兰大厦12楼",
+          "台北市敦化南路1段306号金兰大厦",
           "敦化南路496号",
-          "金兰大厦12楼"
+          "敦化南路1段306号",
+          "金兰大厦12楼",
+          "金兰大厦AB座十二楼"
         ],
         "place_type": "residence",
         "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”；《李敖书函集》“给邻居的一封信”自述“自从1977年搬入金兰大厦、成为各位邻居后，十一年来”，并记1989年被推为B座管理委员和主任委员；《我最难忘的事和人》1988年7月28日致宋希濂信明确写“舍下”为“台北市敦化南路496号金兰大厦12楼”。《李敖访谈录1990-2018》复查又见2012年李敖从阳明山搬回“金兰大厦这个房子”，2014年《南方周末》写其在台北敦南大道金兰大厦书房受访，2017年《亚洲周刊》称在台北市敦化南路书房进行此生最后一次媒体访问。本地全文另有敦化南路490号白宫大厦、610号林肯大厦、敦化南路一段306号等资料，涉及报社、出版社、书房或其他居所，不能直接混同。当前坐标按496号金兰大厦线索近似，仍待旧址/地籍核对。"
+        "notes": "《快意恩仇录》只称“台北市敦化南路大厦”；《李敖回忆录》出现“敦化南路金兰大厦”；《李敖书函集》“给邻居的一封信”自述“自从1977年搬入金兰大厦、成为各位邻居后，十一年来”，并记1989年被推为B座管理委员和主任委员；《我最难忘的事和人》1988年7月28日致宋希濂信明确写“舍下”为“台北市敦化南路496号金兰大厦12楼”。《李敖书启集》“政骚扰”又以“台北市敦化南路1段306号金兰大厦李敖收”作为1993年证明文件寄送地址；“三致金兰邻居”又写到“一住十四年的金兰大厦AB座十二楼”，并称金兰大厦有东、南、北三处正门，以敦化南路上的门为正门，同时出现“四维路21号地下室”登记线索。《李敖秘密书房》第一集又记杨凡曾拍摄“敦化南路一个十二楼的书房”，可补强敦化南路十二楼书房线索，但同篇明确说那不是节目中的当前二楼书房。上述资料说明金兰大厦门牌、座别与地下室登记资料较复杂，需后续复核旧制/新制门牌或路段写法。《李敖访谈录1990-2018》复查又见2012年李敖从阳明山搬回“金兰大厦这个房子”，2014年《南方周末》写其在台北敦南大道金兰大厦书房受访，2017年《亚洲周刊》称在台北市敦化南路书房进行此生最后一次媒体访问。本地全文另有敦化南路490号白宫大厦、610号林肯大厦等资料，涉及报社、出版社、书房或其他居所，不能直接混同。当前坐标按金兰大厦线索近似，仍待旧址/地籍核对。"
       },
       "geometry": {
         "type": "Point",
@@ -1995,7 +2309,7 @@
         "place_type": "university",
         "coordinate_precision": "institution_approx",
         "needs_review": true,
-        "notes": "《大学札记》1957年8月14日记李敖与台大历史系同学参观东海大学；当前按校级定位，具体参观点待考。"
+        "notes": "《大学札记》1957年8月14日记李敖与台大历史系同学参观东海大学；《给马戈的五十封信》1958年9月16日信又记午后赴东海大学看李华俊。当前按校级定位，具体参观点待考。"
       },
       "geometry": {
         "type": "Point",
@@ -2181,7 +2495,7 @@
         "place_type": "study",
         "coordinate_precision": "area_approx",
         "needs_review": true,
-        "notes": "《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
+        "notes": "《李敖书启集》“我与邓丽君后一章”1995年5月24日信称“我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里”；《李敖议坛哀思录》署记多次写“草山之阳/阳明山‘青山见我楼’”，并说明为草山（阳明山）上一幢老旧大厦五楼边间书房；《李敖秘密书房》2000年4月12日“万书如海一身藏（一）”又称“我有四个窝，还有一个在阳明山”，可补强阳明山书房/山居长期线索，但不能证明《李敖秘密书房》节目就在阳明山录制；《李敖访谈录1990-2018》复查见2003年TVBS称李敖摄护腺癌手术后回阳明山住处静养，2012年《外滩画报》称其三个月前搬离居住多年的阳明山书房。未见门牌，坐标按阳明山/草山范围暂定。"
       },
       "geometry": {
         "type": "Point",

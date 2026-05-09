@@ -794,6 +794,34 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/005.李敖快意恩仇录/005.大寒纪.txt",
         "locator": "第43、47行",
         "evidence_quote": "我在1955年6月27日自动办理退学...1955年20岁进台大历史系一年级。"
+      },
+      {
+        "source_id": "source-leeao-letters-to-margo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/011.给马戈的五十封信/051.跋《给马戈的五十封信》.txt",
+        "locator": "第9、11行",
+        "evidence_quote": "一九五五年的暑假以后，我刚自动退出台湾大学法学院法律系司法组，重新考进文学院历史系。在历史系的迎新会上，马戈以二年级老大哥的身份，欢迎我这个一年级的小毛头。"
+      }
+    ]
+  },
+  {
+    "id": "event-1955-1958-ntu-margo-qingtan",
+    "sequence": 102,
+    "date_start": "1955-09-01",
+    "date_end": "1958-08-31",
+    "date_label": "1955年暑假后至1958年暑假",
+    "title": "台大清谈派与马戈",
+    "summary": "李敖在1955年暑假后重考入台大文学院历史系，在历史系迎新会上结识二年级的马戈。此后三年，二人和朋友常在图书馆、小饭店、弹子房、电影院、台大校园草地等处消磨青春、清谈终夜。1958年暑假马戈毕业南下受预备军官训练，李敖在三个月内写出《给马戈的五十封信》。此节点记录李敖台大历史系时期的青年思想交往空间，也是后来他自称“台大清谈派”的核心记忆。",
+    "place_ids": [
+      "place-ntu"
+    ],
+    "category": "education",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-letters-to-margo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/011.给马戈的五十封信/051.跋《给马戈的五十封信》.txt",
+        "locator": "第9、11、13、15、25行",
+        "evidence_quote": "一九五五年的暑假以后...重新考进文学院历史系。在历史系的迎新会上，马戈以二年级老大哥的身份，欢迎我这个一年级的小毛头...此后三年中...常常几个朋友，半夜三更，在台大校园草地上...马戈在一九五八年暑假毕业，到南部受预备军官训练...我在八年前三个多月里写给马戈的五十封信"
       }
     ]
   },
@@ -963,6 +991,41 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/004.大学日记后期乙集/004.1959年4月.txt",
         "locator": "第331、333行",
         "evidence_quote": "4月28日 星期二...7点50分在温州街口见姚先生及庄申，同坐车赴中央研究院，读书竟日...又与高阮同到历史语言研究所书库中"
+      }
+    ]
+  },
+  {
+    "id": "event-1958-taichung-agricultural-college-tunghai-visit",
+    "sequence": 105.2,
+    "date_start": "1958-09-15",
+    "date_end": "1958-09-23",
+    "date_label": "1958年9月15日至23日前后",
+    "title": "台中短行访友：台中农学院与东海大学",
+    "summary": "李敖在1958年9月中旬自台北南下台中，抵达后先访张世民，次日上午赴台中农学院看李善培，午后又赴东海大学看李华俊，并在台中市面为马戈选购照片。后续信件又说9月23日清晨将北上、台中行一周已近尾声。复查后把这组线索合并为一个青年友朋网络的台中短行节点，而不把张世民处、台中市面等缺乏具体地址的微点拆开。",
+    "place_ids": [
+      "place-taichung-agricultural-college",
+      "place-tunghai-university"
+    ],
+    "category": "travel",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-letters-to-margo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/011.给马戈的五十封信/019.小儿女事转播.txt",
+        "locator": "第5、31、33行",
+        "evidence_quote": "我昨日下午抵台中，即赴张世民处谈至傍晚六时...今早赴台中农学院去看李善培...午后赴东海大学看李华俊...今日在台中市面上为汝选购照片三张"
+      },
+      {
+        "source_id": "source-leeao-letters-to-margo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/011.给马戈的五十封信/022.桃花路上.txt",
+        "locator": "第11、13行",
+        "evidence_quote": "我二十三日清晨北上...在台中看《彩凤伴金龙》"
+      },
+      {
+        "source_id": "source-leeao-letters-to-margo",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/011.给马戈的五十封信/023.寡情如此.txt",
+        "locator": "第37、43行",
+        "evidence_quote": "明早北上...台中行一周已近尾声"
       }
     ]
   },
@@ -2224,7 +2287,7 @@
     "date_end": "1975-12-21",
     "date_label": "第一次政治犯时期",
     "title": "军法处八号房",
-    "summary": "李敖第一次政治犯时期在警备总部军法处独居小房，八号房是住得最久的牢房，约两年半。",
+    "summary": "李敖第一次政治犯时期在警备总部军法处独居小房，八号房是住得最久的牢房，约两年半。《坐牢家爸爸给女儿的八十封信》自序又明确说1973年1月24日至1975年11月1日两年间，他都独居在景美军法处看守所第八房，并在这里写给女儿李文大量家书。",
     "place_ids": [
       "place-military-law-detention-center",
       "place-military-law-room-8"
@@ -2309,6 +2372,59 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/002.李敖书序集/007.《调查局研究》序.txt",
         "locator": "第45行",
         "evidence_quote": "同年9月22日，我从初判十年改为八年六个月...我早已搬到第八房，李世杰也搬到第九房。"
+      },
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/《坐牢家爸爸给女儿的八十封信》自序.txt",
+        "locator": "第9、11、13行",
+        "evidence_quote": "它们写于1973年1月24日到1975年11月1日两年间。这两年间，我都独居在景美军法处看守所第八房...在我写的信中...牢中没有剪刀或刀片...五年八个月中，我看书极多、写作极少"
+      }
+    ]
+  },
+  {
+    "id": "event-1973-1975-jingmei-prison-letters-to-daughter",
+    "sequence": 207,
+    "date_start": "1973-01-24",
+    "date_end": "1975-11-01",
+    "date_label": "1973年1月24日至1975年11月1日",
+    "title": "狱中写给女儿八十封信",
+    "summary": "李敖在景美军法处看守所第八房独居期间，持续写信给女儿李文，后来汇成《坐牢家爸爸给女儿的八十封信》。自序说明这些信写于1973年1月24日至1975年11月1日，目录虽列七十四篇，实际约八十封；书信内容多为给女儿的英文、历史、地理和文化函授，也包含生日诗、父女会面愿望和狱中每周只能发两封信的通信限制，记录了他在牢中用参考书、配插图、切割图片和通过检查寄信的特殊写作环境。",
+    "place_ids": [
+      "place-military-law-detention-center",
+      "place-military-law-room-8"
+    ],
+    "category": "writing",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/《坐牢家爸爸给女儿的八十封信》自序.txt",
+        "locator": "第7、9、11、13行",
+        "evidence_quote": "在我坐牢期间，我曾写给李文许多信，权作函授...它们写于1973年1月24日到1975年11月1日两年间。这两年间，我都独居在景美军法处看守所第八房...在我写的信中，为了增加趣味和理解，我尽量酌配插图"
+      },
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/001.猫狗谚.txt",
+        "locator": "第3、21、23、43行",
+        "evidence_quote": "亲爱的小文...爸爸 1973年1月24日...亲爱的小文...爸爸 1974年9月21日"
+      },
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/041.小文十岁生日歌.txt",
+        "locator": "第1、39行",
+        "evidence_quote": "小文十岁生日歌...1974年9月狱中作"
+      },
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/045.坐牢的名人.txt",
+        "locator": "第5、31、51行",
+        "evidence_quote": "姥姥说你想来看爸爸，并说妈妈已告诉你爸爸坐牢的事...爸爸 1974年10月19日...这儿每周只能发两封信"
+      },
+      {
+        "source_id": "source-leeao-prison-father-letters",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/010.坐牢家爸爸给女儿的八十封信/074.登天梯.txt",
+        "locator": "第3、31行",
+        "evidence_quote": "亲爱的小文...爸爸 1975年11月1日"
       }
     ]
   },
@@ -2419,6 +2535,24 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/008.李敖书函集/018.给邻居的一封信.txt",
         "locator": "第5、7、13、43、75行",
         "evidence_quote": "自从1977年搬入金兰大厦、成为各位邻居后，十一年来...忽然选出我为B座管理委员...由全体委员一致通过公推李敖先生为本届主任委员...李敖 1989年5月31日"
+      },
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/003.怨结金兰.txt",
+        "locator": "第5、19、27、55、63行",
+        "evidence_quote": "11月6日，我收到金兰大厦CD座住户二十三位的签名信...1989年5月31日我发到金兰大厦各位邻居的信...我搬进金兰大厦十四年...李敖，1991年12月20日"
+      },
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/007.三致金兰邻居.txt",
+        "locator": "第19、23、33、37、67、73行",
+        "evidence_quote": "李敖一住十四年的金兰大厦AB座十二楼房屋产权登记人“李璎”...1652建号（四维路21号地下室）即停车场及防空避难所...金兰大厦有东、南、北向三处正门...敦化南路上的门是正门"
+      },
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/026.政骚扰.txt",
+        "locator": "第39、41行",
+        "evidence_quote": "证明文件请快信挂寄贰份...台北市敦化南路1段306号金兰大厦李敖收"
       }
     ]
   },
@@ -3189,6 +3323,12 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/006.沉思日记类/008.李敖五五日记/005.1990年8月.txt",
         "locator": "第75、79、87行",
         "evidence_quote": "8月7日...去台中开庭，我的一番话可谓语惊四座...台中法院法官来电：“你成功了，哎呀，你厉害！”"
+      },
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/028.致《民众日报》李瑞标.txt",
+        "locator": "第15、17、23、37、41行",
+        "evidence_quote": "五年七个月前，贵府助纣为虐...非法搜查本人住宅并抢去藏书一万四千七百零八册...今年2月22日，“最高法院”判决贵府败诉定谳...请即依李师母指示，即时惠付为要"
       }
     ]
   },
@@ -3662,6 +3802,34 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/001.自传回忆类/007.李敖风流自传/598.我进东吴.txt",
         "locator": "第3-5行",
         "evidence_quote": "6月7日...敲定我去东吴...9月21日，我上课那天"
+      },
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/030.给台大校长的公开信.txt",
+        "locator": "第9、11、13、15、17行",
+        "evidence_quote": "台大组成“台大哲学系事件”调查小组...章孝慈先生有胆量和度量，请中国第一流的优异分子执教东吴...台大坐视中国第一流的优异分子浪迹在外，最后被东吴请去"
+      }
+    ]
+  },
+  {
+    "id": "event-1995-caoshan-yangmingshan-residence-plan",
+    "sequence": 248,
+    "date_start": "1995-05-24",
+    "date_end": "1995-05-24",
+    "date_label": "1995年5月24日",
+    "title": "订下草山山居",
+    "summary": "李敖致林永丰信中澄清自己没有参加邓丽君丧礼，并写道已在草山，也就是阳明山，订下山居的新建楼房，将来计划死在那里，称台湾是自己的埋骨之地。此节点把后来“青山见我楼”与阳明山书房线索向前推到1995年，记录李敖晚年台北山居空间的成形。",
+    "place_ids": [
+      "place-yangmingshan-qingshan-jianwo-lou"
+    ],
+    "category": "late_life",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-shuqiji-009",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/043.我与邓丽君后一章.txt",
+        "locator": "第15、17行",
+        "evidence_quote": "我在草山（蒋介石之阳明山也）订下山居（新建楼房），将来计划死在那里，台湾是我埋骨之地。"
       }
     ]
   },
@@ -3672,9 +3840,9 @@
     "date_end": "2000-12-31",
     "date_label": "1995年10月30日起",
     "title": "主持《李敖笑傲江湖》",
-    "summary": "自1995年10月30日起主持《李敖笑傲江湖》，进入密集电视节目阶段。《好命操作手册》序又补出1996年10月下旬起，李敖在节目中与施寄青、陈烨合作，连续三个月十二集解构算命迷信，显示该节目不只是政论舞台，也承接其反迷信、反玄学的公共表达。",
+    "summary": "自1995年10月30日起主持《李敖笑傲江湖》，进入密集电视节目阶段。《李敖笑傲江湖》第一集自述，真相新闻网请他做节目，谈判自1995年1月13日来来饭店日本料理会谈开始，延续至10月20日签约，并达成节目合约书；第73集又称节目作满一年后与真相新闻网重新订下一年合约。复查又见第24集称真相新闻网请他到台里面做节目，第28集说明节目录影时前方有三台摄影机和三位工作人员，第113集称只有在周荃、周菲主持的真相新闻网电视台里才有这种言论自由，第115集称《笑傲江湖》已讲七百多场、每集约6500字字幕。《好命操作手册》序补出1996年10月下旬起，李敖在节目中与施寄青、陈烨合作，连续三个月十二集解构算命迷信，显示该节目不只是政论舞台，也承接其反迷信、反玄学的公共表达。",
     "place_ids": [
-      "place-taipei"
+      "place-truth-news-network-taipei"
     ],
     "category": "media",
     "certainty": "medium",
@@ -3696,9 +3864,51 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/003.李敖书序集续集/018.《好命操作手册》序.txt",
         "locator": "第9、11、17行",
         "evidence_quote": "我开始在真相新闻网做《笑傲江湖》的节目时...一九九六年...在十月下旬与她们两位合作，每周在《笑傲江湖》中解构算命...一九九七年三月序于台北。"
-      }
-    ]
-  },
+      },
+    {
+      "source_id": "source-leeao-shuqiji-009",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/008.书信函件类/009.李敖书启集/048.建国党与梁肃戎.txt",
+      "locator": "第5、21、25行",
+      "evidence_quote": "在我电视节目中责其不当。选后我邀她上我节目...感谢您邀请我上您在“真相”的节目“笑傲江湖”...选举期间，谢谢您在“真相”您的节目中为我美言"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/001.《李敖笑傲江湖》第一集.txt",
+      "locator": "第25、27、31行",
+      "evidence_quote": "走到今天，一直走到真相新闻网，最后请我来做这个节目...1月13号...周荃女士，她约我在来来饭店的日本料理约我谈...今年10月20号我们才签约...达成了真相新闻网李敖笑傲江湖节目合约书"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/073.笑傲江湖一周年了！.txt",
+      "locator": "第1、5行",
+      "evidence_quote": "笑傲江湖一周年了...这个节目已经作满一年了，我又跟真相新闻网重新订了下一年的合约"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/024.李敖的三个主义.txt",
+      "locator": "第5、7、51行",
+      "evidence_quote": "我从跟真相新闻网合作，做这个笑傲江湖的节目，眼看就快满一年了...真相新闻网很有雅量跟度量请我来台里面做这个节目...在真相新闻网主持节目"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/028.何其太雅.txt",
+      "locator": "第35、45、47、51行",
+      "evidence_quote": "真相新闻网...希望做字幕...我可以告诉各位怎么录这个影，前面是三台摄影机，然后是工作人员三位...真相新闻网...如不得乙方同意，片面删改节目...目前的真相新闻网电视台"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/113.李敖快意恩仇录（一）.txt",
+      "locator": "第21、23行",
+      "evidence_quote": "在真相新闻网我讲话的时候...我李敖只有在真相新闻网，在周荃和她的妹妹周菲所主持的电视台里面，才有这种自由"
+    },
+    {
+      "source_id": "source-leeao-xiaoaojianghu",
+      "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/001.李敖笑傲江湖/115.李敖快意恩仇录（三）.txt",
+      "locator": "第63行",
+      "evidence_quote": "笑傲江湖讲下来七百多场...每次在一个节目里面讲的话...下面有中文的字幕...每一次平均起来6500个字"
+    }
+  ]
+},
   {
     "id": "event-1997-cathay-hospital-memoir-surgery",
     "sequence": 255,
@@ -3746,6 +3956,216 @@
         "file": "《大李敖全集5.0》（wjm_tcy版）分章节/007.采访序跋类/005.李敖访谈录1990-2018/008.19990819《中国时报》专访李敖.txt",
         "locator": "第5、79、81行",
         "evidence_quote": "知名作家李敖将代表新党参选总统...昨天出席新党六周年党庆，并发表一场专题演讲...将近五千名群众涌到台北国际会议中心会场聆听李敖的演讲"
+      }
+    ]
+  },
+  {
+    "id": "event-1999-2000-tv-challenge-leeao-global",
+    "sequence": 257.2,
+    "date_start": "1999-09-20",
+    "date_end": "2000-03-30",
+    "date_label": "1999年9月20日至2000年3月30日",
+    "title": "环球电视台《挑战李敖》",
+    "summary": "《挑战李敖》是1999年总统选举期李敖在环球电视台主持的电视节目。1999年10月20日节目称“在环球电视台开播满一个月”，可反推开播约在9月20日；2000年2月9日节目又回顾吴子嘉请李敖进驻环球电视台，开出《挑战李敖》节目，并把节目做成台柱。本书只支持环球电视台台北市级媒体空间，旧址与摄影棚仍待考。",
+    "place_ids": [
+      "place-global-tv-taipei"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-challenge",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/016.19991020挑战李敖.txt",
+        "locator": "第13行",
+        "evidence_quote": "今天正好是这个节目在环球电视台开播满一个月"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/091.20000209挑战李敖.txt",
+        "locator": "第19、21行",
+        "evidence_quote": "吴子嘉把我李敖请到了环球电视台，开这个《挑战李敖》节目以后...李敖是我们的台柱"
+      }
+    ]
+  },
+  {
+    "id": "event-1999-2000-challenge-leeao-live-tour",
+    "sequence": 257.4,
+    "date_start": "1999-10-21",
+    "date_end": "2000-02-29",
+    "date_label": "1999年10月21日至2000年2月29日",
+    "title": "《挑战李敖》校园与社区现场巡回",
+    "summary": "《挑战李敖》在总统选举期多次离开摄影棚，到大学校园、地方场地进行现场播出、现场录影或演讲。复查后把台北医学院、高雄中山大学、淡江大学、东吴大学、台湾大学、中正大学、政治大学、海洋大学、中华大学、成功大学、板桥国小活动中心合并为一个巡回节点：它表现的是李敖把电视节目、校园演讲、社区演讲和竞选表达接在一起的空间路线，而不是每一期谈话中的地名。",
+    "place_ids": [
+      "place-taipei-medical-university",
+      "place-national-sun-yat-sen-university-kaohsiung",
+      "place-tamkang-university",
+      "place-soochow-university",
+      "place-ntu",
+      "place-national-chung-cheng-university",
+      "place-national-chengchi-university",
+      "place-national-taiwan-ocean-university",
+      "place-chung-hua-university",
+      "place-national-cheng-kung-university",
+      "place-banqiao-elementary-school-activity-center"
+    ],
+    "category": "lecture",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-taipei-medical-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/016.19991020挑战李敖.txt",
+        "locator": "第13行",
+        "evidence_quote": "改在吴兴街的台北医学院现场播出"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-national-sun-yat-sen-university-kaohsiung",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/031.19991110挑战李敖.txt",
+        "locator": "第3、7行",
+        "evidence_quote": "中山大学演讲...今天的演讲的题目叫做——别再中山了"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-tamkang-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/040.19991123挑战李敖.txt",
+        "locator": "第3、11、21行",
+        "evidence_quote": "代表我们系欢迎李总统到淡江大学大传系的传播讲座...成立一个李敖先生言论自由国际传播讲座...到贵学校来谈李敖与语言论自由"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-soochow-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/041.19991124挑战李敖.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "又回到这个东吴的校园...过去就是我们东吴大学的教授"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-ntu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/044.19991129挑战李敖.txt",
+        "locator": "第19行",
+        "evidence_quote": "明天晚上到台湾大学讲演...现场在这环球电视台播出"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-national-chung-cheng-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/052.19991209挑战李敖.txt",
+        "locator": "第3、7、13行",
+        "evidence_quote": "今天一样非常高兴，李敖先生可以应邀到我们学校来做一个演讲...中正大学政治系...环球电视台做现场录影"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-national-chengchi-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/055.19991215挑战李敖.txt",
+        "locator": "第57、63行",
+        "evidence_quote": "我是政治大学历史系四年级...今天政大很了不起，能够这样的开放"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-national-taiwan-ocean-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/070.20000106挑战李敖.txt",
+        "locator": "第23行",
+        "evidence_quote": "我今天到海洋大学来，也是向你们学习"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-chung-hua-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/071.20000107挑战李敖.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "今天是我们中华大学为了迎接我们十周年校庆所举办的一系列演讲活动...各位中华的小朋友"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-national-cheng-kung-university",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/072.20000110挑战李敖.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "邀请到李敖先生到我们成大来演讲...赶到了台南来...这个节目现场录影"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-banqiao-elementary-school-activity-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/098.20000218挑战李敖.txt",
+        "locator": "第73行",
+        "evidence_quote": "明天下午两点钟，我在板桥市有一个讲演...板桥国小活动中心，就是板桥市文化路1段23号，题目是从郑板桥到板桥"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "place_id": "place-banqiao-elementary-school-activity-center",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/104.20000229挑战李敖.txt",
+        "locator": "第3行",
+        "evidence_quote": "今天我来到板桥，讲演的题目叫做从郑板桥到板桥"
+      }
+    ]
+  },
+  {
+    "id": "event-2000-sun-yat-sen-memorial-hall-hometown-speech",
+    "sequence": 257.6,
+    "date_start": "2000-01-21",
+    "date_end": "2000-01-21",
+    "date_label": "2000年1月21日",
+    "title": "国父纪念馆“热爱乡土，共同打拼”演讲",
+    "summary": "2000年总统选举期间，李敖在台北国父纪念馆大会堂作“热爱乡土，共同打拼”演讲。前一日节目预告时间、地点与主办单位；当日节目现场由主持人说明主办单位谢许英文教基金会与国父纪念馆，并称未来57天还会在其他场合提出政见。此节点补出1999年台北国际会议中心参选演讲之后、2000年大选前的又一处大型公共演讲空间。",
+    "place_ids": [
+      "place-sun-yat-sen-memorial-hall-taipei"
+    ],
+    "category": "politics",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-challenge",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/080.20000120挑战李敖.txt",
+        "locator": "第29行",
+        "evidence_quote": "明天晚上七点钟，我在台北市国父纪念馆的大会堂里面有一个重要的演讲...热爱乡土，共同打拼"
+      },
+      {
+        "source_id": "source-leeao-challenge",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/002.挑战李敖/081.20000121挑战李敖.txt",
+        "locator": "第3、103行",
+        "evidence_quote": "今天我到这个地方应邀来做一个演讲...谢许英文教基金会，还有国父纪念馆"
+      }
+    ]
+  },
+  {
+    "id": "event-1999-2000-tv-secret-study-at-home",
+    "sequence": 257.8,
+    "date_start": "1999-12-01",
+    "date_end": "2000-05-05",
+    "date_label": "约1999年12月至2000年5月5日",
+    "title": "《李敖秘密书房》在家中书房录制",
+    "summary": "《李敖秘密书房》承接《李敖笑傲江湖》与《挑战李敖》之后的电视阶段，把节目空间从摄影棚和校园/社区现场，进一步转入李敖家中书房。第一集说明《笑傲江湖》做满一千集后重新推出《李敖秘密书房》，并强调“请各位进入我的家”；同篇又区分旧日敦化南路十二楼书房与当时节目所见的二楼书房。复查见第三集以1999年12月14日前后的巴拿马运河新闻为引子，后段篇目延续至2000年5月5日。因文本未给出门牌，本轮只把它作为台北市级的书房/媒体空间节点，不与金兰大厦、白宫大厦、林肯大厦或阳明山书房混同。",
+    "place_ids": [
+      "place-leeao-secret-study-taipei"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-secret-study",
+        "place_id": "place-leeao-secret-study-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/003.李敖秘密书房/001.秘密书房泄密了.txt",
+        "locator": "第3行",
+        "evidence_quote": "《李敖笑傲江湖》是在摄影棚录制的...《李敖秘密书房》...在李敖书房里面录制...请各位进入我的家...因为是在我家录制"
+      },
+      {
+        "source_id": "source-leeao-secret-study",
+        "place_id": "place-leeao-secret-study-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/003.李敖秘密书房/001.秘密书房泄密了.txt",
+        "locator": "第7行",
+        "evidence_quote": "我有四个书房，今天你们看到的是最大的一个...当他到我家照我的书房的时候...这个书房是我在敦化南路一个十二楼的书房，不是现在这个书房，现在这个书房是二楼"
+      },
+      {
+        "source_id": "source-leeao-secret-study",
+        "place_id": "place-leeao-secret-study-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/003.李敖秘密书房/001.秘密书房泄密了.txt",
+        "locator": "第23行",
+        "evidence_quote": "后半场是用我现在书房做为空间，请来男女老少...跟我在一起上天下地，又聊天，又辩论"
+      },
+      {
+        "source_id": "source-leeao-secret-study",
+        "place_id": "place-leeao-secret-study-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/003.李敖秘密书房/003.书房搜秘.txt",
+        "locator": "第3行",
+        "evidence_quote": "报上是12月14号登出来，巴拿马运河移交了...现在是1999年"
       }
     ]
   },
