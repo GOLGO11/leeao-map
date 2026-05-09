@@ -4170,6 +4170,294 @@
     ]
   },
   {
+    "id": "event-2000-tv-diandao-zhongsheng-truth",
+    "sequence": 258,
+    "date_start": "2000-05-08",
+    "date_end": "2000-08-11",
+    "date_label": "2000年5月8日至8月11日",
+    "title": "真相新闻网《李敖颠倒众生》开播",
+    "summary": "《李敖颠倒众生》是李敖在2000年政权轮替后，于真相新闻网新开的电视节目。第一集明确说“今天是我李敖在真相新开节目的第一集”，并称《大成报》5月5日预告该节目下周开讲；第二集又说明节目尽量掌握最新媒体资讯，下午录影、晚上即可播出。第44集给出真相正经电视台收件地址为台北市南港区八德路四段768巷1弄18号13楼，本轮据此校正真相新闻网旧址，但具体摄影棚仍待复查。",
+    "place_ids": [
+      "place-truth-news-network-taipei"
+    ],
+    "category": "media",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-truth-news-network-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/001.20000508从敖之吾兄说起.txt",
+        "locator": "第5行",
+        "evidence_quote": "今天是我李敖在真相新开节目的第一集...《李敖颠倒众生》下周开讲...今天就正式的开始了"
+      },
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-truth-news-network-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/002.20000509法院两头大.txt",
+        "locator": "第17行",
+        "evidence_quote": "李敖颠倒众生的节目开出来以后...我下午看到的晚报，然后我下午录影，晚上就可以看到了"
+      },
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-truth-news-network-taipei",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/044.20000711谁骗了两万个台湾人？.txt",
+        "locator": "第15行",
+        "evidence_quote": "寄给真相电视台也可以，邮区是115真相正经电视台，台北市南港区八德路四段768巷1弄18号13楼，李敖先生收"
+      }
+    ]
+  },
+  {
+    "id": "event-2000-tv-leeao-talk-show-ttv",
+    "sequence": 258.2,
+    "date_start": "2000-05-17",
+    "date_end": "2000-09-20",
+    "date_label": "2000年5月17日至9月20日",
+    "title": "进入台视时段主持《李敖TALK SHOW》",
+    "summary": "《李敖Talk秀》初筛确认节目文字稿从2000年5月17日至9月20日共19期，李敖在真相新闻网之外，应杰米罗公司之请进入台湾电视公司时段主持《李敖TALK SHOW》。第1期陈孝萱开场即问台视为何有胆量请李敖主持，李敖也说自己能够到台视来；第2期又说台视和杰米罗公司请他来做节目。此前《李敖颠倒众生》已交叉见5月23日新闻局警告、7月5日与7月13日李敖自述每周三晚间在台视开节目并遭剪辑。本节点按台视总公司八德路三段10号定位，节目具体摄影棚仍待考。",
+    "place_ids": [
+      "place-taiwan-television-bade-10"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/012.20000526警告老烟枪钟琴.txt",
+        "locator": "第9、11行",
+        "evidence_quote": "行政院新闻局函，受文者，台湾电视事业股份有限公司...5月17号...《李敖TALK秀》节目...予以警告"
+      },
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/040.20000705民视大黑幕.txt",
+        "locator": "第7行",
+        "evidence_quote": "我李敖在真相台以外，在每个星期三的晚上九点钟，我在台市有个节目叫做《李敖TALK SHOW》...杰米罗公司他们去买下台视的时段，然后请我来做的"
+      },
+      {
+        "source_id": "source-leeao-diandao-zhongsheng",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/004.李敖颠倒众生/046.20000713比李还李.txt",
+        "locator": "第29、31行",
+        "evidence_quote": "我应杰米罗公司之请，到台视每个礼拜三晚上9点钟到十点半...我李敖挤进来做了一个节目...我在台视的节目，有的根本就给剪掉了"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/001.20000517李敖Talk秀.txt",
+        "locator": "第1、3、43、49行",
+        "evidence_quote": "20000517李敖Talk秀...台视为什么有这样的胆量请来李敖大师主持节目...我能够到台视来...台视不要怕"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/002.20000524李敖Talk秀.txt",
+        "locator": "第23、37行",
+        "evidence_quote": "混到台湾电视台，台视来做一个节目...台视请我来，这个杰米罗公司请我来"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-taiwan-television-bade-10",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/019.20000920李敖Talk秀.txt",
+        "locator": "第1行",
+        "evidence_quote": "20000920李敖Talk秀"
+      }
+    ]
+  },
+  {
+    "id": "event-2000-mother-death-renai-funeral",
+    "sequence": 258.6,
+    "date_start": "2000-07-29",
+    "date_end": "2000-07-31",
+    "date_label": "2000年7月29日至31日",
+    "title": "母亲张桂贞在仁爱医院去世、火化并安放阳明山",
+    "summary": "《李敖Talk秀》2000年8月16日节目中，李敖回忆7月29日上午10点15分，90岁的母亲张桂贞在台北市仁爱医院去世，陈宽荣医师开死亡证明。他上午7点探望母亲后回家工作，9点半接到病危电话赶回医院，随后在医院地下室太平间接洽丧葬社。遗体送往台北市第二殡仪馆火化，李敖称这是他第一次去第二殡仪馆。复查又据9月6日和9月13日节目补明：7月31日火化后，他把母亲骨灰移到阳明山，想与父亲骨灰放在同一柜，并与台北市社会局的灵骨塔缴费和合柜规定发生争执。阳明山点按台北市政府公立阳明山灵骨塔/第一公墓园区近似定位，不定位到具体骨灰柜。",
+    "place_ids": [
+      "place-taipei-renai-hospital",
+      "place-taipei-second-funeral-parlor",
+      "place-yangmingshan-columbarium"
+    ],
+    "category": "public_life",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-taipei-renai-hospital",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/014.20000816李敖Talk秀.txt",
+        "locator": "第3、5行",
+        "evidence_quote": "7月29号上午10:15，我90岁的母亲过去了，由台北市仁爱医院陈宽荣医师开了死亡证明书...仁爱医院...地下室的太平间"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-taipei-second-funeral-parlor",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/014.20000816李敖Talk秀.txt",
+        "locator": "第11、13行",
+        "evidence_quote": "到了火葬场...这是我第一次去台北市第二殡仪馆"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-yangmingshan-columbarium",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/017.20000906李敖Talk秀.txt",
+        "locator": "第203、207行",
+        "evidence_quote": "她7月29号故去，我在7月31号就把她火葬，并且把她移到了阳明山...我把我父亲的骨灰送到阳明山的台北市政府办的灵骨塔"
+      },
+      {
+        "source_id": "source-leeao-talk-show",
+        "place_id": "place-yangmingshan-columbarium",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/005.李敖Talk秀/018.20000913李敖Talk秀.txt",
+        "locator": "第109行",
+        "evidence_quote": "到了阳明山...要把我母亲跟父亲放在一起...台北市社会局说不可以，说一个位置只能装一个人"
+      }
+    ]
+  },
+  {
+    "id": "event-2001-kangning-hospital-two-surgeries",
+    "sequence": 258.68,
+    "date_start": "2001-07-01",
+    "date_end": "2001-10-15",
+    "date_label": "2001年夏秋至10月病后复出",
+    "title": "康宁医院两次开刀后复出《李敖大哥大》",
+    "summary": "《李敖大哥大》复查确认，2001年夏秋李敖在台北内湖康宁医院前后两次开刀，由副院长王振宗主刀；节目中称三个月开两次刀，第二次伤口14公分，且第二次手术时正逢内湖水灾，马英九到院探视病人。首集开场又说自己开刀后一个月复出，央视连线节目中也提到他在医院打吊针仍坚持开讲。本节点作为《李敖大哥大》病后复出的健康空间；术后到振兴医院做核磁共振和长期照护线索暂不拆点。",
+    "place_ids": [
+      "place-kangning-hospital-neihu"
+    ],
+    "category": "health",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-kangning-hospital-neihu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/001.张学良是末代民族英雄.txt",
+        "locator": "第11行",
+        "evidence_quote": "从开刀以后一个月...三个月开两次刀，并且第二次刀开的是14公分的刀"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-kangning-hospital-neihu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/004.批评陈水扁.txt",
+        "locator": "第19行",
+        "evidence_quote": "我去开刀，我开刀的时候我就在康宁医院，我跟给我开刀的副院长王振宗开玩笑"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-kangning-hospital-neihu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/010.意淫大陆，手淫台湾.txt",
+        "locator": "第13行",
+        "evidence_quote": "我这次在康宁医院前后两次开刀，都是由名医王振宗副院长给我开的刀"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-kangning-hospital-neihu",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/012.李敖论今古政坛迹象.txt",
+        "locator": "第71行",
+        "evidence_quote": "这一次第二次在康宁医院开刀的时候，正好内湖淹水，小马哥穿着雨靴跑来看我们这些病人"
+      }
+    ]
+  },
+  {
+    "id": "event-2001-2002-tv-leeao-dageda-cti",
+    "sequence": 258.75,
+    "date_start": "2001-10-15",
+    "date_end": "2002-05-20",
+    "date_label": "2001年10月15日前后至2002年5月20日",
+    "title": "中天电视《李敖大哥大》",
+    "summary": "《李敖大哥大》初筛确认全书127集，节目自张学良去世当天前后开讲，延续至2002年5月20日陈水扁就职两周年节点。第1集说“张学良今天下午死了”，第2集又称“昨天死掉的张学良”，据张学良台湾时间2001年10月15日去世推定节目起点；第126集标题和正文明确为2002年5月17日，第127集题为520并围绕陈水扁就职两周年，故终点定为2002年5月20日。节目主要落在中天电视台/中天资讯台；第一轮复查以中天前身劲道数位电视资料把旧址从台北市级收窄到信义区东兴路37号中农科技大楼。早期因纳莉水灾，中天曾借华视的棚，开放CALL IN电话线受限；华视具体棚别仍待考。",
+    "place_ids": [
+      "place-cti-television-taipei-2001",
+      "place-chinese-television-system-guangfu-100"
+    ],
+    "category": "media",
+    "certainty": "medium",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/001.张学良是末代民族英雄.txt",
+        "locator": "第13行",
+        "evidence_quote": "张学良今天下午死了，我可以在这电视节目里面讲出来"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-chinese-television-system-guangfu-100",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/008.假如陈幸妤是观世音.txt",
+        "locator": "第79行",
+        "evidence_quote": "由于我们现在水灾的原因，中天是借华视的棚，结果只有两线电话"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/002.张学良与赵四小姐的爱情故事.txt",
+        "locator": "第67行",
+        "evidence_quote": "原来中天这个台的收视率只在0.2-0.3之间。由于请我跟陈文茜来了以后...我李敖做到0.9"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/127.从猪狗不如到猫狗不如.txt",
+        "locator": "第19、21行",
+        "evidence_quote": "中天电视台一半的股份就是国民党的...在国民党有一半资本的中天电视台有一半投资的中天电视台，公然来骂国民党党主席的老婆"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/119.正名未遂，骂了自己.txt",
+        "locator": "第11行",
+        "evidence_quote": "从后天就是星期三15号开始，我在41频道的李敖大哥大调到36频道...就是中天资讯台...我现在是中天新闻台"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/126.2002年5月17号.txt",
+        "locator": "第1、11行",
+        "evidence_quote": "2002年5月17号...今天2002年5月17号"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/127.从猪狗不如到猫狗不如.txt",
+        "locator": "第11行",
+        "evidence_quote": "今天讲的题目是520...阿扁当了所谓中华民国的总统两周年的纪念日"
+      }
+    ]
+  },
+  {
+    "id": "event-2002-cti-cctv-mainland-dialogue",
+    "sequence": 258.82,
+    "date_start": "2001-12-22",
+    "date_end": "2002-02-15",
+    "date_label": "2001年12月央视首播，2002年马年正月初一至初四中天播出",
+    "title": "中天/央视《李敖对祖国发音》卫星连线专题",
+    "summary": "《李敖大哥大》第31至34集作为马年正月初一到初四连续四天特别专辑，播放并评述中央电视台与台湾中天电视联合推出的《李敖与大陆观众的第一次对话》。复查补正时间：央视资料显示连线节目先于2001年12月播出；《李敖大哥大》文本则明确把这四集安排为2002年马年春节初一至初四连续播出。节目中李敖在台北中天端，与北京主持人李峰、台北主持人李晶玉，以及北京现场80多位读者通过卫星连线对话；李敖称这是“对大陆中央电视台”发音，也是台湾熬了50年才有的一点“隔海唱和”机会。本节点只标李敖所在的台北中天端，北京央视演播室与北京四中画面作为远程对话对象，暂不作为李敖到场点。",
+    "place_ids": [
+      "place-cti-television-taipei-2001"
+    ],
+    "category": "media",
+    "certainty": "high",
+    "source_refs": [
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/031.李敖对祖国发音第一集.txt",
+        "locator": "第11、39、41、43行",
+        "evidence_quote": "从这一集开始连续四集，也就是中国马年的正月初一到初四...我跟大陆中央电视台，对他们开始发音...中央电视台与台湾中天电视联合推出...在台北的主持人叫李晶玉"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/031.李敖对祖国发音第一集.txt",
+        "locator": "第47、49、55行",
+        "evidence_quote": "在北京现场还有80多位您的忠实读者...在医院的时候还打着吊针在坚持开讲，做你《李敖大哥大》的节目...隔着海峡两岸跟共产党来对话"
+      },
+      {
+        "source_id": "source-leeao-dageda",
+        "place_id": "place-cti-television-taipei-2001",
+        "file": "《大李敖全集5.0》（wjm_tcy版）分章节/010.节目演讲类/006.李敖大哥大/034.李敖对祖国发音第四集.txt",
+        "locator": "第117、123行",
+        "evidence_quote": "透过这一次的卫星连线，我跟李敖大哥仿佛也走了一趟北京...以上VCR全部都是我对大陆的、对祖国的发音，透过大陆的中央电视台对他们的发音"
+      }
+    ]
+  },
+  {
     "id": "event-2004-sys-memorial-campaign-speech",
     "sequence": 259,
     "date_start": "2004-11-14",

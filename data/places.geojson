@@ -204,23 +204,130 @@
       "type": "Feature",
       "id": "place-truth-news-network-taipei",
       "properties": {
-        "name_zh": "真相新闻网（台北，旧址待考）",
+        "name_zh": "真相新闻网 / 真相正经电视台（南港八德路旧址）",
         "aliases": [
           "真相新闻网",
           "真相新闻",
           "真相",
+          "真相电视台",
+          "真相正经电视台",
+          "台湾真相电视台",
           "Truth News Network"
         ],
         "place_type": "media_organization",
-        "coordinate_precision": "city",
+        "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "《李敖笑傲江湖》第一集称李敖经十个月谈判，于1995年10月20日与真相新闻网签约，达成《李敖笑傲江湖》节目合约书；第73集又称节目作满一年后与真相新闻网重新订下一年合约。复查又见第24集称真相新闻网请他到“台里面”做节目，第28集称前方有三台摄影机与三位工作人员，第113集称周荃、周菲主持真相新闻网电视台。本书没有给出真相新闻网门牌或录影棚位置，暂按台北市级坐标处理。"
+        "notes": "《李敖笑傲江湖》第一集称李敖经十个月谈判，于1995年10月20日与真相新闻网签约，达成《李敖笑傲江湖》节目合约书；第73集又称节目作满一年后与真相新闻网重新订下一年合约。复查又见第24集称真相新闻网请他到“台里面”做节目，第28集称前方有三台摄影机与三位工作人员，第113集称周荃、周菲主持真相新闻网电视台。《李敖颠倒众生》第44集给出收件地址“邮区115真相正经电视台，台北市南港区八德路四段768巷1弄18号13楼，李敖先生收”；本轮据邮递区号地址页坐标校正为地址近似点。具体摄影棚、楼层用途与公司沿革仍待考。"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          121.5654,
-          25.033
+          121.58132,
+          25.050137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taiwan-television-bade-10",
+      "properties": {
+        "name_zh": "台湾电视公司 / 台视（八德路三段10号）",
+        "aliases": [
+          "台视",
+          "台湾电视公司",
+          "台湾电视事业股份有限公司",
+          "臺灣電視事業股份有限公司",
+          "台湾电视台",
+          "TTV",
+          "Taiwan Television"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖颠倒众生》复查确认，2000年5月至7月前后李敖应杰米罗公司之请进入台视时段制作《李敖TALK SHOW》；《李敖Talk秀》初筛据19期节目文字稿把起讫校正为2000年5月17日至9月20日，并补强第1、第2期台视现场证据。台视官网“台视位置”列地址为台北市八德路三段10号；本点按该地址近似定位，节目具体摄影棚仍待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5512,
+          25.0485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-renai-hospital",
+      "properties": {
+        "name_zh": "台北市仁爱医院 / 台北市立联合医院仁爱院区",
+        "aliases": [
+          "仁爱医院",
+          "台北市仁爱医院",
+          "臺北市立聯合醫院仁愛院區",
+          "台北市立联合医院仁爱院区",
+          "仁爱院区"
+        ],
+        "place_type": "hospital",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖Talk秀》2000年8月16日节目回忆，7月29日10点15分，母亲张桂贞在台北市仁爱医院去世，陈宽荣医师开死亡证明；医院地下室太平间由丧葬社接洽。坐标按现台北市立联合医院仁爱院区（仁爱路四段10号）近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.5456,
+          25.0376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-taipei-second-funeral-parlor",
+      "properties": {
+        "name_zh": "台北市第二殡仪馆 / 怀爱馆",
+        "aliases": [
+          "台北市第二殡仪馆",
+          "臺北市第二殯儀館",
+          "第二殡仪馆",
+          "第二殯儀館",
+          "怀爱馆",
+          "懷愛館"
+        ],
+        "place_type": "funeral_facility",
+        "coordinate_precision": "institution_approx",
+        "needs_review": true,
+        "notes": "《李敖Talk秀》2000年8月16日节目称母亲去世后，李敖第一次去台北市第二殡仪馆，见棺木火化并办理简化丧礼。现称怀爱馆，地址辛亥路三段330号，坐标按馆区近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55275,
+          25.01358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-yangmingshan-columbarium",
+      "properties": {
+        "name_zh": "阳明山灵骨塔 / 阳明山第一公墓",
+        "aliases": [
+          "阳明山灵骨塔",
+          "陽明山靈骨塔",
+          "阳明山第一公墓",
+          "陽明山第一公墓",
+          "台北市政府办的灵骨塔",
+          "臺北市政府辦的靈骨塔"
+        ],
+        "place_type": "columbarium",
+        "coordinate_precision": "facility_approx",
+        "needs_review": true,
+        "notes": "《李敖Talk秀》复查确认，2000年7月31日李敖将母亲张桂贞骨灰移到阳明山，想与父亲骨灰同柜；第17期称为“阳明山的台北市政府办的灵骨塔”，第18期又记与台北市社会局就一柜一人规定发生争执。台北市殡葬管理处资料显示阳明山灵骨塔位于北投区阳明山第一公墓内，地址泉源路220号；坐标按阳明山灵骨塔/第一公墓园区近似，不定位到具体骨灰柜。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.52362,
+          25.13889
         ]
       }
     },
@@ -270,6 +377,86 @@
         "coordinates": [
           121.5654,
           25.033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-cti-television-taipei-2001",
+      "properties": {
+        "name_zh": "中天电视台 / 中天资讯台（中农科技大楼旧址）",
+        "aliases": [
+          "中天",
+          "中天电视",
+          "中天电视台",
+          "中天资讯台",
+          "劲道数位电视",
+          "中农科技大楼",
+          "CTI TV",
+          "Chung T'ien Television"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "building_approx",
+        "needs_review": true,
+        "notes": "《李敖大哥大》确认2001年10月至2002年5月前后，李敖在中天电视台/中天资讯台主持《李敖大哥大》。第一轮复查以2001年中天前身劲道数位电视资料收窄到台北市信义区东兴路37号中农科技大楼旧址；同年纳莉水灾时中农科技大楼淹水，华视临时挪出摄影棚，也与书中“中天借华视的棚”互证。本书仍未给出具体楼层或棚别，故坐标按大楼近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.56638,
+          25.048009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-chinese-television-system-guangfu-100",
+      "properties": {
+        "name_zh": "中华电视公司 / 华视（光复南路100号）",
+        "aliases": [
+          "华视",
+          "中华电视公司",
+          "中华电视股份有限公司",
+          "中華電視公司",
+          "中華電視股份有限公司",
+          "CTS",
+          "Chinese Television System"
+        ],
+        "place_type": "television_station",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖大哥大》第1集与第8集开放CALL IN段落说明，因水灾影响，中天曾暂时借用华视的棚，电话线受限；本点仅作为《李敖大哥大》早期临时录影棚线索。华视官方地址为台北市大安区光复南路100号，坐标按该地址近似，具体棚别待考。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.55747,
+          25.04367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-kangning-hospital-neihu",
+      "properties": {
+        "name_zh": "康宁医院（内湖）",
+        "aliases": [
+          "康宁医院",
+          "康寧醫院",
+          "康宁医疗财团法人康宁医院",
+          "康寧醫療財團法人康寧醫院",
+          "Kang Ning Hospital"
+        ],
+        "place_type": "hospital",
+        "coordinate_precision": "address_approx",
+        "needs_review": true,
+        "notes": "《李敖大哥大》多次回忆2001年李敖在康宁医院前后两次开刀，由副院长王振宗主刀；第二次开刀正逢内湖水灾，马英九曾到院探视病人。康宁医院官方地址为台北市内湖区成功路五段420巷26号；坐标按该院址近似，具体病房与手术室不定位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.607,
+          25.0739
         ]
       }
     },
