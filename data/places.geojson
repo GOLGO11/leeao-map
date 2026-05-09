@@ -167,7 +167,7 @@
         "place_type": "temple",
         "coordinate_precision": "address_approx",
         "needs_review": true,
-        "notes": "《李敖政论综艺集》059篇央视《东方时空》记2005年9月23日下午，李敖踏进神往已久的北京法源寺，并说明此前虽未到过，已通过照片和资料写成长篇历史小说《北京法源寺》。坐标按北京市西城区法源寺前街7号近似。"
+        "notes": "《快意还乡——李敖神州文化之旅》逐日记录记2005年9月21日下午三点半，李敖到北京法源寺参观、题字并在佛学院礼堂讲话；《李敖政论综艺集》059篇央视《东方时空》作9月23日下午，故本轮以逐日记录为主并保留日期异文。坐标按北京市西城区法源寺前街7号近似。"
       },
       "geometry": {
         "type": "Point",
@@ -2035,7 +2035,7 @@
         "place_type": "site",
         "coordinate_precision": "site_approx",
         "needs_review": true,
-        "notes": "李敖去买书经过黄浦滩，目击抢兑黄金潮；暂按外滩中央银行历史建筑一带近似。"
+        "notes": "李敖去买书经过黄浦滩，目击抢兑黄金潮；2005年神州文化之旅回到上海观看黄浦江与外滩时，再度触发这段记忆。暂按外滩中央银行历史建筑一带近似。"
       },
       "geometry": {
         "type": "Point",
@@ -2085,17 +2085,29 @@
       "type": "Feature",
       "id": "place-shanghai-jigui-middle-school",
       "properties": {
-        "name_zh": "上海市缉椝中学",
+        "name_zh": "上海市市东中学 / 缉椝中学旧址",
         "aliases": [
+          "上海市缉椝中学",
           "缉椝中学",
+          "缉规中学",
+          "上海市东中学",
+          "上海市市东中学",
+          "市东中学",
+          "聂中丞华童公学",
           "华童公学"
         ],
-        "place_type": "institution",
-        "coordinate_precision": "unknown",
-        "needs_review": true,
-        "notes": "1949年1月25日考取、2月15日开学；具体旧址待考。"
+        "place_type": "school",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "1949年1月25日李敖考取缉椝中学，2月15日开学；《快意还乡——李敖神州文化之旅》009篇记2005年9月27日上午11点，李敖拜访他在上海就读过的缉规中学（现为上海市东中学），并在校礼堂讲话、题字。坐标按市东中学/上海市市东实验学校校园近似；具体礼堂或旧教室不另行定位。"
       },
-      "geometry": null
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          121.51274,
+          31.25965
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -3475,6 +3487,78 @@
         "coordinates": [
           121.526,
           25.079
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-tiananmen-beijing",
+      "properties": {
+        "name_zh": "天安门城楼",
+        "aliases": [
+          "天安门",
+          "天安门城楼",
+          "Tiananmen Gate"
+        ],
+        "place_type": "heritage_site",
+        "coordinate_precision": "landmark",
+        "needs_review": false,
+        "notes": "《快意还乡——李敖神州文化之旅》002篇记2005年9月20日李敖登上天安门城楼，并在城楼上俯看天安门广场，感叹“大国气象”。坐标按维基共享资源所列天安门物体位置近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.391083,
+          39.907333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-palace-museum-beijing",
+      "properties": {
+        "name_zh": "故宫博物院（北京）",
+        "aliases": [
+          "北京故宫",
+          "故宫",
+          "故宫博物院",
+          "紫禁城",
+          "Palace Museum"
+        ],
+        "place_type": "museum",
+        "coordinate_precision": "institution_approx",
+        "needs_review": false,
+        "notes": "《快意还乡——李敖神州文化之旅》002篇记2005年9月20日李敖在故宫太和殿前现身，参观武英殿、钟表馆、景仁宫、漱芳斋等处，并表示“我对以前对故宫的评论，表示忏悔”。坐标按北京市文物局所列景山前街4号院区近似。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.397041,
+          39.916351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "place-cai-yuanpei-tomb-aberdeen-hong-kong",
+      "properties": {
+        "name_zh": "蔡元培墓（香港仔华人永远坟场）",
+        "aliases": [
+          "蔡元培墓",
+          "蔡孑民先生之墓",
+          "香港仔华人永远坟场",
+          "Aberdeen Chinese Permanent Cemetery"
+        ],
+        "place_type": "cemetery",
+        "coordinate_precision": "site_approx",
+        "needs_review": true,
+        "notes": "《快意还乡——李敖神州文化之旅》011篇记2005年9月29日上午李敖到香港仔华人永远坟场蔡元培墓前献花拜祭，并现场考订碑文。外部资料可确认蔡元培墓在香港仔华人永远坟场；当前坐标只落到坟场山坡区域，未伪精确到具体墓位。"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1547,
+          22.2508
         ]
       }
     }
